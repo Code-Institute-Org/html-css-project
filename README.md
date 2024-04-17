@@ -43,6 +43,12 @@ Outline the Agile planning process, including  planning, defining user stories, 
 
 Document phase  goals focused on setting up the project's foundational elements— proposal submission, community engagement for feedback, revision processes, endorsements by trusted members, and adoption by organizations.  Highlight how GitHub Copilot contributed to refining user stories and goals, ensuring a broad coverage of platform functionalities. nclude screenshots and examples of the project board setup and user story formats.
 
+Why did I do what I did?
+
+What challenges/Limitations did I encounter
+
+How did it help?
+
 ### Environment Setup
 Describe the process of selecting and setting up the development environment, including version control systems and choice of tech stack.
 
