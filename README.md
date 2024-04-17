@@ -9,15 +9,15 @@
     - [Agile Planning](#agile-planning)
     - [Environment Setup](#environment-setup)
     - [Initial Design and Wireframing](#initial-design-and-wireframing)
-3. [Phase 2: Sprint 1 - Basic Features Development](#phase-2-sprint-1---basic-features-development)
+3. [Phase 2:  1 - Basic Features Development](#phase-2--1---basic-features-development)
     - [Setup Basic Structure](#setup-basic-structure)
     - [Develop Core Features](#develop-core-features)
     - [Integration and Testing](#integration-and-testing)
-4. [Phase 3: Sprint 2 - Advanced Features and Refinement](#phase-3-sprint-2---advanced-features-and-refinement)
+4. [Phase 3:  2 - Advanced Features and Refinement](#phase-3--2---advanced-features-and-refinement)
     - [Feature Development](#feature-development)
     - [Testing and Debugging](#testing-and-debugging)
     - [User Feedback](#user-feedback)
-5. [Phase 4: Sprint 3 - Finalization and Deployment](#phase-4-sprint-3---finalization-and-deployment)
+5. [Phase 4: - Finalization and Deployment](#phase-4--3---finalization-and-deployment)
     - [Polishing and Optimization](#polishing-and-optimization)
     - [Deployment](#deployment)
     - [Final Testing and Documentation](#final-testing-and-documentation)
@@ -39,7 +39,7 @@ The main goals the project intends to achieve, aligned with specific learning ou
 Detail the initial brainstorming process, concept selection, and the unique value proposition of the project.
 
 ### Agile Planning
-Outline the Agile planning process, including sprint planning, defining user stories, and setting up project management tools.
+Outline the Agile planning process, including  planning, defining user stories, and setting up project management tools.
 
 ### Environment Setup
 Describe the process of selecting and setting up the development environment, including version control systems and choice of tech stack.
@@ -47,7 +47,7 @@ Describe the process of selecting and setting up the development environment, in
 ### Initial Design and Wireframing
 Provide insights into the initial UI/UX design process, including wireframes and design tools used.
 
-## Phase 2: Sprint 1 - Basic Features Development
+## Phase 2: - Basic Features Development
 
 ### Setup Basic Structure
 Document the creation of the project's foundational structure, focusing on backend setup and frontend layout.
@@ -58,18 +58,18 @@ Detail the development of core project features, noting any particular challenge
 ### Integration and Testing
 Summarize the integration process between different components and initial testing efforts, including both manual and automated tests where applicable.
 
-## Phase 3: Sprint 2 - Advanced Features and Refinement
+## Phase 3: - Advanced Features and Refinement
 
 ### Feature Development
 Discuss the development of more advanced features, highlighting innovative solutions and AI-enhanced coding practices.
 
 ### Testing and Debugging
-Describe the focused testing and debugging efforts during this sprint, including methodologies, tools used, and key outcomes.
+Describe the focused testing and debugging efforts during this , including methodologies, tools used, and key outcomes.
 
 ### User Feedback
 Detail the process of gathering and integrating user feedback, reflecting on how it influenced project direction and feature refinement.
 
-## Phase 4: Sprint 3 - Finalization and Deployment
+## Phase 4: - Finalization and Deployment
 
 ### Polishing and Optimization
 Cover the final polishing of features and UI/UX, alongside performance optimization efforts, mentioning any AI-driven enhancements.
