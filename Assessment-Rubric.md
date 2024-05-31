@@ -11,7 +11,7 @@
     - [Code Quality and Standards (15%)](#code-quality-and-standards-15)
     - [AI-Generated Code Integration (15%)](#ai-generated-code-integration-15)
     - [Functional Implementation (15%)](#functional-implementation-15)
-    - [Version Control and Collaboration (5%)](#version-control-and-collaboration-5)
+    - [Version Control(5%)](#version-control-5)
 4. [Post-Implementation Review (20%)](#post-implementation-review-20)
     - [Final Project Submission (10%)](#final-project-submission-10)
     - [Documentation (10%)](#documentation-10)
@@ -151,23 +151,23 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 - **Evidence:** Outstanding functional implementation meeting all acceptance criteria flawlessly.
 - **Example:** Perfectly functional homepage with all required sections, interactive elements working smoothly, and excellent UI/UX.
 
-### Version Control and Collaboration (5%)
+### Version Control (5%)
 
 **Fail (0-2%):**
-- **Evidence:** Poor version control practices with minimal commits and lack of collaboration evidence.
-- **Example:** Only one or two commits, no evidence of collaboration.
+- **Evidence:** Poor version control practices with minimal commits.
+- **Example:** Only one or two commits
 
 **Pass (3%):**
-- **Evidence:** Basic version control practices with regular commits and some collaboration evidence.
-- **Example:** Regular commits, some collaborative comments and pull requests.
+- **Evidence:** Basic version control practices with regular commits.
+- **Example:** Regular commits.
 
 **Merit (4%):**
-- **Evidence:** Good version control practices with frequent commits, well-documented pull requests, and clear collaboration evidence.
-- **Example:** Frequent commits, detailed pull requests, evidence of code reviews and collaboration.
+- **Evidence:** Good version control practices with frequent commits, well-documented pull requests.
+- **Example:** Frequent commits.
 
 **Distinction (5%):**
-- **Evidence:** Excellent version control practices with highly frequent and well-documented commits, outstanding collaboration evidence.
-- **Example:** Highly frequent commits, exceptionally detailed pull requests with thorough reviews, extensive collaboration documentation.
+- **Evidence:** Excellent version control practices with highly frequent and well-documented commits.
+- **Example:** Highly frequent commits.
 
 ## Post-Implementation Review (20%)
 
