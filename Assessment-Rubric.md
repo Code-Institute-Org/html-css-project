@@ -48,7 +48,7 @@
 5. [Mapped Learning Outcomes and Assessment Criteria](#mapped-learning-outcomes-and-assessment-criteria)
 
 ## Introduction
-This rubric is designed to assess the AI-Augmented Pair Programming Project. It evaluates pre-implementation artefacts, project implementation, and post-implementation review, focusing on learner contributions and adherence to project requirements. This version excludes any collaboration tasks and activities.
+This rubric is designed to assess the AI-Augmented Pair Programming Project. It evaluates pre-implementation artefacts, project implementation, and post-implementation review, focusing on learner contributions and adherence to project requirements.
 
 ## Pre-Implementation Artefacts (30%)
 
