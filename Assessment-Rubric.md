@@ -1,4 +1,4 @@
-# Detailed Assessment Rubric for AI-Augmented Pair Programming Project (Excluding Presentations and Collaboration Tasks)
+# Detailed Assessment Rubric for AI-Augmented Pair Programming Project 
 
 ## Overall Pass, Merit, and Distinction Grades
 
