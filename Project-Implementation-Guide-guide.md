@@ -283,14 +283,13 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
 
 ---
 
-### 4. Version Control and Collaboration (5%)
+### 4. Version Control (5%)
 
-**Objective:** Demonstrate effective version control practices and collaboration.
+**Objective:** Demonstrate effective version control practices
 
 **Steps:**
 1. **Version Control:**
-   - Make regular commits with detailed messages.
-   - Collaborate with team members using pull requests and code reviews.
+   - Make regular commits with detailed messages
    - Example:
      ```markdown
      ### Commit Messages
@@ -304,11 +303,9 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
 **Do's and Don'ts:**
 - **Do's:**
   - Do commit regularly with clear and detailed messages.
-  - Do use pull requests for collaboration and code reviews.
   - Do document your version control practices.
 - **Don'ts:**
   - Don't commit infrequently or without clear messages.
-  - Don't neglect collaboration and code reviews.
   - Don't forget to document your version control practices.
 
 **Mapped Learning Outcomes and Assessment Criteria:**
