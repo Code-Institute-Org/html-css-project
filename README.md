@@ -28,6 +28,18 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
 - Provides a clear starting point without rigid constraints.
 - Allows for iterative updates and refinements.
 
+**Do's and Don'ts:**
+- **Do's:**
+   - Do define clear and achievable project scope and objectives.
+   - Do outline detailed user stories with clear acceptance criteria.
+   - Do create initial wireframes and design concepts that align with project goals.
+   - Do include UX design principles and accessibility considerations.
+ - **Don'ts:**
+   - Don't define overly broad or vague project objectives.
+   - Don't create user stories without acceptance criteria.
+   - Don't skip the initial design concept phase.
+   - Don't ignore accessibility in your design considerations.
+
 **Mapped Learning Outcomes and Assessment Criteria:**
 - **LO1.1:** Document and implement all User Stories and map them to the project within an Agile tool.
 - **LO1.5:** Use an Agile tool to manage the planning and implementation of all significant functionality.
