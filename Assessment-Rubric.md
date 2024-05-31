@@ -1,4 +1,35 @@
-# Detailed Assessment Rubric for AI-Augmented Pair Programming Project
+# Detailed Assessment Rubric for AI-Augmented Pair Programming Project (Excluding Presentations and Collaboration Tasks)
+
+## Overall Pass, Merit, and Distinction Grades
+
+### Overall Grading Criteria
+
+### Pass
+**Criteria:**
+- Achieve a minimum overall score of 50%.
+- No component (Pre-Implementation Artefacts, Project Implementation, Post-Implementation Review) falls below a pass mark in its category.
+- Basic adherence to project requirements, showing understanding and execution of the project plan, user stories, design, and implementation.
+
+**Justification:**
+- A pass indicates the learner has met the essential requirements of the project, demonstrating a foundational understanding and ability to execute the tasks, albeit with potential for improvement in detail and execution.
+
+### Merit
+**Criteria:**
+- Achieve an overall score between 65% and 79%.
+- Demonstrate good quality and understanding across all components with minor issues.
+- High-quality execution of the project plan, user stories, design documentation, code quality, and functional implementation.
+
+**Justification:**
+- A merit grade shows that the learner has not only met but exceeded basic expectations, producing work that is well-organized, detailed, and largely free of significant issues. This grade reflects a solid grasp of the project requirements and an ability to implement them effectively.
+
+### Distinction
+**Criteria:**
+- Achieve an overall score of 80% or higher.
+- All components (Pre-Implementation Artefacts, Project Implementation, Post-Implementation Review) are executed to a high standard, with exceptional detail and quality.
+- Comprehensive and detailed project plan, user stories, design documentation, exceptional code quality, seamless AI integration, and flawless functional implementation.
+
+**Justification:**
+- A distinction represents the highest level of achievement, indicating exceptional understanding and execution. This grade is reserved for work that is not only free of significant issues but is also innovative, detailed, and exceptionally well-documented, reflecting a deep understanding and mastery of the project requirements and tools.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -10,16 +41,14 @@
 3. [Project Implementation (50%)](#project-implementation-50)
     - [Code Quality and Standards (15%)](#code-quality-and-standards-15)
     - [AI-Generated Code Integration (15%)](#ai-generated-code-integration-15)
-    - [Functional Implementation (15%)](#functional-implementation-15)
-    - [Version Control(5%)](#version-control-5)
+    - [Functional Implementation (20%)](#functional-implementation-20)
 4. [Post-Implementation Review (20%)](#post-implementation-review-20)
     - [Final Project Submission (10%)](#final-project-submission-10)
     - [Documentation (10%)](#documentation-10)
-    - [Retrospective Report (10%)](#retrospective-report-10)
 5. [Mapped Learning Outcomes and Assessment Criteria](#mapped-learning-outcomes-and-assessment-criteria)
 
 ## Introduction
-This rubric is designed to assess the AI-Augmented Pair Programming Project. It evaluates pre-implementation artefacts, project implementation, and post-implementation review, focusing on learner contributions and adherence to project requirements.
+This rubric is designed to assess the AI-Augmented Pair Programming Project. It evaluates pre-implementation artefacts, project implementation, and post-implementation review, focusing on learner contributions and adherence to project requirements. This version excludes any collaboration tasks and activities.
 
 ## Pre-Implementation Artefacts (30%)
 
@@ -62,20 +91,20 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 ### Version Control Setup (5%)
 
 **Fail (0-2%):**
-- **Evidence:** GitHub repository not properly set up. No branching strategy or minimal commits.
-- **Example:** Only one branch with initial commit.
+- **Evidence:** GitHub repository not properly set up. No regular commits.
+- **Example:** Only one commit for the initial setup.
 
 **Pass (3%):**
-- **Evidence:** Basic setup of GitHub repository with a simple branching strategy.
-- **Example:** Main branch and one feature branch with commits for initial setup.
+- **Evidence:** Basic setup of GitHub repository with some regular commits.
+- **Example:** Initial commit followed by a few subsequent commits for basic changes.
 
 **Merit (4%):**
-- **Evidence:** Well-organized GitHub repository with a clear branching strategy.
-- **Example:** Main branch, development branch, and multiple feature branches with regular commits.
+- **Evidence:** Well-organized GitHub repository with regular commits documenting the development process.
+- **Example:** Frequent commits documenting key stages of development.
 
 **Distinction (5%):**
-- **Evidence:** Exceptionally organized GitHub repository with advanced branching strategy.
-- **Example:** Main branch, development branch, feature branches for each user story, regular commits, and detailed pull requests with reviews.
+- **Evidence:** Exceptionally organized GitHub repository with highly frequent and detailed commits.
+- **Example:** Very frequent commits with detailed messages explaining the changes and development progress.
 
 ### AI Tool Usage Plan (5%)
 
@@ -133,41 +162,23 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 - **Evidence:** Exceptional use of AI tools with highly effective integration and critical assessment of AI-generated code.
 - **Example:** AI-generated code is seamlessly integrated, thoroughly reviewed, and optimized, with clear documentation of AI vs. human contributions.
 
-### Functional Implementation (15%)
+### Functional Implementation (20%)
 
-**Fail (0-6%):**
+**Fail (0-8%):**
 - **Evidence:** Incomplete or non-functional implementation. User stories' acceptance criteria not met.
 - **Example:** Homepage missing key sections, broken links, or non-functional features.
 
-**Pass (7-9%):**
+**Pass (9-11%):**
 - **Evidence:** Basic functional implementation meeting most acceptance criteria with some issues.
 - **Example:** Homepage with welcome message and services section, but some interactive elements not working properly.
 
-**Merit (10-12%):**
+**Merit (12-16%):**
 - **Evidence:** High-quality functional implementation meeting all acceptance criteria with minor issues.
 - **Example:** Fully functional homepage with all required sections working, minor UI/UX issues.
 
-**Distinction (13-15%):**
+**Distinction (17-20%):**
 - **Evidence:** Outstanding functional implementation meeting all acceptance criteria flawlessly.
 - **Example:** Perfectly functional homepage with all required sections, interactive elements working smoothly, and excellent UI/UX.
-
-### Version Control (5%)
-
-**Fail (0-2%):**
-- **Evidence:** Poor version control practices with minimal commits.
-- **Example:** Only one or two commits
-
-**Pass (3%):**
-- **Evidence:** Basic version control practices with regular commits.
-- **Example:** Regular commits.
-
-**Merit (4%):**
-- **Evidence:** Good version control practices with frequent commits, well-documented pull requests.
-- **Example:** Frequent commits.
-
-**Distinction (5%):**
-- **Evidence:** Excellent version control practices with highly frequent and well-documented commits.
-- **Example:** Highly frequent commits.
 
 ## Post-Implementation Review (20%)
 
