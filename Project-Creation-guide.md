@@ -27,7 +27,7 @@
 
 ## Design Documentation
 ### Wireframes
-- **Wireframes:** Include high-fidelity wireframes for each key page of the project.
+- **Wireframes:** Include wireframes for each key page of the project.
 - **Annotations:** Provide annotations and explanations for design choices.
 
 ### UX Design
@@ -39,7 +39,6 @@
 ## Version Control Practices
 - **Repository Setup:** Detail the GitHub repository setup and branching strategy.
 - **Commit History:** Summarize the commit history with clear messages.
-- **Collaboration:** Describe collaboration practices, including pull requests and code reviews.
 
 ## AI Tool Usage
 - **GitHub Copilot:** Document how GitHub Copilot was used to generate user stories and code snippets.
@@ -63,7 +62,7 @@
 ## Retrospective Report
 - **Development Process:** Review the development process, identifying successes and areas for improvement.
 - **User Stories:** Summarize which user stories were met and propose solutions for any unmet stories.
-- **Reflections:** Provide detailed reflections on lessons learned and future improvements.
+- **Reflections:** Provide reflections on lessons learned and future improvements.
 
 ## Mapped Learning Outcomes and Assessment Criteria
 - **Learning Outcomes:**
