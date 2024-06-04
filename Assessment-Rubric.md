@@ -88,25 +88,7 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 - **Evidence:** Exceptional wireframes and UX design documentation. Thorough and detailed accessibility considerations. Extensive user interaction details.
 - **Example:** High-fidelity wireframes with complete annotations on design choices, detailed UX flow diagrams, and comprehensive accessibility audit.
 
-### Version Control Setup (5%)
-
-**Fail (0-2%):**
-- **Evidence:** GitHub repository not properly set up. No regular commits.
-- **Example:** Only one commit for the initial setup.
-
-**Pass (3%):**
-- **Evidence:** Basic setup of GitHub repository with some regular commits.
-- **Example:** Initial commit followed by a few subsequent commits for basic changes.
-
-**Merit (4%):**
-- **Evidence:** Well-organized GitHub repository with regular commits documenting the development process.
-- **Example:** Frequent commits documenting key stages of development.
-
-**Distinction (5%):**
-- **Evidence:** Exceptionally organized GitHub repository with highly frequent and detailed commits.
-- **Example:** Very frequent commits with detailed messages explaining the changes and development progress.
-
-### AI Tool Usage Plan (5%)
+### AI Tool Usage Plan (10%)
 
 **Fail (0-2%):**
 - **Evidence:** Missing or unclear plan for using AI tools.
@@ -126,7 +108,7 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 
 ## Project Implementation (50%)
 
-### Code Quality and Standards (15%)
+### Code Quality and Standards (10%)
 
 **Fail (0-6%):**
 - **Evidence:** Poor code quality with inconsistent indentation, naming conventions, and poor use of HTML5/CSS3 standards.
@@ -143,6 +125,25 @@ This rubric is designed to assess the AI-Augmented Pair Programming Project. It 
 **Distinction (13-15%):**
 - **Evidence:** Exceptional code quality with highly consistent and meaningful naming conventions, excellent adherence to HTML5/CSS3 standards.
 - **Example:** Impeccably structured code with perfect indentation, highly descriptive names, and fully valid and semantic HTML/CSS.
+
+### Version Control Setup (5%)
+
+**Fail (0-2%):**
+- **Evidence:** GitHub repository not properly set up. No regular commits.
+- **Example:** Only one commit for the initial setup.
+
+**Pass (3%):**
+- **Evidence:** Basic setup of GitHub repository with some regular commits.
+- **Example:** Initial commit followed by a few subsequent commits for basic changes.
+
+**Merit (4%):**
+- **Evidence:** Well-organized GitHub repository with regular commits documenting the development process.
+- **Example:** Frequent commits documenting key stages of development.
+
+**Distinction (5%):**
+- **Evidence:** Exceptionally organized GitHub repository with highly frequent and detailed commits.
+- **Example:** Very frequent commits with detailed messages explaining the changes and development progress.
+
 
 ### AI-Generated Code Integration (15%)
 
