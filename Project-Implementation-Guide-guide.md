@@ -263,7 +263,7 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
      Copilot suggested the basic structure of the header and navigation menu, which I accepted because it aligned with the project requirements.
      I added a welcome message and modified the navigation links to include a services section as per the project specifications.
      I also used Copilot to generate the initial structure for the services section, which I refined to include relevant content.
-     ```
+     -->
      ```
 
 **Do's and Don'ts:**
