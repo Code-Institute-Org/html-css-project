@@ -34,6 +34,7 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
    - Do outline detailed user stories with clear acceptance criteria.
    - Do create initial wireframes and design concepts that align with project goals.
    - Do include UX design principles and accessibility considerations.
+   - Do include how you plan to use Gen AI to aid your project creation
  - **Don'ts:**
    - Don't define overly broad or vague project objectives.
    - Don't create user stories without acceptance criteria.
@@ -45,6 +46,8 @@ Welcome to the AI-Augmented Pair Programming Project! This guide will walk you t
 - **LO1.5:** Use an Agile tool to manage the planning and implementation of all significant functionality.
 - **LO1.6:** Document and implement all User Stories and map them to the project goals.
 - **LO1.8:** Demonstrate and document the development process through a version control system such as GitHub.
+- **LO9:** Develop proficiency in AI-augmented web development.
+
 
 ---
 
