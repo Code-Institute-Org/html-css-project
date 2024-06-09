@@ -147,7 +147,7 @@ Reflect on your development process. Include insights on successes, challenges, 
 
 ### Pre-Implementation Artefacts Section
 **Progress Submissions:**
-- **Intermediate Deliverables:** Submit drafts of your project plan, wireframes, and initial code. These should show the evolution of your project and your understanding at each stage.
+- **Intermediate Deliverables:** Using this document, submit drafts of your project plan, wireframes, and initial code. These should show the evolution of your project and your understanding at each stage.
 
 ### Documentation Section
 **Version Control Analysis:**
