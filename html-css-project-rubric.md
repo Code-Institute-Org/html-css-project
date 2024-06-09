@@ -1,4 +1,4 @@
-# Detailed Assessment Rubric for AI-Augmented Pair Programming Project (Excluding Presentations)
+# Detailed Assessment Rubric for AI-Augmented Pair Programming Project
 
 ## Table of Contents
 1. [Pre-Implementation Artefacts (30%)](#pre-implementation-artefacts-30)
