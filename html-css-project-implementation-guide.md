@@ -27,6 +27,7 @@ Welcome to the AI-Augmented Pair Programming Project Implementation Guide. This 
 6. [Do's and Don'ts](#dos-and-donts)
 7. [Phased Approach to the Project](#phased-approach-to-the-project)
 8. [Sample Retrospective Report](#sample-retrospective-report)
+9. [Plagiarism Guidelines for Learners](#plagiarism-guidelines-for-learners)
 
 ---
 
@@ -401,3 +402,72 @@ Ensure that you continuously document your progress throughout the project phase
 ---
 
 By focusing on reflections, challenges, successes, and proposed improvements, the retrospective report provides meaningful insights without duplicating the detailed documentation already present in the README.
+
+---
+
+## Plagiarism Guidelines for Learners
+
+In this AI-Augmented Pair Programming Project, it is crucial to maintain academic integrity and avoid plagiarism. Here are specific guidelines and strategies to help you understand and adhere to ethical practices, along with ways assessors can verify compliance.
+
+### Project Overview Section
+**Guidelines on AI Tool Usage:**
+- **Use Responsibly:** While using AI tools like GitHub Copilot, ensure that the code you submit is your own. You should be able to explain all AI-generated content.
+- **Document Usage:** Clearly document where and how AI tools were used in your project, specifying the contributions made by AI versus your own work.
+
+### Pre-Implementation Artefacts Section
+**Progress Submissions:**
+- **Intermediate Deliverables:** Submit drafts of your project plan, wireframes, and initial code. These should show the evolution of your project and your understanding at each stage.
+
+### Documentation Section
+**Version Control Analysis:**
+- **Regular Commits:** Make regular commits to your version control system (e.g., GitHub) to document your progress. Each commit should have a clear message detailing the changes made.
+- **Detailed Contribution Reports:** Include a report explaining your contributions at each stage of the project. Clearly differentiate between AI-generated code and your own work.
+
+**Plagiarism Detection:**
+- **Use of Tools:** Be aware that plagiarism detection tools will be used to scan your code and documentation for similarities with other sources. Ensure that all content is original or properly cited.
+
+### Implementation Guidelines
+
+#### Project Plan and User Stories (10%)
+- **Original Content:** Your project plan and user stories must be your own work. Avoid copying from other sources without proper attribution.
+- **Specificity and Detail:** Ensure that your user stories are specific to your project scenario and not generic templates from the internet.
+
+#### Design Documentation (10%)
+- **Create Your Own Designs:** Wireframes and UX design documentation should be original. If you use design tools or templates, customize them significantly to reflect your unique project requirements.
+- **Accessibility Considerations:** Document how you have considered accessibility in your design. This should be based on your understanding and application of accessibility standards.
+
+#### Version Control Setup (5%)
+- **Consistent Use:** Use your version control system consistently. Regular, descriptive commits will help demonstrate your ongoing work and understanding.
+- **Branching Strategy:** While branching is not required, document any strategies used to manage different parts of your project.
+
+#### AI Tool Usage Plan (5%)
+- **Clear Usage Plan:** Document your plan for using AI tools. Specify which parts of the project will use AI-generated code and how you will ensure the quality and originality of this code.
+
+#### Code Quality and Standards (15%)
+- **Adhere to Standards:** Ensure your code meets HTML5/CSS3 standards and follows best practices for readability and maintainability.
+- **Review and Optimize:** Review and optimize AI-generated code. Clearly document any modifications or optimizations you make.
+
+#### AI-Generated Code Integration (15%)
+- **Document AI Use:** Clearly document where AI-generated code is used. Include comments in the code to highlight AI-generated sections.
+- **Critical Assessment:** Critically assess AI-generated code for quality and relevance. Make necessary adjustments to ensure it fits your project requirements.
+
+#### Functional Implementation (20%)
+- **Meet Acceptance Criteria:** Ensure your implementation meets all user stories' acceptance criteria. Document any challenges and how you addressed them.
+- **Original Implementation:** Avoid copying implementation details from other sources. Your solution should be unique to your project scenario.
+
+#### Final Project Submission (10%)
+- **Complete Submission:** Ensure your final project submission includes a fully functional web application, source code repository, and deployment link.
+- **Proper Attribution:** If you use any external resources or libraries, provide proper attribution and documentation.
+
+#### Retrospective Report (10%)
+- **Reflect Honestly:** Your retrospective report should honestly reflect your development process, challenges faced, and lessons learned. It should be your own analysis and not copied from other sources.
+
+### Plagiarism Guidelines Summary
+
+1. **Use AI Tools Responsibly:** Ensure you understand and can explain all AI-generated content.
+2. **Document Everything:** Clearly document the use of AI tools, progress, and contributions.
+3. **Submit Original Work:** Your project plan, user stories, designs, code, and retrospective report must be original and specific to your project.
+4. **Use Version Control:** Make regular, descriptive commits to document your progress and contributions.
+5. **Attribute Properly:** Properly cite any external resources or libraries used in your project.
+
+By following these guidelines, you can ensure that your work is original, demonstrates your understanding, and adheres to academic integrity standards. Assessors will use these documented processes and tools to verify the originality and authenticity of your work.
