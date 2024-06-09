@@ -1,144 +1,101 @@
-# Overview
-The Assessment mechanism is broken into 3 main artefacts (based on the first project)
-- An assessment rubric aligned to the learning outcomes
-- A project implementation guide
-- A project documentation template
+# AI-Augmented Pair Programming Project Summary Document
 
-
-## Rubric overview
-This rubric is designed to assess the AI-Augmented Pair Programming Project. It evaluates pre-implementation artefacts, project implementation, and post-implementation review, focusing on learner contributions and adherence to project requirements.
-
-####  Artefacts to be graded
-#### Pre-Implementation Artefacts (30%)
-#### Project Implementation (50%)
-#### Post-Implementation Review (20%)
-
-
-
-
-## AI-Augmented Pair Programming Project Guide
-This guide will walk learners through the process of planning, implementing, and reviewing your project, leveraging AI tools such as GitHub Copilot and DALL-E to enhance your development experience. Follow this guide step-by-step to ensure a successful project outcome.
-
-
-
-
-## Project Documentation Guide
-This guide will provide learners with the scope of documentation requirements and supporting artefacts
-
-
-
-
-
-
-
-# Outstanding Questions
-- Will all apsects of a succesfully submitted project be taught prior to commencement
-  
-- How can the learner self diagnose project strengths/gaps when planning/implementing their projects?
-  - Bootamp students:
-    - Copilot?
-  - PT learners:
-    - ASA(with GEN AI API calls)?
-  -  What are the limitations?
-
-- How do we maintain academic integrity?
-  - Use Copilot to review pre-implementaiton artefacts?
-  - Continue with Copyleaks(s) to review against existing repos?
- 
-
-
-
-
-
-
-
-
-# Project Documentation for AI-Augmented Pair Programming Project
+---
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Project Scope and Objectives](#project-scope-and-objectives)
-3. [User Stories](#user-stories)
-4. [Design Documentation](#design-documentation)
-    - [Wireframes](#wireframes)
-    - [UX Design](#ux-design)
-5. [Version Control Practices](#version-control-practices)
-6. [AI Tool Usage](#ai-tool-usage)
-7. [Code Quality and Standards](#code-quality-and-standards)
-8. [Functional Implementation](#functional-implementation)
-9. [Final Project Submission](#final-project-submission)
-10. [Retrospective Report](#retrospective-report)
-11. [Mapped Learning Outcomes and Assessment Criteria](#mapped-learning-outcomes-and-assessment-criteria)
+1. [Introduction](#introduction)
+2. [Ensuring the Learner Has a Clear Guide to Creating a Successful Project](#ensuring-the-learner-has-a-clear-guide-to-creating-a-successful-project)
+    - [Rubric](#rubric)
+    - [Implementation Guide](#implementation-guide)
+    - [Documentation Template](#documentation-template)
+3. [Ensuring the Resultant Project is Worthy of a Junior Software Developer](#ensuring-the-resultant-project-is-worthy-of-a-junior-software-developer)
+    - [Code Quality and Standards](#code-quality-and-standards)
+    - [AI-Generated Code Integration](#ai-generated-code-integration)
+    - [Functional Implementation](#functional-implementation)
+4. [Ensuring Assessment Academic Integrity](#ensuring-assessment-academic-integrity)
+    - [Plagiarism Guidelines](#plagiarism-guidelines)
+    - [Documentation and Version Control](#documentation-and-version-control)
+    - [Critical Assessment of AI Tools](#critical-assessment-of-ai-tools)
 
 ---
 
-## Project Overview
-### Project Scope and Objectives
-- **Scope:** Describe the overall scope of the project.
-- **Objectives:** Outline the main objectives and goals of the project.
+## Introduction
 
-## User Stories
-- **User Stories:** List all user stories, including their priorities and acceptance criteria.
-
-## Design Documentation
-### Wireframes
-- **Wireframes:** Include wireframes for each key page of the project.
-- **Annotations:** Provide annotations and explanations for design choices.
-
-### UX Design
-- **Principles:** Document the UX design principles applied to the project.
-- **Accessibility:** Include accessibility considerations and audits.
-- **User Interactions:** Describe user interactions and navigation flow.
-- **Design Artifacts:** Attach UX flow diagrams, accessibility audits, and other relevant artifacts.
-
-## Version Control Practices
-- **Repository Setup:** Detail the GitHub repository setup and branching strategy.
-- **Commit History:** Summarize the commit history with clear messages.
-
-## AI Tool Usage
-- **GitHub Copilot:** Document how GitHub Copilot was used to generate user stories and code snippets.
-- **DALL-E:** Explain how DALL-E was used to generate images for the project.
-- **Critical Assessment:** Provide a critical assessment of AI-generated code and its integration.
-
-## Code Quality and Standards
-- **Coding Standards:** Describe the coding standards followed (e.g., consistent indentation, naming conventions).
-- **Web Standards:** Ensure adherence to HTML5 and CSS3 standards.
-- **Quality Assurance:** Detail code reviews and testing practices.
-
-## Functional Implementation
-- **Implementation:** Describe how each user story was implemented according to the acceptance criteria.
-- **Responsiveness:** Ensure the front-end design is responsive and interactive.
-- **Testing:** Document testing procedures and results.
-
-## Final Project Submission
-- **Deployment:** Provide the link to the deployed web application and explain the deployment process.
-- **Source Code:** Ensure the source code repository is complete and well-documented.
-
-## Retrospective Report
-- **Development Process:** Review the development process, identifying successes and areas for improvement.
-- **User Stories:** Summarize which user stories were met and propose solutions for any unmet stories.
-- **Reflections:** Provide reflections on lessons learned and future improvements.
-
-## Mapped Learning Outcomes and Assessment Criteria
-- **Learning Outcomes:**
-  - **LO1.1:** Document and implement all User Stories and map them to the project within an Agile tool.
-  - **LO1.2:** Implement custom HTML and CSS code to create a responsive Full-Stack application consisting of one or more HTML pages with relevant responses to user actions and a set of data manipulation functions.
-  - **LO1.5:** Use an Agile tool to manage the planning and implementation of all significant functionality.
-  - **LO1.6:** Document and implement all User Stories and map them to the project goals.
-  - **LO1.8:** Demonstrate and document the development process through a version control system such as GitHub.
-  - **LO1.9:** Write code that meets minimum standards for readability (indentation, consistent, and meaningful naming conventions).
-  - **LO1.10:** Name files consistently and descriptively without spaces or capitalization to allow for cross-platform compatibility.
-  - **LO1.12:** Document the UX design work undertaken for this project, including any wireframes, mockups, diagrams, etc., created as part of the design process and its reasoning.
-  - **LO1.14:** Implement AI-augmented enhancements to document the models and code.
-  - **LO8:** Present a project solution for assessment evaluation. Presentation will evidence resilience behaviours critical for software development in a team environment focusing on a solution-oriented mindset, accurate task estimation, personal accountability, effective handling of distractions, problem-solving skills, adherence to consistent coding practices, and the adoption of Agile methodologies.
-  - **LO9:** Develop proficiency in AI-augmented web development.
-  - **LO10:** Enhance code quality and problem-solving skills.
-  - **LO11:** Critically assess and integrate AI-generated code.
-  - **LO12:** Adapt to evolving web development trends.
+This document serves as a comprehensive summary of the AI-Augmented Pair Programming Project, providing an overview of the rubric, implementation guide, and documentation template. It categorizes the information to ensure learners have a clear guide to creating a successful project, ensuring the resultant project meets the standards of a junior software developer, and ensuring the integrity of the assessment process.
 
 ---
 
-By following this README template, you will provide comprehensive documentation that reflects the various aspects and requirements of your AI-Augmented Pair Programming Project. Ensure you cover all sections thoroughly to demonstrate your understanding and application of the project requirements and learning outcomes. Good luck with your project!
+## Ensuring the Learner Has a Clear Guide to Creating a Successful Project
 
-      
-         
+### Rubric
+
+The detailed assessment rubric provides clear criteria for evaluating each aspect of the project. It is divided into three main sections: Pre-Implementation Artefacts, Project Implementation, and Post-Implementation Review. Each section has specific criteria with examples to illustrate what constitutes a fail, pass, and commendation.
+
+- **Pre-Implementation Artefacts (30%):** Includes project plan and user stories, design documentation, version control setup, and AI tool usage plan.
+- **Project Implementation (50%):** Covers code quality and standards, AI-generated code integration, and functional implementation.
+- **Post-Implementation Review (20%):** Encompasses final project submission, documentation, and retrospective report.
+
+### Implementation Guide
+
+The implementation guide provides a phased approach to the project, ensuring learners can manage their time effectively and avoid last-minute panic. It includes detailed instructions for each phase, from initial planning to final submission, and aligns with the rubric to ensure all criteria are met.
+
+- **Phase 1: Initial Planning**
+- **Phase 2: Design and Documentation**
+- **Phase 3: Initial Implementation**
+- **Phase 4: AI Integration and Enhancement**
+- **Phase 5: Functional Implementation and Testing**
+- **Phase 6: Final Review and Submission**
+
+### Documentation Template
+
+The documentation template ensures continuous documentation throughout the project timeline. It includes sections for project overview, scope and objectives, user stories, wireframes, UX design, version control practices, AI tool usage, code quality and standards, functional implementation, final project submission, and retrospective.
+
+- **Project Overview**
+- **Project Scope and Objectives**
+- **User Stories**
+- **Wireframes**
+- **UX Design**
+- **Version Control Practices**
+- **AI Tool Usage**
+- **Code Quality and Standards**
+- **Functional Implementation**
+- **Final Project Submission**
+- **Retrospective**
+
+---
+
+## Ensuring the Resultant Project is Worthy of a Junior Software Developer
+
+### Code Quality and Standards
+
+The rubric emphasizes high code quality, consistent indentation, meaningful naming conventions, and adherence to HTML5/CSS3 standards. This ensures that the learner's code is readable, maintainable, and meets industry standards.
+
+### AI-Generated Code Integration
+
+Effective and innovative use of AI tools is encouraged, with a focus on critical assessment and optimization of AI-generated code. This demonstrates the learner's ability to integrate advanced tools into their workflow and adapt AI-generated content to meet specific project requirements.
+
+### Functional Implementation
+
+The project must meet all user stories' acceptance criteria, ensuring a fully functional web application. This includes a responsive design, accessibility considerations, and a seamless user experience, reflecting the skills expected of a junior software developer.
+
+---
+
+## Ensuring Assessment Academic Integrity
+
+### Plagiarism Guidelines
+
+Clear guidelines are provided to prevent plagiarism, emphasizing the importance of original work and proper citation of external resources. Learners must document the use of AI tools, progress, and contributions, ensuring transparency and accountability.
+
+### Documentation and Version Control
+
+Regular commits with descriptive messages are required to document progress and contributions. This practice not only aids in tracking development but also provides a clear record for assessors to verify the originality and authenticity of the work.
+
+### Critical Assessment of AI Tools
+
+Learners are required to critically assess AI-generated code for quality and relevance, making necessary adjustments to ensure it fits their project requirements. This demonstrates their understanding and ability to work with AI tools responsibly.
+
+---
+
+## Summary
+
+This comprehensive approach, incorporating a detailed rubric, phased implementation guide, and continuous documentation template, ensures that learners have a clear path to success. It guarantees that the resultant project meets the standards of a junior software developer while maintaining academic integrity through rigorous documentation and critical assessment practices.
