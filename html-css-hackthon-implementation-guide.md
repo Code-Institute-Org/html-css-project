@@ -1,4 +1,4 @@
-# AI-Augmented Pair Programming Hackathon Project Implementation Guide
+# AI Augmented Static Front End Hackathon Project Implementation Guide
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Introduction
 
-Welcome to the AI-Augmented Pair Programming Hackathon Project Implementation Guide. This guide will help your team navigate through the stages of your hackathon project, from planning and pre-implementation to final presentation and judging. You will be using AI tools like GitHub Copilot and DALL-E to enhance your development process. The guide aligns with the detailed assessment rubric to ensure that you meet all the necessary criteria for a successful project.
+Welcome to the AI-Augmented Pair Programming Hackathon Project Implementation Guide. This guide will help your team navigate through the stages of your hackathon project, from planning and pre-implementation to final presentation and judging. You will be using AI tools like GitHub Copilot and DALL-E to enhance your development process. The guide aligns with the hackathon judging guide to ensure that you meet all the necessary criteria for a successful project.
 
 ---
 
