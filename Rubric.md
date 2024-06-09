@@ -1,4 +1,4 @@
-# Detailed Assessment Rubric for AI-Augmented Pair Programming Project (Excluding Presentations)
+# Detailed Assessment Rubric for AI-Augmented Pair Programming Project
 
 ---
 
