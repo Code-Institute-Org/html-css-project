@@ -1,4 +1,4 @@
-# AI-Augmented Pair Programming Project Documentation Template
+# AI-Augmented Static Front End Project Documentation Template
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -10,15 +10,16 @@
 7. [AI Tool Usage](#ai-tool-usage)
 8. [Code Quality and Standards](#code-quality-and-standards)
 9. [Functional Implementation](#functional-implementation)
-10. [Final Project Submission](#final-project-submission)
-11. [Retrospective](#retrospective)
+10. [User Experience Quality](#user-experience-quality)
+11. [Final Project Submission](#final-project-submission)
+12. [Retrospective](#retrospective)
     - [Sample Retrospective Report](#sample-retrospective-report)
-12. [Plagiarism Guidelines for Learners](#plagiarism-guidelines-for-learners)
+13. [Plagiarism Guidelines for Learners](#plagiarism-guidelines-for-learners)
     - [Project Overview Section](#project-overview-section)
     - [Pre-Implementation Artefacts Section](#pre-implementation-artefacts-section)
     - [Documentation Section](#documentation-section)
     - [Implementation Guidelines](#implementation-guidelines)
-13. [Plagiarism Guidelines Summary](#plagiarism-guidelines-summary)
+14. [Plagiarism Guidelines Summary](#plagiarism-guidelines-summary)
 
 ---
 
@@ -80,6 +81,14 @@ Detail how you implemented the functional elements of your web application. Ensu
 
 **Examples:**
 - **Do:** Fully functional homepage with all required sections, interactive elements working smoothly, and excellent UI/UX.
+
+---
+
+## User Experience Quality
+Describe how you ensured a high-quality user experience, focusing on design aesthetics, usability, and responsiveness.
+
+**Examples:**
+- **Do:** Intuitive and appealing design with smooth navigation and responsive layout.
 
 ---
 
