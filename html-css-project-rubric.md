@@ -37,7 +37,12 @@
 **Justification:**
 - A pass indicates the learner has met the essential requirements of the project, demonstrating a foundational understanding and ability to execute the tasks, albeit with potential for improvement in detail and execution.
 
+ **Note to Learners:**
+
+Achieving a pass grade is sufficient to demonstrate the competencies required to pursue a career in the field. While noteworthy feedback highlights exceptional work, it is not a formal grade category. Employers value the practical skills and understanding you have developed through this project, and a pass grade is a strong indicator of your readiness for the job market.
+
 ### Commendation
+
 **Criteria:**
 - Achieve an overall score of 70% or higher.
 - All components (Pre-Implementation Artefacts, Project Implementation, Post-Implementation Review) are executed to a high standard, with exceptional detail and quality.
@@ -46,7 +51,21 @@
 **Justification:**
 - A commendation represents a high level of achievement, indicating exceptional understanding and execution. This grade is reserved for work that is not only free of significant issues but is also innovative, detailed, and exceptionally well-documented, reflecting a deep understanding and mastery of the project requirements and tools.
 
+### Note on Commendation
+The commendation serves as a detailed feedback mechanism within the fail/pass grading structure. It highlights exceptional work and provides constructive feedback, encouraging learners to continue improving their skills and aiming for excellence.
+The commendation is not a formal grade but rather a form of feedback. Here’s how the commendation functions within this framework:
 
+#### Feedback Mechanism
+The commendation acts as a feedback mechanism to acknowledge areas where the learner has exceeded expectations. This feedback is meant to guide learners on their strengths and encourage them to maintain or improve upon these areas in future work.
+
+#### Motivational Tool
+Even though it is not a formal grade, the commendation can motivate learners by recognizing their hard work and exceptional performance in certain aspects of the project. This recognition can inspire learners to continue striving for high-quality work.
+
+#### Benchmark for Excellence
+The commendation provides a benchmark for what constitutes work that is beyond basic requirements. It helps learners understand what high-quality work looks like, even if it does not result in a higher formal grade.
+
+#### Guidance for Improvement
+By highlighting specific commendable aspects, the feedback helps learners understand what they did well and how they can continue to develop these skills. This constructive feedback is essential for continuous improvement.
 
 ---
 
