@@ -1,10 +1,10 @@
-# AI-Augmented Pair Programming Project Implementation Guide
+# AI-Augmented Static Front End Project Implementation Guide
 
 ---
 
 ## Introduction
 
-Welcome to the AI-Augmented Pair Programming Project Implementation Guide. This guide will help you navigate through the stages of your project, from planning and pre-implementation to final submission and retrospective analysis. You will be using AI tools like GitHub Copilot and DALL-E to enhance your development process. The guide is aligned with the detailed assessment rubric to ensure that you meet all the necessary criteria for a successful project.
+Welcome to the AI-Augmented Static Front End Project Implementation Guide. This guide will help you navigate through the stages of your project, from planning and pre-implementation to final submission and retrospective analysis. You will be using AI tools like GitHub Copilot and DALL-E to enhance your development process. The guide is aligned with the detailed assessment rubric to ensure that you meet all the necessary criteria for a successful project.
 
 ---
 
@@ -19,6 +19,7 @@ Welcome to the AI-Augmented Pair Programming Project Implementation Guide. This 
     - [Code Quality and Standards (15%)](#code-quality-and-standards-15)
     - [AI-Generated Code Integration (15%)](#ai-generated-code-integration-15)
     - [Functional Implementation (20%)](#functional-implementation-20)
+    - [User Experience Quality (10%)](#user-experience-quality-10)
 4. [Post-Implementation Review (20%)](#post-implementation-review-20)
     - [Final Project Submission (10%)](#final-project-submission-10)
     - [Documentation (10%)](#documentation-10)
@@ -121,6 +122,17 @@ Your project involves creating a responsive Full-Stack web application using onl
   **Examples:**
   - **Do:** Perfectly functional homepage with all required sections, interactive elements working smoothly, and excellent UI/UX.
   - **Don't:** Homepage missing key sections, broken links, or non-functional features.
+
+### User Experience Quality (10%)
+**Related Learning Outcomes:** LO8
+
+- **What to Do:**
+  - Ensure your application provides a high-quality user experience.
+  - Focus on design aesthetics, usability, and responsiveness.
+
+  **Examples:**
+  - **Do:** Intuitive and appealing design with smooth navigation and responsive layout.
+  - **Don't:** Cluttered or unappealing design with poor usability and responsiveness.
 
 ---
 
@@ -454,6 +466,10 @@ In this AI-Augmented Pair Programming Project, it is crucial to maintain academi
 #### Functional Implementation (20%)
 - **Meet Acceptance Criteria:** Ensure your implementation meets all user stories' acceptance criteria. Document any challenges and how you addressed them.
 - **Original Implementation:** Avoid copying implementation details from other sources. Your solution should be unique to your project scenario.
+
+#### User Experience Quality (10%)
+- **Ensure Quality UX:** Focus on creating a high-quality user experience, with emphasis on design aesthetics, usability, and responsiveness.
+- **Document Decisions:** Record design decisions that enhance the user experience.
 
 #### Final Project Submission (10%)
 - **Complete Submission:** Ensure your final project submission includes a fully functional web application, source code repository, and deployment link.
