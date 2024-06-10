@@ -1,4 +1,4 @@
-# Detailed Assessment Rubric for AI-Augmented Pair Programming Project
+# Detailed Assessment Rubric for AI-Augmented Static Front End Programming Project
 
 ## Table of Contents
 1. [Pre-Implementation Artefacts (30%)](#pre-implementation-artefacts-30)
@@ -10,6 +10,7 @@
     - [Code Quality and Standards (15%)](#code-quality-and-standards-15)
     - [AI-Generated Code Integration (15%)](#ai-generated-code-integration-15)
     - [Functional Implementation (20%)](#functional-implementation-20)
+    - [User Experience Quality (10%)](#user-experience-quality-10)
 3. [Post-Implementation Review (20%)](#post-implementation-review-20)
     - [Final Project Submission (10%)](#final-project-submission-10)
     - [Documentation (10%)](#documentation-10)
@@ -128,6 +129,20 @@
 - **Evidence:** High-quality functional implementation meeting all acceptance criteria with minor issues. Clear evidence of original work and adaptation of AI-generated code.
 - **Example:** Fully functional homepage with all required sections working, minor UI/UX issues. Documentation and comments show how AI-generated code was adapted and customized.
 
+### User Experience Quality (10%)
+
+**Fail (0-4%):**
+- **Evidence:** Poor user experience with significant usability issues and unappealing design. No consideration for accessibility.
+- **Example:** Cluttered layout with poor navigation and no responsiveness.
+
+**Pass (5-6%):**
+- **Evidence:** Basic user experience with some usability and design issues. Some consideration for accessibility.
+- **Example:** Simple and functional design with basic accessibility features.
+
+**Commendation (7-10%):**
+- **Evidence:** High-quality user experience with intuitive design, smooth navigation, and responsiveness. Thorough consideration for accessibility.
+- **Example:** Intuitive and appealing design with smooth navigation and responsive layout.
+
 ---
 
 ## Post-Implementation Review (20%)
@@ -233,6 +248,10 @@ To achieve a **Commendation** grade, learners must:
 #### Functional Implementation (20%)
 - **Meet Acceptance Criteria:** Ensure your implementation meets all user stories' acceptance criteria. Document any challenges and how you addressed them.
 - **Original Implementation:** Avoid copying implementation details from other sources. Your solution should be unique to your project scenario.
+
+#### User Experience Quality (10%)
+- **Ensure Quality UX:** Focus on creating a high-quality user experience, with emphasis on design aesthetics, usability, and responsiveness.
+- **Document Decisions:** Record design decisions that enhance the user experience.
 
 #### Final Project Submission (10%)
 - **Complete Submission:** Ensure your final project submission includes a fully functional web application, source code repository, and deployment link.
