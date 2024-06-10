@@ -24,6 +24,31 @@
 6. [Plagiarism Guidelines Summary](#plagiarism-guidelines-summary)
 
 ---
+## Overall Pass and Commendation Grades
+
+### Overall Grading Criteria
+
+### Pass
+**Criteria:**
+- Achieve a minimum overall score of 50%.
+- No component (Pre-Implementation Artefacts, Project Implementation, Post-Implementation Review) falls below a pass mark in its category.
+- Basic adherence to project requirements, showing understanding and execution of the project plan, user stories, design, and implementation.
+
+**Justification:**
+- A pass indicates the learner has met the essential requirements of the project, demonstrating a foundational understanding and ability to execute the tasks, albeit with potential for improvement in detail and execution.
+
+### Commendation
+**Criteria:**
+- Achieve an overall score of 70% or higher.
+- All components (Pre-Implementation Artefacts, Project Implementation, Post-Implementation Review) are executed to a high standard, with exceptional detail and quality.
+- Comprehensive and detailed project plan, user stories, design documentation, exceptional code quality, seamless AI integration, and flawless functional implementation.
+
+**Justification:**
+- A commendation represents a high level of achievement, indicating exceptional understanding and execution. This grade is reserved for work that is not only free of significant issues but is also innovative, detailed, and exceptionally well-documented, reflecting a deep understanding and mastery of the project requirements and tools.
+
+
+
+---
 
 ## Pre-Implementation Artefacts (30%)
 
