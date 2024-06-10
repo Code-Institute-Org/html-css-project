@@ -1,4 +1,4 @@
-# AI-Augmented Pair Programming Project Summary Document
+# AI-Augmented Static Front End Project Summary Document
 
 ---
 
@@ -21,7 +21,7 @@
 
 ## Introduction
 
-This document serves as a comprehensive summary of the AI-Augmented Pair Programming Project, providing an overview of the rubric, implementation guide, and documentation template. It categorizes the information to ensure learners have a clear guide to creating a successful project, ensuring the resultant project meets the standards of a junior software developer, and ensuring the integrity of the assessment process.
+This document serves as a comprehensive summary of the AI-Augmented Static Front End Project, providing an overview of the rubric, implementation guide, and documentation template. It categorizes the information to ensure learners have a clear guide to creating a successful project, ensuring the resultant project meets the standards of a junior software developer, and ensuring the integrity of the assessment process.
 
 ---
 
