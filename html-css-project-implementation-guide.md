@@ -34,7 +34,7 @@ Welcome to the AI-Augmented Static Front End Project Implementation Guide. This 
 
 ## Project Overview
 
-Your project involves creating a responsive Full-Stack web application using only HTML and CSS. You will document and implement user stories, use AI tools for coding and design, and manage your project using an Agile tool. The goal is to demonstrate your ability to develop high-quality web applications, utilize AI tools effectively, and follow best practices in software development.
+Your project involves creating a responsive web application using only HTML and CSS. You will document and implement user stories, use AI tools for coding and design, and manage your project using an Agile tool. The goal is to demonstrate your ability to develop high-quality web applications, utilize AI tools effectively, and follow best practices in software development.
 
 ---
 
