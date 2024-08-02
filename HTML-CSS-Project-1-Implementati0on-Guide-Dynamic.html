@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Implementation Guide</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #666666;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            font-weight: normal;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .accordion:hover, .accordion.active {
+            background-color: #ddd;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Implementation Guide</h1>
+    <p>The phased approach to project implementation is designed to ensure a structured, manageable, and systematic process for developing a website project. By dividing the project into distinct phases, learners can focus on specific tasks and objectives, making it easier to track progress, identify issues, and achieve high-quality results. This methodical approach allows for iterative development, regular testing, and refinement, ensuring that the final product meets all specified requirements and standards.</p>
+
+    <h2>Phase 1: Ideation & Initial Setup (4 hours)</h2>
+    <p><strong>Description:</strong> In this phase, the primary goal is to lay a solid foundation for the project by defining its purpose, audience, and design. This involves brainstorming ideas, creating user stories, and setting up the project environment.</p>
+    
+    <h3>Ideation and User Story Definition (1.5 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Brainstorm and refine project ideas.</li>
+                <li>Define and prioritize user stories (Must, Should, Could).</li>
+                <li>Document user stories in the README (User Stories section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO1.1, LO1.3, LO4.1</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Think about the specific needs of your target audience.</li>
+                <li>Use user stories to guide the development process.</li>
+                <li>Document user stories in the README.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Skip this step; clear planning is crucial for success.</li>
+                <li>Overlook the importance of user stories in guiding development.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Ensure the user stories are detailed and cover various user scenarios.</li>
+                <li>Prioritize user stories effectively to balance project scope and complexity.</li>
+                <li>Clearly define the target audience and their specific needs in the README.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Create vague or generic user stories.</li>
+                <li>Fail to prioritize user stories, leading to an imbalanced project scope.</li>
+                <li>Ignore the specific needs and characteristics of the target audience.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Develop detailed user stories that cover diverse user scenarios.</li>
+                <li>Prioritize user stories effectively to balance project scope and complexity.</li>
+                <li>Clearly define the target audience and their specific needs in the README.</li>
+                <li>Provide a clear, justified rationale for a real-world application and a comprehensive explanation of how it will be developed.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Create vague or generic user stories.</li>
+                <li>Fail to prioritize user stories, leading to an imbalanced project scope.</li>
+                <li>Ignore the specific needs and characteristics of the target audience.</li>
+                <li>Lack of clear rationale for the application and its development.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Initial Planning and Wireframing (1.5 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Sketch wireframes for key pages using Balsamiq.</li>
+                <li>Choose color schemes and fonts using tools like image color pickers and contrast checkers.</li>
+                <li>Plan the layout and content placement.</li>
+                <li>Document design decisions, wireframes, and rationale in the README (Wireframes section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO1.2, LO1.3, LO1.4, LO4.1</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Create detailed wireframes for each key page using Balsamiq.</li>
+                <li>Ensure chosen color schemes meet accessibility standards.</li>
+                <li>Document design decisions and wireframes in the README.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Start coding without a clear design plan.</li>
+                <li>Neglect accessibility standards when choosing colors and fonts.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Create high-fidelity wireframes with detailed annotations.</li>
+                <li>Ensure color schemes and fonts are chosen to enhance user experience and accessibility.</li>
+                <li>Provide a clear rationale for design decisions, supported by research or references.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Produce low-quality or incomplete wireframes.</li>
+                <li>Ignore accessibility standards in design choices.</li>
+                <li>Provide weak or unsupported rationale for design decisions.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Create detailed wireframes with annotations.</li>
+                <li>Ensure color schemes and fonts are chosen to enhance user experience and accessibility.</li>
+                <li>Provide a clear and justified rationale for design decisions, supported by research or references.</li>
+                <li>The design of the web application demonstrates principles of good UX design, including information hierarchy and user control.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Produce low-quality or incomplete wireframes.</li>
+                <li>Ignore accessibility standards in design choices.</li>
+                <li>Provide weak or unsupported rationale for design decisions.</li>
+                <li>Lack of adherence to UX design principles.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Environment Setup and Version Control (1 hour)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Set up a GitHub repository.</li>
+                <li>Create a basic project structure with necessary folders (assets, CSS, images).</li>
+                <li>Link CSS and any external resources like Bootstrap, Google Fonts, and Font Awesome.</li>
+                <li>Document the setup process in the README (Setup and Installation section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO3.2, LO4.6, LO4.9</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Commit regularly to GitHub with meaningful commit messages.</li>
+                <li>Organize files logically from the start.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Delay setting up version control.</li>
+                <li>Forget to test the setup to ensure everything is working correctly.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Maintain a well-organized and logical file structure.</li>
+                <li>Use consistent and descriptive commit messages.</li>
+                <li>Document each step of the setup process in detail.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Have a disorganized file structure.</li>
+                <li>Use vague or infrequent commit messages.</li>
+                <li>Provide inadequate documentation of the setup process.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Maintain a well-organized and logical file structure.</li>
+                <li>Use consistent and descriptive commit messages.</li>
+                <li>Document each step of the setup process in detail.</li>
+                <li>Follow clean code principles, including consistent and appropriate naming conventions, file structure, and readability.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Have a disorganized file structure.</li>
+                <li>Use vague or infrequent commit messages.</li>
+                <li>Provide inadequate documentation of the setup process.</li>
+                <li>Lack of adherence to clean code principles.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h2>Phase 2: Must User Stories Implementation & Testing (14 hours)</h2>
+    <p><strong>Description:</strong> This phase focuses on implementing the core functionality of the website as outlined in the Must user stories. It involves coding essential features, validating code, and ensuring visual and functional alignment with initial plans.</p>
+    
+    <h3>Must User Stories Implementation (10 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Implement essential features defined in Must user stories.</li>
+                <li>Ensure the website structure is functional and meets initial design requirements.</li>
+                <li>Validate HTML and CSS code using W3C and Jigsaw validators.</li>
+                <li>Document key coding decisions and any challenges faced in the README (Features section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO1.1, LO1.4, LO2.2, LO2.3</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Focus on implementing the most critical features first.</li>
+                <li>Regularly validate your code to catch errors early.</li>
+                <li>Ensure intuitive navigation options on the website (LO1.1).</li>
+                <li>Place navigation elements strategically for ease of use (LO1.1).</li>
+                <li>The purpose of the website should be clear from the outset with consistent imagery and text (LO1.2).</li>
+                <li>The website design should be unique and thoughtful, with an overall simple and elegant UX design (LO1.2).</li>
+                <li>The website should provide an excellent solution to the key project goals and expectations (LO1.3).</li>
+                <li>Site meets all stated ways to add value for the user (LO1.3).</li>
+                <li>The site has been developed for a well-defined target audience and meets the overall expectation with minor bugs (LO1.3).</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Ignore best practices for HTML and CSS.</li>
+                <li>Overcomplicate your CSS; keep it maintainable.</li>
+                <li>Have broken navigation links (LO1.1).</li>
+                <li>Create difficulty in navigating from one page to another (LO1.1).</li>
+                <li>Have a design where the thought and purpose are not evident (LO1.2).</li>
+                <li>Have the thought and purpose behind the project difficult to comprehend (LO1.2).</li>
+                <li>The project purpose is vague and should dive deeper and include specific user value and scenarios (LO1.3).</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Ensure that navigation is intuitive and links work correctly.</li>
+                <li>Design must meet accessibility guidelines and have good contrast.</li>
+                <li>Ensure clear organization of information with headers and prioritized content.</li>
+                <li>Provide comprehensive documentation of key coding decisions and challenges.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Have broken navigation links.</li>
+                <li>Overlook accessibility guidelines.</li>
+                <li>Have disorganized content layout.</li>
+                <li>Provide incomplete or unclear documentation of coding decisions.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Ensure that navigation is intuitive and links work correctly.</li>
+                <li>Design must meet accessibility guidelines and have good contrast.</li>
+                <li>Ensure clear organization of information with headers and prioritized content.</li>
+                <li>Provide comprehensive documentation of key coding decisions and challenges.</li>
+                <li>Code is clean, well-documented, and follows best practices.</li>
+                <li>The finished project is judged to be publishable in its current form with a professional-grade user interface and interaction.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Have broken navigation links.</li>
+                <li>Overlook accessibility guidelines.</li>
+                <li>Have disorganized content layout.</li>
+                <li>Provide incomplete or unclear documentation of coding decisions.</li>
+                <li>Project is not of publishable quality.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Visual Progress & Testing (2 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Preview and test the website on different devices.</li>
+                <li>Adjust styles as needed based on initial tests.</li>
+                <li>Document any changes made during testing in the README (Testing section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO2.4, LO2.5, LO2.8</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Test on multiple devices and screen sizes.</li>
+                <li>Make adjustments to ensure consistency.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Skip testing; it’s crucial for finding issues.</li>
+                <li>Ignore feedback from testing.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Conduct thorough testing on multiple devices and browsers to ensure consistent performance.</li>
+                <li>Document all test cases and results, highlighting any issues found and how they were resolved.</li>
+                <li>Make necessary adjustments based on feedback from initial tests to improve usability.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Skip testing on a variety of devices and browsers.</li>
+                <li>Ignore or fail to document testing results.</li>
+                <li>Leave identified issues unresolved.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Conduct thorough testing on multiple devices and browsers to ensure consistent performance.</li>
+                <li>Document all test cases and results, highlighting any issues found and how they were resolved.</li>
+                <li>Make necessary adjustments based on feedback from initial tests to improve usability.</li>
+                <li>Ensure the website is highly polished with no visual or functional inconsistencies.</li>
+                <li>Code passes through official validators (W3C and Jigsaw) with no issues.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Skip testing on a variety of devices and browsers.</li>
+                <li>Ignore or fail to document testing results.</li>
+                <li>Leave identified issues unresolved.</li>
+                <li>Have visual or functional inconsistencies after testing.</li>
+                <li>Code does not pass validation checks.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Adjustments & Refinement (2 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Ensure consistency across all pages.</li>
+                <li>Validate the site functions as expected.</li>
+                <li>Document any significant changes or refinements in the README (Testing section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO1.5, LO2.6, LO2.7</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Pay attention to detail in design and functionality.</li>
+                <li>Ensure all links and buttons are working correctly.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Assume everything is working without testing.</li>
+                <li>Overlook minor details that could affect user experience.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Pay meticulous attention to detail in design and functionality.</li>
+                <li>Ensure all links and buttons are working correctly and provide appropriate feedback.</li>
+                <li>User actions are confirmed where appropriate, feedback is given at all times.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Assume everything is working without testing.</li>
+                <li>Overlook minor details that could affect user experience.</li>
+                <li>Lack of user feedback and confirmation in interactions.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Pay meticulous attention to detail in design and functionality.</li>
+                <li>Ensure all links and buttons are working correctly and provide appropriate feedback.</li>
+                <li>User actions are confirmed where appropriate, feedback is given at all times.</li>
+                <li>Ensure the website provides a seamless user experience with no functional inconsistencies.</li>
+                <li>The design of the web application demonstrates principles of good UX design, including information hierarchy and user control.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Assume everything is working without testing.</li>
+                <li>Overlook minor details that could affect user experience.</li>
+                <li>Lack of user feedback and confirmation in interactions.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h2>Phase 3: Should User Stories Implementation & Advanced Features (7 hours)</h2>
+    <p><strong>Description:</strong> In this phase, advanced features and enhancements are added based on Should user stories. This includes implementing interactive elements, refining design, and completing comprehensive documentation.</p>
+    
+    <h3>Should User Stories Implementation (5 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Add interactive elements and refine design.</li>
+                <li>Ensure responsive design across various devices.</li>
+                <li>Document any advanced features and their implementation in the README (Features section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO1.6, LO2.6</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Implement advanced CSS features like grids and media queries.</li>
+                <li>Test interactive elements thoroughly.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Overcomplicate interactive features.</li>
+                <li>Neglect to test on various devices.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Implement advanced CSS features like grids and media queries.</li>
+                <li>Test interactive elements thoroughly.</li>
+                <li>Provide comprehensive documentation of the implementation of advanced features, explaining the choices made and any challenges encountered.</li>
+                <li>Ensure all HTML attributes and CSS rule names are consistent in format, appropriate, and meaningful.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Overcomplicate interactive features.</li>
+                <li>Neglect to test on various devices.</li>
+                <li>Overcomplicate interactive features to the point of confusing users.</li>
+                <li>Neglect testing of advanced features on various devices to ensure compatibility.</li>
+                <li>Fail to document the advanced features and their purpose clearly.</li>
+                <li>Code is inconsistent with significant bugs.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Implement advanced CSS features like grids and media queries.</li>
+                <li>Test interactive elements thoroughly.</li>
+                <li>Provide comprehensive documentation of the implementation of advanced features, explaining the choices made and any challenges encountered.</li>
+                <li>Ensure all HTML attributes and CSS rule names are consistent in format, appropriate, and meaningful.</li>
+                <li>Code follows clean code principles and best practices.</li>
+                <li>The resulting application is original and not a copy of any walkthrough projects encountered in the course.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Overcomplicate interactive features.</li>
+                <li>Neglect to test on various devices.</li>
+                <li>Overcomplicate interactive features to the point of confusing users.</li>
+                <li>Neglect testing of advanced features on various devices to ensure compatibility.</li>
+                <li>Fail to document the advanced features and their purpose clearly.</li>
+                <li>Code is inconsistent with significant bugs.</li>
+                <li>Project is not original or is too similar to existing walkthrough projects.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Documentation (2 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Finalize the README, covering the project's purpose, audience, features, and setup instructions.</li>
+                <li>Comment on complex code sections explaining decisions.</li>
+                <li>Ensure all documentation is comprehensive and up-to-date.</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO4.1, LO4.2, LO4.3, LO4.4</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Ensure the README is detailed and up-to-date.</li>
+                <li>Include screenshots and explanations.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Leave documentation until the last minute.</li>
+                <li>Write incomplete or unclear documentation.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Ensure the README is detailed and up-to-date.</li>
+                <li>Include screenshots and explanations.</li>
+                <li>Clearly explain complex code sections and decisions made during development.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Leave documentation until the last minute.</li>
+                <li>Write incomplete or unclear documentation.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Ensure the README is detailed and up-to-date.</li>
+                <li>Include screenshots and explanations.</li>
+                <li>Clearly explain complex code sections and decisions made during development.</li>
+                <li>Ensure all documentation is professional-grade and suitable for a real-world application.</li>
+                <li>Provide a detailed testing report with all issues identified and resolved.</li>
+                <li>Include user story acceptance criteria and state which ones were implemented.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Leave documentation until the last minute.</li>
+                <li>Write incomplete or unclear documentation.</li>
+                <li>Lack of detailed testing report and user story acceptance criteria.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h2>Phase 4: Final Testing, Debugging & Deployment (3 hours)</h2>
+    <p><strong>Description:</strong> The final phase focuses on ensuring that the project is free from errors, performing thorough testing, and deploying the website. This phase is critical for delivering a functional and polished final product.</p>
+    
+    <h3>Final Testing & Debugging (2 hours)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Conduct comprehensive testing using Chrome DevTools and Lighthouse.</li>
+                <li>Fix any remaining issues.</li>
+                <li>Document final testing results and any last-minute fixes in the README (Testing section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO2.1, LO2.4, LO2.9</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Test all functionalities thoroughly.</li>
+                <li>Ensure the site works well on all target devices.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Rush through testing.</li>
+                <li>Ignore small issues; they can affect user experience.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Conduct comprehensive testing using tools like Chrome DevTools, Lighthouse, or other debugging tools.</li>
+                <li>Fix any issues found during testing and document the fixes in detail.</li>
+                <li>Ensure the website functions correctly on all target devices and browsers.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Rush through testing.</li>
+                <li>Ignore small issues; they can affect user experience.</li>
+                <li>Fail to document the testing results and fixes clearly.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Conduct comprehensive testing using tools like Chrome DevTools, Lighthouse, or other debugging tools.</li>
+                <li>Fix any issues found during testing and document the fixes in detail.</li>
+                <li>Ensure the website functions correctly on all target devices and browsers.</li>
+                <li>Provide a detailed testing report with all issues identified and resolved.</li>
+                <li>Ensure robust code with no logic errors and proper handling of user inputs.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Rush through testing.</li>
+                <li>Ignore small issues; they can affect user experience.</li>
+                <li>Fail to document the testing results and fixes clearly.</li>
+                <li>Have unresolved issues or inconsistencies after testing.</li>
+                <li>Code has logic errors or fails to handle user inputs properly.</li>
+            </ul>
+        </li>
+    </div>
+
+    <h3>Deployment (1 hour)</h3>
+    <ul>
+        <li><strong>Tasks:</strong>
+            <ul>
+                <li>Deploy to GitHub Pages.</li>
+                <li>Ensure all links and features work correctly.</li>
+                <li>Document the deployment process in the README (Deployment section).</li>
+            </ul>
+        </li>
+        <li><strong>Associated Criteria:</strong> LO3.1, LO3.4, LO3.5</li>
+        <li><strong>Pass Grade: Expected Pass Performance (Do's):</strong>
+            <ul>
+                <li>Follow deployment best practices.</li>
+                <li>Test the live site after deployment.</li>
+            </ul>
+        </li>
+        <li><strong>Pass Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Forget to double-check everything after deployment.</li>
+                <li>Overlook the importance of a smooth deployment process.</li>
+            </ul>
+        </li>
+    </ul>
+    <button class="accordion">Show Merit Guidance</button>
+    <div class="panel">
+        <li><strong>Merit Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Follow best practices for deployment to ensure a smooth and error-free launch.</li>
+                <li>Test the live site after deployment to ensure all features work as expected.</li>
+                <li>Document the deployment process and any post-deployment checks performed.</li>
+            </ul>
+        </li>
+        <li><strong>Merit Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Overlook final checks post-deployment, which could result in missed issues.</li>
+                <li>Fail to document the deployment steps and any issues encountered.</li>
+            </ul>
+        </li>
+    </div>
+
+    <button class="accordion">Show Distinction Guidance</button>
+    <div class="panel">
+        <li><strong>Distinction Grade: Expected Performance (Do's):</strong>
+            <ul>
+                <li>Follow best practices for deployment to ensure a smooth and error-free launch.</li>
+                <li>Test the live site after deployment to ensure all features work as expected.</li>
+                <li>Document the deployment process and any post-deployment checks performed.</li>
+                <li>Ensure the deployment process is smooth and all features function as expected in the live environment.</li>
+                <li>Version control systems are used effectively, with well-defined commits for each feature/fix.</li>
+            </ul>
+        </li>
+        <li><strong>Distinction Grade Areas for Improvement (Don'ts):</strong>
+            <ul>
+                <li>Overlook final checks post-deployment, which could result in missed issues.</li>
+                <li>Fail to document the deployment steps and any issues encountered.</li>
+                <li>Poor use of version control systems, with infrequent or poorly described commits.</li>
+            </ul>
+        </li>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
