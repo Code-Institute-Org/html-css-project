@@ -11,8 +11,88 @@
             margin: 0;
             padding: 20px;
         }
-        h1, h2, h3, h4 {
+
+        h1, h2, h3, h4, h5, h6 {
             font-weight: normal;
+        }
+
+        p, li, td {
+            line-height: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background: #FFF;
+        }
+
+        tr:nth-child(odd) {
+            background: #EEE;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            color: rgb(229, 71, 36);
+            font-size: 50px;
+        }
+
+        h3 {
+            color: rgb(0, 162, 233);
+            font-size: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        a:hover {
+            color: rgb(0, 162, 233);
+        }
+
+        .unit-container {
+            max-width: 1000px;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(229, 71, 36);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
         }
         .accordion {
             cursor: pointer;
