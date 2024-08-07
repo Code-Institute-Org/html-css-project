@@ -96,358 +96,117 @@
         }
         .accordion {
             cursor: pointer;
-            padding: 10px;
-            border: none;
-            outline: none;
-            transition: background-color 0.3s ease;
+            padding: 18px;
             width: 100%;
+            border: none;
             text-align: left;
-            font-size: 16px;
-            margin: 5px 0.
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
         }
-        .accordion:hover, .accordion.active {
-            background-color: #ddd.
+        .active, .accordion:hover {
+            background-color: #ccc;
         }
         .panel {
             padding: 0 18px;
             display: none;
             background-color: white;
-            overflow: hidden.
+            overflow: hidden;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: #4caf50;
+            border-radius: 5px;
         }
 
     </style>
 </head>
 <body>
 <div class="unit-container">
- <h2>Project Guide</h2>
+ <div class="progress-container">
+    <div id="progress-bar" class="progress-bar"></div>
+</div>
 
-<button class="accordion">Phase 1: Ideation & Initial Setup (4 hours)</button>
-<div class="panel">
-    <h3>What’s the goal of this phase?</h3>
-    <p>In this phase, the primary goal is to lay a solid foundation for the project by defining its purpose, audience, and design. This involves brainstorming ideas, creating user stories, and setting up the project environment.</p>
-
-    <h3>What are My Tasks?</h3>
-    <h4>Ideation and User Story Definition (1.5 hours):</h4>
-    <p>This task involves brainstorming and refining project ideas, defining user stories that capture the project's essential features and functionality, and documenting these stories in the README. This process helps clarify the project's goals and ensures that the development is user-centered.</p>
-
-    <h4>Initial Planning and Wireframing (1.5 hours):</h4>
-    <p>You will outline the website's structure and design through wireframes. This includes sketching key pages, choosing color schemes and fonts, and planning content placement. Documenting these decisions helps in creating a clear design blueprint and facilitates a user-centric approach.</p>
-
-    <h4>Environment Setup and Version Control (1 hour):</h4>
-    <p>Setting up the development environment includes creating a GitHub repository, organizing project files, and linking necessary resources. Proper documentation of this setup ensures that the project is well-organized and version-controlled from the start.</p>
-
-    <h3>What Should Be in Place By The End Of This Phase?</h3>
-    <ul>
-        <li>A clear understanding of the project's purpose user stories and target audience.</li>
-        <li>Wireframes, images, fonts, colors, and design decisions chosen and documented.</li>
-        <li>A fully set up development environment (IDE project) with version control (GitHub repository) in place.</li>
-    </ul>
-
-    <button class="accordion">First Task: Ideation and User Story Definition (1.5 hours)</button>
+<section>
+    <button class="accordion">First task: Ideation and User Story Definition (1.5 hours)</button>
     <div class="panel">
-        <h4>What do I need to do now?</h4>
+        <h5>Pass Grade: Expected Pass Performance (Do's):</h5>
         <ul>
-            <li>Brainstorm and refine project ideas.</li>
-            <li>Define and prioritize user stories and their acceptance criteria in a way that reflects the website's goals (Must, Should, Could).</li>
-            <li>Create a project repository on GitHub. Include a README for documentation.</li>
-            <li>Add the project definition, user stories, and acceptance criteria to the README (User Stories section).</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Think about the specific needs of your target audience.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Use user stories and their acceptance criteria to guide the development process.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Include the project overview as well as the target audience in the README</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Include user stories and their acceptance criteria in the README.</li>
         </ul>
-
-        <h4>Pass Guidance: What do I need to do (and not do) to work towards creating a fully working and useful website?</h4>
-        <p>Associated Pass Criteria:</p>
-        <ul>
-            <li>4.1: Write a README.md file for the web application that explains its purpose, the value that it provides to its users, and the deployment procedure.</li>
-        </ul>
-        <p>Justification:</p>
-        <ul>
-            <li>4.1: Documenting user stories in the README aligns with the need for clear documentation and understanding of the project's purpose and value.</li>
-        </ul>
-        <p>Note: Ignore the deployment procedure for now. You can get to that later.</p>
-
-        <h4>Pass Grade: Expected Pass Performance (Do's):</h4>
-        <ul>
-            <li>4.1 Think about the specific needs of your target audience.</li>
-            <li>4.1 Use user stories and their acceptance criteria to guide the development process.</li>
-            <li>4.1 Include the project overview as well as the target audience in the README.</li>
-            <li>4.1 Include user stories and their acceptance criteria in the README.</li>
-        </ul>
-
-        <h4>Pass Grade Areas for Improvement (Don'ts):</h4>
-        <ul>
-            <li>Skip this step; clear planning is crucial for success.</li>
-            <li>Overlook the importance of user stories in guiding development.</li>
-            <li>Forget to include a brief overview of the project and its intended audience as well as the user stories and acceptance criteria.</li>
-        </ul>
-
-        <button class="accordion">Merit Guidance: What do I need to do (and not do) to work towards creating a fully working, useful and intuitively designed website?</button>
-        <div class="panel">
-            <p>Associated Merit Criteria:</p>
-            <ul>
-                <li>1.1 Design a website with a flow of information layout and interaction feedback that is clear and unambiguous</li>
-                <li>1.2 Implement a website whose purpose is immediately evident to a new user. E.g. make the landing page relevant to the site’s primary goal.</li>
-                <li>1.3 Implement a website that provides an excellent solution to the key project goals, demands, and expectations.</li>
-                <li>4.1 Present a clear rationale for the development of the project, in the README, - Key project goals, target audience</li>
-            </ul>
-            <p>Justification:</p>
-            <ul>
-                <li>1.1: Clearly defined user stories help in creating a structured, navigable and useful website.</li>
-                <li>1.2 Ensures that the project prioritizes user-centric design and clear communication of purpose from the outset.</li>
-                <li>1.3: Effective user story prioritization ensures a balanced project scope, which is crucial for a functional and user-friendly design.</li>
-                <li>4.1: Clearly defining the target audience helps tailor the website to meet their specific needs, enhancing user experience and relevance.</li>
-            </ul>
-            <h4>Merit Grade: Expected Performance (Do's):</h4>
-            <ul>
-                <li>Ensure the user stories are clearly defined and cover the key user scenarios. (LO1.1, LO1.3)</li>
-                <li>Prioritize user stories effectively to balance project scope and complexity. (LO1.2, LO1.3)</li>
-                <li>Clearly define the target audience and their specific needs in the README. (LO4.1)</li>
-            </ul>
-
-            <h4>Merit Grade Areas for Improvement (Don'ts):</h4>
-            <ul>
-                <li>Create vague or generic user stories. (LO1.1, LO1.3)</li>
-                <li>Fail to prioritize user stories, leading to an imbalanced project scope. (LO1.3)</li>
-                <li>Ignore the specific needs and characteristics of the target audience. (LO4.1)</li>
-            </ul>
-        </div>
-
-        <button class="accordion">Distinction Guidance: What do I need to do (and not do) to work towards creating a fully working, useful, intuitively designed, and highly crafted website?</button>
-        <div class="panel">
-            <p>Associated Distinction Sections:</p>
-            <ul>
-                <li>Real-world application: Provide a clear, justified rationale for a real-world application and a comprehensive explanation of how it will be developed.</li>
-            </ul>
-            <p>Justification:</p>
-            <ul>
-                <li>Real-world application: Providing a clear, justified rationale for a real-world application and a concise explanation of how it will be developed ensures a focused and coherent project vision, guiding all subsequent design and development efforts effectively.</li>
-            </ul>
-            <h4>Distinction Grade: Expected Performance (Do's):</h4>
-            <ul>
-                <li>Concise Real-World Application:</li>
-                <li>Develop a brief, focused explanation of the real-world application. Limit this to one or two paragraphs that clearly state the problem being solved or the need being addressed.</li>
-                <li>Example: "This project aims to create a responsive website for a local bakery, which will enhance customer engagement by providing up-to-date information on products, promotions, and events. The site will cater to both desktop and mobile users, ensuring accessibility and convenience."</li>
-                <li>Clear Target Audience Definition:</li>
-                <li>Define the target audience succinctly, focusing on their needs and how the website will meet these needs.</li>
-                <li>Example: "The target audience for the bakery's website includes local customers who prefer online browsing and ordering, as well as tourists looking for unique local experiences. The site will provide easy navigation, attractive visuals, and relevant content to engage these users effectively."</
-            </ul>
-            <h5>Distinction Grade Areas for Improvement (Don'ts):</h5>
-            <ul>
-                <li>Avoid Overly Lengthy Documentation:</li>
-                <li>Do not write extensive pages of text. Keep the rationale and development explanation focused and to the point.</li>
-                <li>Prevent Ambiguity:</li>
-                <li>Ensure the purpose and development process are clear and specific. Avoid vague statements that do not add value to the understanding of the project's goals and implementation.</li>
-            </ul>
-        </div>
     </div>
 
     <button class="accordion">Second Task: Initial Planning and Wireframing (1.5 hours)</button>
     <div class="panel">
-        <h4>What do I need to do now?</h4>
+        <h5>Pass Grade: Expected Pass Performance (Do's):</h5>
         <ul>
-            <li>Sketch wireframes for each key page (or each key section for single-page applications) using Balsamiq.</li>
-            <li>Ensure wireframes include intuitive and strategically placed navigation options.</li>
-            <li>Ensure wireframes include features that reflect the Must, Should and Could user stories.</li>
-            <li>Choose color schemes, images and fonts using tools like color contrast checkers to meet accessibility standards.</li>
-            <li>Briefly document design decisions in the README.</li>
-            <li>Add your wireframes to the README.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.3 Create wireframes for each key page (or key section if creating a single page application) using Balsamiq.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.3 Prioritize and structure information clearly.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.3 Ensure that the wireframes include intuitive and strategically placed navigation options.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.3 Ensure that the wireframes reflect the Must, Should and Could user stories.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.2 Ensure chosen color schemes meet accessibility standards.</li>
+            <li><input type="checkbox" class="do-checkbox"> Ensure good contrast throughout allowing content to take center stage on the screen.</li>
+            <li><input type="checkbox" class="do-checkbox"> Select color schemes that complement the layout.</li>
+            <li><input type="checkbox" class="do-checkbox"> 1.4 Ensure that foreground information is never distracted by backgrounds.</li>
+            <li><input type="checkbox" class="do-checkbox"> Select images that reflect the website’s purpose.</li>
+            <li><input type="checkbox" class="do-checkbox"> Maintain an information hierarchy supported by consistent imagery and text.</li>
+            <li><input type="checkbox" class="do-checkbox"> Keep designs simple and elegant.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Briefly document your color and layout decisions in the README.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.1 Add your wireframes to the readme.</li>
         </ul>
-
-        <h4>Pass Guidance: What do I need to do (and not do) to work towards creating a fully working and useful website?</h4>
-        <p>Associated Pass Criteria:</p>
-        <ul>
-            <li>1.2 Design a website that meets accessibility guidelines.</li>
-            <li>1.3 Design the organization of information on the page following the principles of user experience design.</li>
-            <li>1.4 Ensure that foreground information is never distracted by backgrounds.</li>
-            <li>4.1 Write a README.md file for the web application that explains its purpose, the value that it provides to its users, and the deployment procedure.</li>
-        </ul>
-        <p>Justification:</p>
-        <ul>
-            <li>1.2 Ensuring the website meets accessibility guidelines is fundamental for inclusivity and usability.</li>
-            <li>1.3 Organizing information according to user experience design principles ensures the website will be user-friendly and intuitive.</li>
-            <li>1.4 Maintaining clear foreground information ensures content is easily comprehensible and not overshadowed by background elements.</li>
-            <li>4.1 Documenting design decisions in the README is essential for future maintainability and understanding the design rationale.</li>
-        </ul>
-
-        <h4>Pass Grade: Expected Pass Performance (Do's):</h4>
-        <ul>
-            <li>1.3 Create wireframes for each key page (or key section if creating a single page application) using Balsamiq.</li>
-            <li>1.3 Prioritize and structure information clearly.</li>
-            <li>1.3 Ensure that the wireframes include intuitive and strategically placed navigation options.</li>
-            <li>1.3 Ensure that the wireframes reflect the Must, Should and Could user stories.</li>
-            <li>1.2 Ensure chosen color schemes meet accessibility standards.</li>
-            <li>Ensure good contrast throughout allowing content to take center stage on the screen.</li>
-            <li>Select color schemes that complement the layout.</li>
-            <li>1.4 Ensure that foreground information is never distracted by backgrounds.</li>
-            <li>Select images that reflect the website’s purpose.</li>
-            <li>Maintain an information hierarchy supported by consistent imagery and text.</li>
-            <li>Keep designs simple and elegant.</li>
-            <li>4.1 Briefly document your color and layout decisions in the README.</li>
-            <li>4.1 Add your wireframes to the README.</li>
-        </ul>
-
-        <h4>Pass Grade Areas for Improvement (Don'ts):</h4>
-        <ul>
-            <li>Start coding without a clear design plan.</li>
-            <li>Neglect accessibility standards when choosing colors, images and fonts.</li>
-            <li>Create wireframes that result in difficulty in Navigation from one page, or if using a single page application, one section to another.</li>
-            <li>Avoid images and text overlays with poor contrast ratios that are incomprehensible.</li>
-            <li>Avoid presenting information without considering categorization priority.</li>
-            <li>Avoid varying information across different pages, resolutions, or devices.</li>
-            <li>Ensure content is not difficult to understand against the background.</li>
-        </ul>
-
-        <button class="accordion">Merit Guidance: What do I need to do (and not do) to work towards creating a fully working, useful and intuitively designed website?</button>
-        <div class="panel">
-            <p>Associated Merit Criteria:</p>
-            <ul>
-                <li>1.1 Design a website that incorporates a main navigation menu and a structured layout.</li>
-                <li>1.2 Implement a website whose purpose is immediately evident to a new user. E.g. make the landing page relevant to the site’s primary goal.</li>
-                <li>1.3 Implement a website that provides an excellent solution to the key project goals, demands and expectations.</li>
-                <li>4.1 Present a clear rationale for the development of the project, in the README, - Key project goals, target audience.</li>
-            </ul>
-            <p>Justification:</p>
-            <ul>
-                <li>1.2 Ensuring the website’s purpose is immediately evident to a new user is crucial for engaging the audience and guiding them towards desired actions.</li>
-                <li>1.3 Meeting project goals ensures the site fulfills its intended purpose and provides value to its users by addressing their needs effectively.</li>
-                <li>4.1 A clear project rationale in the README helps document the thought process behind the project, providing context and justification for design decisions, ensuring cohesiveness and organization while also meeting user needs and accessibility requirements.</li>
-            </ul>
-            <h4>Merit Grade: Expected Performance (Do's):</h4>
-            <ul>
-                <li>1.2, 1.3 Ensure color schemes, images and fonts are chosen to enhance user experience and accessibility.</li>
-                <li>Make sure that the purpose is clear from the outset. Information hierarchy is supported by consistent imagery, colors and text.</li>
-                <li>The website design is thoughtfully designed. Overall UX design is simple and elegant.</li>
-                <li>Site meets all stated ways to add value for the user.</li>
-                <li>The site has been developed for a well-defined target audience and meets the overall expectation with minor bugs.</li>
-                <li>4.1 Provide a clear rationale for design decisions.</li>
-            </ul>
-
-            <h4>Merit Grade Areas for Improvement (Don'ts):</h4>
-            <ul>
-                <li>Ignore accessibility standards in design choices.</li>
-                <li>The thought and purpose behind the project are not evident and difficult to comprehend.</li>
-                <li>Provide weak rationale for design decisions.</li>
-                <li>README file is missing clearly articulated entries for the initial planning sections.</li>
-            </ul>
-        </div>
-
-        <button class="accordion">Distinction Guidance: What do I need to do (and not do) to work towards creating a fully working, useful, intuitively designed, and highly crafted website?</button>
-        <div class="panel">
-            <p>Justification:</p>
-            <ul>
-                <li>Accessibility: Thoughtful selection of color schemes, imagery, and fonts ensures the website is both visually appealing and accessible to all users, including those with visual impairments.</li>
-                <li>Design: Applying principles of good UX design, such as clear information hierarchy and user control, ensures that users can navigate the site intuitively and find information easily.</li>
-            </ul>
-            <h4>Distinction Grade: Expected Performance (Do's):</h4>
-            <ul>
-                <li>Accessibility: Ensure color schemes, imagery and fonts are chosen to enhance user experience and accessibility.</li>
-                <li>Design: The design of the web application demonstrates principles of good UX design, including information hierarchy and user control to the extent that the user will be happy to repeatedly return to the site.</li>
-            </ul>
-
-            <h4>Distinction Grade Areas for Improvement (Don'ts):</h4>
-            <ul>
-                <li>Accessibility: Ignore accessibility standards in design choices.</li>
-                <li>Accessibility: Use color schemes with poor contrast that make it difficult for visually impaired users to read content.</li>
-                <li>Accessibility: Choose imagery or fonts that are visually cluttered or hard to read, detracting from the overall user experience.</li>
-                <li>Design: Overlook the importance of a clear information hierarchy, leading to a confusing and frustrating navigation experience.</li>
-                <li>Design: Ignore user control principles, resulting in a design where users cannot easily navigate or interact with the site effectively.</li>
-            </ul>
     </div>
-</div>
 
-<button class="accordion">Third Task: Environment Setup and Version Control (1 hour)</button>
-<div class="panel">
-    <h4>What do I need to do now?</h4>
-    <ul>
-        <li>Create a basic project structure with necessary files and folders (assets, css, images).</li>
-        <li>Link CSS and any external resources like Bootstrap, Google Fonts, and Font Awesome.</li>
-        <li>Document the setup process in the README (Setup and Installation section).</li>
-    </ul>
-
-    <h4>Pass Guidance: What do I need to do (and not do) to work towards creating a fully working and useful website?</h4>
-    <p>Associated Pass Criteria:</p>
-    <ul>
-        <li>3.2 Use Git & GitHub for version control of an interactive web application up to deployment.</li>
-        <li>4.6 Place CSS code in external files linked to the HTML page in the HEAD element.</li>
-        <li>4.9 Group files in directories by file type.</li>
-        <li>5.1 Use consistent and effective markdown formatting to produce a README file in English that is well-structured, easy to follow, and has few grammatical errors.</li>
-    </ul>
-    <p>Justification:</p>
-    <ul>
-        <li>3.2: Using Git & GitHub from the start ensures proper version control.</li>
-        <li>4.6: Linking CSS in external files is a best practice for maintainability.</li>
-        <li>4.9: Organizing files by type from the beginning is crucial for project organization.</li>
-        <li>5.1: Clear, consistent documentation is essential for project maintainability and clarity.</li>
-    </ul>
-
-    <h4>Pass Grade: Expected Pass Performance (Do's):</h4>
-    <ul>
-        <li>3.2 Commit regularly to GitHub with meaningful commit messages.</li>
-        <li>4.9 Organize files logically from the start, e.g., create an assets folder with subfolders containing CSS and any locally stored images.</li>
-        <li>4.6 Create and link CSS in external files placed appropriately in the HEAD element.</li>
-        <li>Use consistent and effective markdown formatting in your README file in English that is well-structured, easy to follow, and has few grammatical errors.</li>
-    </ul>
-
-    <h4>Pass Grade Areas for Improvement (Don'ts):</h4>
-    <ul>
-        <li>3.2 Make a few big commits instead of consistent regular commits.</li>
-        <li>Use CSS ineffectively by relying too much on in-line styles.</li>
-        <li>4.9 Ignore directory structure conventions and place files haphazardly.</li>
-        <li>5.1 Edit your README file with inconsistent formatting or many grammatical errors.</li>
-    </ul>
-
-    <button class="accordion">Merit Guidance: What do I need to do (and not do) to work towards creating a fully working, useful, and intuitively designed website?</button>
+    <button class="accordion">Third Task: Environment Setup and Version Control (1 hour)</button>
     <div class="panel">
-        <p>Associated Criteria:</p>
+        <h5>Pass Grade: Expected Pass Performance (Do's):</h5>
         <ul>
-            <li>No associated Merit Criteria apply here.</li>
-        </ul>
-        <p>Justification:</p>
-        <ul>
-            <li>No associated Merit Criteria apply here.</li>
-        </ul>
-        <h4>Merit Grade: Expected Performance (Do's):</h4>
-        <ul>
-            <li>No associated Merit Criteria apply here.</li>
-        </ul>
-        <h4>Merit Grade Areas for Improvement (Don'ts):</h4>
-        <ul>
-            <li>No associated Merit Criteria apply here.</li>
+            <li><input type="checkbox" class="do-checkbox"> 3.2 Commit regularly to GitHub with meaningful commit messages.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.9 Organize files logically from the start. E.g., Create an assets folder with subfolders containing CSS and any locally stored images.</li>
+            <li><input type="checkbox" class="do-checkbox"> 4.6 Create and link CSS in external files placed appropriately in the HEAD element.</li>
+            <li><input type="checkbox" class="do-checkbox"> Use consistent and effective markdown formatting in your README file in English that is well-structured, easy to follow, and has few grammatical errors.</li>
         </ul>
     </div>
-
-    <button class="accordion">Distinction Guidance: What do I need to do (and not do) to work towards creating a fully working, useful, intuitively designed, and highly crafted website?</button>
-    <div class="panel">
-        <p>Justification:</p>
-        <ul>
-            <li>No associated Distinction requirements apply here.</li>
-        </ul>
-        <h4>Distinction Grade: Expected Performance (Do's):</h4>
-        <ul>
-            <li>No associated Distinction requirements apply here.</li>
-        </ul>
-        <h4>Distinction Grade Areas for Improvement (Don'ts):</h4>
-        <ul>
-            <li>No associated Distinction requirements apply here.</li>
-        </ul>
-    </div>
-</div>
+</section>
 
 </div>
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordions = document.getElementsByClassName('accordion');
+        const checkboxes = document.querySelectorAll('.do-checkbox');
+        const progressBar = document.getElementById('progress-bar');
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
+        Array.from(accordions).forEach(accordion => {
+            accordion.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+            });
         });
-    }
+
+        function updateProgressBar() {
+            const checkedCount = document.querySelectorAll('.do-checkbox:checked').length;
+            const totalCheckboxes = checkboxes.length;
+            const progress = (checkedCount / totalCheckboxes) * 100;
+            progressBar.style.width = progress + '%';
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgressBar);
+        });
+
+        updateProgressBar();
+    });
 </script>
 </body>
 </html>
