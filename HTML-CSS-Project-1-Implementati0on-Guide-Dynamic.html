@@ -180,12 +180,52 @@
 
 </div>
 
-    <script>
+   <script>
     document.addEventListener('DOMContentLoaded', function () {
         const accordions = document.getElementsByClassName('accordion');
         const checkboxes = document.querySelectorAll('.do-checkbox');
         const progressBar = document.getElementById('progress-bar');
 
+        // Load checkbox states from localStorage
+        checkboxes.forEach(checkbox => {
+            const savedState = localStorage.getItem(checkbox.id);
+            if (savedState === 'checked') {
+                checkbox.checked = true;
+            }
+        });
+
+        // Function to update the progress bar
+        function updateProgressBar() {
+            const checkedCount = document.querySelectorAll('.do-checkbox:checked').length;
+            const totalCheckboxes = checkboxes.length;
+            const progress = (checkedCount / totalCheckboxes) * 100;
+            progressBar.style.width = progress + '%';
+
+            // Save progress to localStorage
+            localStorage.setItem('progress', progress);
+        }
+
+        // Save checkbox state and update progress bar when changed
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    localStorage.setItem(checkbox.id, 'checked');
+                } else {
+                    localStorage.removeItem(checkbox.id);
+                }
+                updateProgressBar();
+            });
+        });
+
+        // Load progress bar state from localStorage
+        const savedProgress = localStorage.getItem('progress');
+        if (savedProgress) {
+            progressBar.style.width = savedProgress + '%';
+        } else {
+            updateProgressBar();
+        }
+
+        // Accordion functionality
         Array.from(accordions).forEach(accordion => {
             accordion.addEventListener('click', function () {
                 this.classList.toggle('active');
@@ -193,19 +233,6 @@
                 panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
             });
         });
-
-        function updateProgressBar() {
-            const checkedCount = document.querySelectorAll('.do-checkbox:checked').length;
-            const totalCheckboxes = checkboxes.length;
-            const progress = (checkedCount / totalCheckboxes) * 100;
-            progressBar.style.width = progress + '%';
-        }
-
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', updateProgressBar);
-        });
-
-        updateProgressBar();
     });
 </script>
 </body>
