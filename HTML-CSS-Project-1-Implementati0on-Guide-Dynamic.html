@@ -60,8 +60,8 @@ h3 {
 
 /* Task Title Styling */
 .accordion-button {
-    background-color: #007bff;
-    color: white;
+    background-color: #007bff !important;
+    color: white !important;
     font-weight: bold;
     border-radius: 5px;
     padding: 15px;
@@ -71,16 +71,17 @@ h3 {
     cursor: pointer;
     display: block;
     width: 100%;
+    border: none;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #0056b3;
-    color: white;
+    background-color: #0056b3 !important;
+    color: white !important;
 }
 
 .accordion-button:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: #0056b3 !important;
+    color: white !important;
     text-decoration: none;
 }
 
@@ -88,18 +89,18 @@ h3 {
     box-shadow: none;
 }
 
-/* Additional styling to remove hyperlink appearance */
+/* Remove default arrow on the accordion button */
 .accordion-button::after {
     display: none;
 }
 
 .accordion-button.collapsed {
-    color: white;
-    background-color: #007bff;
+    color: white !important;
+    background-color: #007bff !important;
 }
 
 .accordion-button.collapsed:hover {
-    background-color: #0056b3;
+    background-color: #0056b3 !important;
 }
 
 .accordion-body {
@@ -109,6 +110,7 @@ h3 {
     padding: 20px;
     margin-top: -1px;
 }
+
     </style>
 </head>
 <body>
