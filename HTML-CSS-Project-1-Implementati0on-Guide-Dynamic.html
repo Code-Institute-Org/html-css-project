@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Implementation Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .progress {
+            height: 25px;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -69,6 +74,11 @@
         </ol>
         <p>By incorporating these strategies into your 14-hour project, you can work efficiently while maintaining your health and well-being. Remember, taking care of yourself is crucial to ensuring a successful and productive project outcome.</p>
 
+        <h3>Progress</h3>
+        <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressBar">0%</div>
+        </div>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -88,11 +98,11 @@
                             <p><strong>Objective:</strong> Brainstorm and refine project ideas, define user stories that capture the essential features and functionality, and document these stories in the README. GitHub Copilot will be used to assist in drafting content and defining user stories more efficiently.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>A README.md file briefly documenting the application’s purpose, user value, and deployment steps.</li>
-                                <li>Include user stories and their acceptance criteria in the README.</li>
-                                <li>Prioritize the user stories into Must, Should, and Could.</li>
-                                <li>Utilize GitHub Copilot to effectively generate content for project goals, and prioritized user stories and their acceptance criteria.</li>
-                                <li>Ensure that the AI-generated ideation content is reviewed and refined to meet the project requirements.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task1Do1"> A README.md file briefly documenting the application’s purpose, user value, and deployment steps.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task1Do2"> Include user stories and their acceptance criteria in the README.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task1Do3"> Prioritize the user stories into Must, Should, and Could.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task1Do4"> Utilize GitHub Copilot to effectively generate content for project goals, and prioritized user stories and their acceptance criteria.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task1Do5"> Ensure that the AI-generated ideation content is reviewed and refined to meet the project requirements.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -118,9 +128,9 @@
                             <p><strong>Objective:</strong> Outline the website's structure and design through wireframes. This includes sketching key sections, choosing color schemes and fonts, and planning content placement. DALL-E or similar will be used to generate any image concepts that align with the project's theme and user stories.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Create wireframes that reflect a cohesive structure and clear information hierarchy.</li>
-                                <li>Ensure design choices adhere to accessibility standards, including appropriate color contrast, image consistency, and alt-text considerations for non-text elements.</li>
-                                <li>Leverage DALL-E to generate any image concepts that enhance the visual design and align with the overall project theme.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task2Do1"> Create wireframes that reflect a cohesive structure and clear information hierarchy.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task2Do2"> Ensure design choices adhere to accessibility standards, including appropriate color contrast, image consistency, and alt-text considerations for non-text elements.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task2Do3"> Leverage DALL-E to generate any image concepts that enhance the visual design and align with the overall project theme.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -146,9 +156,9 @@
                             <p><strong>Objective:</strong> Set up the development environment, including creating a GitHub repository, organizing project files, and linking necessary resources like CSS, Bootstrap, and Google Fonts. This task will establish the foundation for efficient version control and project organization.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Establish a well-organized project structure, including clear directory organization and the proper linking of external resources.</li>
-                                <li>Use Git and GitHub effectively for version control, with regular, meaningful commits that reflect incremental progress.</li>
-                                <li>Test deploy your project with the basic structures in place.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task3Do1"> Establish a well-organized project structure, including clear directory organization and the proper linking of external resources.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task3Do2"> Use Git and GitHub effectively for version control, with regular, meaningful commits that reflect incremental progress.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task3Do3"> Test deploy your project with the basic structures in place.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -174,10 +184,10 @@
                             <p><strong>Objective:</strong> Develop essential features based on prioritized Must user stories. GitHub Copilot will be used to assist in writing the HTML and CSS code, streamlining the process while ensuring the core functionality is robust and aligned with the project’s design goals.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Implement a functional, cohesive layout with a well-structured navigation menu.</li>
-                                <li>Adhere to accessibility guidelines, including correct color contrast and appropriate alt text for images.</li>
-                                <li>Validate HTML and CSS using W3C and Jigsaw validators.</li>
-                                <li>Use GitHub Copilot effectively to draft and refine code snippets.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do1"> Implement a functional, cohesive layout with a well-structured navigation menu.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do2"> Adhere to accessibility guidelines, including correct color contrast and appropriate alt text for images.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do3"> Validate HTML and CSS using W3C and Jigsaw validators.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do4"> Use GitHub Copilot effectively to draft and refine code snippets.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -203,9 +213,9 @@
                             <p><strong>Objective:</strong> Test the website on different virtual devices (Chrome DevTools) to ensure visual and functional consistency. GitHub Copilot and other AI tools will be used to identify and fix issues during the testing process, ensuring the website is fully responsive and functional across different screen sizes.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Test the website across multiple (virtual) devices to verify consistent functionality and appearance.</li>
-                                <li>Apply CSS media queries effectively to adapt the layout for various screen sizes.</li>
-                                <li>Utilize GitHub Copilot to efficiently debug and refine the code.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do1"> Test the website across multiple (virtual) devices to verify consistent functionality and appearance.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do2"> Apply CSS media queries effectively to adapt the layout for various screen sizes.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do3"> Utilize GitHub Copilot to efficiently debug and refine the code.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -230,9 +240,9 @@
                             <p><strong>Objective:</strong> Fine-tune the website to ensure consistency across all sections and functionality. AI tools will be used to optimize code and enhance performance where applicable.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Ensure a consistent design and functionality across all sections of the website.</li>
-                                <li>Optimize the HTML and CSS code to enhance performance and ensure a smooth, responsive user experience.</li>
-                                <li>Leverage AI tools to identify and implement optimization opportunities.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do1"> Ensure a consistent design and functionality across all sections of the website.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do2"> Optimize the HTML and CSS code to enhance performance and ensure a smooth, responsive user experience.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do3"> Leverage AI tools to identify and implement optimization opportunities.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -258,9 +268,9 @@
                             <p><strong>Objective:</strong> Refine the design based on the Should user stories. AI tools such as GitHub Copilot will assist in implementing complex features and refining the design.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Implement any Should user story features that enhance user engagement.</li>
-                                <li>Refine the site design using CSS media queries to maintain a responsive and adaptive layout.</li>
-                                <li>Leverage GitHub Copilot to streamline the coding process for advanced features.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task7Do1"> Implement any Should user story features that enhance user engagement.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task7Do2"> Refine the site design using CSS media queries to maintain a responsive and adaptive layout.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task7Do3"> Leverage GitHub Copilot to streamline the coding process for advanced features.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -285,9 +295,9 @@
                             <p><strong>Objective:</strong> Finalize the README by reviewing all sections to ensure clarity and completeness. Include proper attribution of any external code (exclude code generated by GitHub Copilot). Ensure that the role of AI tools throughout the project is briefly but clearly documented.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Complete all sections of the README with clear and concise documentation.</li>
-                                <li>Properly attribute any external code sources (other than GitHub Copilot).</li>
-                                <li>Provide a brief account of how AI tools were used throughout the development process.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task8Do1"> Complete all sections of the README with clear and concise documentation.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task8Do2"> Properly attribute any external code sources (other than GitHub Copilot).</li>
+                                <li><input type="checkbox" class="form-check-input" id="task8Do3"> Provide a brief account of how AI tools were used throughout the development process.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -312,8 +322,8 @@
                             <p><strong>Objective:</strong> Conduct a thorough test of the website to identify and fix any remaining issues before deployment.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Perform comprehensive testing to ensure the website functions correctly across all devices and browsers.</li>
-                                <li>Use AI tools to identify and resolve any final issues.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task9Do1"> Perform comprehensive testing to ensure the website functions correctly across all devices and browsers.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task9Do2"> Use AI tools to identify and resolve any final issues.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -336,10 +346,10 @@
                             <p><strong>Objective:</strong> Deploy the website to GitHub Pages, ensuring all features and links work correctly. Briefly document the deployment process in the README, and reflect on the role of AI in assisting with deployment.</p>
                             <p><strong>Expected Performance (Do's):</strong></p>
                             <ul>
-                                <li>Follow deployment instructions carefully to ensure a smooth and successful process.</li>
-                                <li>Test the live site to confirm that all features, links, and interactive elements function as expected.</li>
-                                <li>Briefly and clearly document the deployment process in the README.</li>
-                                <li>Reflect on any role AI tools played in assisting with the deployment.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task10Do1"> Follow deployment instructions carefully to ensure a smooth and successful process.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task10Do2"> Test the live site to confirm that all features, links, and interactive elements function as expected.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task10Do3"> Briefly and clearly document the deployment process in the README.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task10Do4"> Reflect on any role AI tools played in assisting with the deployment.</li>
                             </ul>
                             <p><strong>Documentation Task:</strong></p>
                             <ul>
@@ -359,6 +369,45 @@
         </table>
     </div>
 
+    <script>
+        // Initialize progress
+        function updateProgress() {
+            const totalCheckboxes = document.querySelectorAll('input[type="checkbox"]').length;
+            const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const progress = Math.round((checkedCheckboxes / totalCheckboxes) * 100);
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = progress + '%';
+            progressBar.setAttribute('aria-valuenow', progress);
+            progressBar.textContent = progress + '%';
+        }
+
+        // Save checkbox state to localStorage
+        function saveCheckboxState(id, checked) {
+            localStorage.setItem(id, checked);
+        }
+
+        // Load checkbox state from localStorage
+        function loadCheckboxState() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const checked = localStorage.getItem(checkbox.id) === 'true';
+                checkbox.checked = checked;
+            });
+            updateProgress();
+        }
+
+        // Event listener for checkbox changes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                saveCheckboxState(this.id, this.checked);
+                updateProgress();
+            });
+        });
+
+        // Load the state when the page loads
+        window.onload = function () {
+            loadCheckboxState();
+        };
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
