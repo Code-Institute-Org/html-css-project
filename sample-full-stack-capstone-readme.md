@@ -1,16 +1,16 @@
 # College Noticeboard
 
 ## Overview
-This project is a College Noticeboard web application built with Django and styled using Bootstrap 5. It provides full CRUD functionality, enabling users to create, read, update, and delete notices efficiently. The application addresses the need for a centralized, user-friendly platform for managing college announcements, improving communication and accessibility for students and staff.
+This project is a College Noticeboard web application built with Django and styled using Bootstrap 5. It provides full CRUD functionality, enabling users to create, read, update, and delete notices efficiently. The application addresses the need for a centralised, user-friendly platform for managing college announcements, improving communication and accessibility for students and staff.
 
 ## UX Design Process
 - **Link to User Stories in GitHub Projects:**
   - [GitHub Projects Kanban Board](https://github.com/username/project/kanban)
 - **Wireframes:**
   - [Wireframe Designs](https://linktowireframes.com)
-  - Wireframes were designed to ensure clarity, intuitive navigation, and compatibility with assistive technologies. High-contrast colors and alt text for images were used to maximize accessibility.
+  - Wireframes were designed to ensure clarity, intuitive navigation, and compatibility with assistive technologies. High-contrast colours and alt text for images were used to maximise accessibility.
 - **Design Rationale:**
-  - The layout emphasizes simplicity and readability, with Bootstrap 5 providing a responsive design. The color scheme adheres to WCAG guidelines for contrast, and the typography uses accessible fonts for clarity.
+  - The layout emphasises simplicity and readability, with Bootstrap 5 providing a responsive design. The colour scheme adheres to WCAG guidelines for contrast, and the typography uses accessible fonts for clarity.
   - Accessibility considerations include keyboard navigation and screen reader support, ensuring usability for users with diverse needs.
 - **Reasoning For Any Final Changes:**
   - Based on user feedback, adjustments were made to enhance usability, such as reordering navigation elements for better flow and refining accessibility features. These changes improve the inclusivity of the application.
@@ -19,22 +19,21 @@ This project is a College Noticeboard web application built with Django and styl
 - **Notice Management:** Create, view, update, and delete notices with ease.
 - **User Authentication:** Secure login/logout functionality for managing user access.
 - **Inclusivity Notes:** 
-  - Features include ARIA labels for screen readers and logical tab order to support keyboard navigation.
+  - Features include ARIA labels and `alt` attributes on images for screen readers.
 
 ## Deployment
 - **Platform:** Heroku
 - **High-Level Deployment Steps:** 
-  1. Set up the Heroku environment with a PostgreSQL database.
-  2. Configure environment variables for sensitive data (e.g., secret keys).
-  3. Deploy using Heroku Git or GitHub integration.
+  1. Clone the repository
+  2. Set up the Heroku environment with a PostgreSQL database.
+  3. Configure environment variables for sensitive data (e.g., secret keys).
+  4. Deploy using Heroku Git or GitHub integration.
 - **Verification and Validation:**
   - Tested the deployed application against the development environment for consistent functionality and design.
-  - Verified accessibility using tools such as Axe and manual testing.
+  - Verified accessibility using tools such as Lighthouse and manual testing.
 - **Security Measures:**
   - Sensitive data is stored in environment variables.
   - DEBUG mode is disabled in the production environment to enhance security.
-
-## AI Implementation and Orchestration
 
 ## AI Implementation and Orchestration
 
@@ -50,10 +49,10 @@ Throughout this project, I relied on GitHub Copilot to streamline development an
   - Reflection: Debugging with Copilot was a learning experience in itself. It didn’t just find errors; it often suggested solutions that highlighted gaps in my understanding. I appreciated how it encouraged me to simplify complex logic, making the code easier to maintain and more accessible to anyone who might work on it in the future.
 
 - **Performance and UX Optimization:** 
-  - Reflection: One of my proudest moments came when I used Copilot to refine the Bootstrap styling. I wasn’t very confident in front-end design, but the AI helped bridge that gap. It suggested small, impactful changes—like improving button alignment and tweaking breakpoints—that made the application feel polished and professional. These adjustments also ensured that the app was truly responsive, which was a priority for me.
+  - Reflection: One of my proudest moments came when I used Copilot to refine the Bootstrap styling. I wasn’t very confident in front-end design, but the AI helped bridge that gap. It suggested small, impactful changes, like improving button alignment and tweaking breakpoints, that made the application feel polished and professional. These adjustments also ensured that the app was truly responsive, which was a priority for me.
 
 - **Automated Unit Testing:**
-  - Reflection: Writing unit tests has always been a challenging aspect of development for me, but Copilot turned it into a manageable task. It generated a solid starting point for my test cases, which I could then refine to align with the project’s requirements. Seeing it anticipate edge cases—like invalid user input—made me more aware of the importance of writing comprehensive tests. This process deepened my understanding of Django’s testing framework and made me more confident in my ability to create robust applications.
+  - Reflection: Writing unit tests has always been a challenging aspect of development for me, but Copilot turned it into a manageable task. I used question-and-answer and multi-step prompts to generate a solid starting point for my test cases, which I could then refine to align with the project’s requirements. Seeing it anticipate edge cases—like invalid user input—made me more aware of the importance of writing comprehensive tests. This process deepened my understanding of Django’s testing framework and made me more confident in my ability to create robust applications.
 
 ### Overall Impact:
 Working with Copilot transformed my workflow. It allowed me to focus on higher-level decisions while handling repetitive tasks efficiently. However, it wasn’t always perfect—some suggestions required significant tweaking to fit my specific needs. Those moments were valuable reminders that the AI wasn’t a replacement for my skills but a tool to enhance them. 
@@ -64,7 +63,7 @@ Looking back, I feel this experience not only improved my technical abilities bu
 ## Testing Summary
 - **Manual Testing:**
   - **Devices and Browsers Tested:** Windows 11 (Chrome, Edge), macOS (Safari), Android, iOS.
-  - **Assistive Technologies:** Screen readers (NVDA, VoiceOver) and keyboard-only navigation.
+  - **Assistive Technologies:** Tested using Lighthouse in the Developer Tools.
   - **Features Tested:** CRUD operations, user authentication, responsive design, and accessibility features.
   - **Results:** All critical features, including accessibility checks, worked as expected.
 - **Automated Testing:**
@@ -74,6 +73,5 @@ Looking back, I feel this experience not only improved my technical abilities bu
 
 ## Future Enhancements
 - Add a notification feature for upcoming events and deadlines.
-- Implement voice input for notice creation and navigation.
-- Extend multilingual support for non-English-speaking users.
-- Enhance analytics for tracking user engagement with notices.
+- Build multilingual support for non-English-speaking users.
+- Learn how to build or integrate analytics for tracking user engagement with notices.
