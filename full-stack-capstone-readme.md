@@ -32,25 +32,20 @@
 ## AI Implementation and Orchestration
 
 - **Use Cases and Reflections:**
+
+(As part of your reflections, highlight the different types of prompts you used to achieve your project goals, and the benefits these brought. E.g.: Reverse, Question and Answer, and Multi-Step prompts)
+
   - **Code Creation:** 
-    - AI tools (e.g., GitHub Copilot) assisted in generating initial drafts of models, views, and templates.
     - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals.
   - **Debugging:** 
-    - AI tools identified and resolved code bugs efficiently, saving debugging time and improving code readability.
     - Reflection: Key interventions included resolving logic errors and enhancing maintainability.
   - **Performance and UX Optimization:** 
-    - AI suggested performance enhancements (e.g., query efficiency, front-end responsiveness).
     - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience.
   - **Automated Unit Testing:**
-    - AI (e.g., GitHub Copilot) generated Django unit tests for CRUD operations and authentication logic.
     - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality.
-
-- **Prompt Strategies:**
-  - **Reverse Prompts:** Used to generate alternative solutions and validate existing implementations.
-  - **Question and Answer Prompts:** Leveraged for resolving specific development challenges.
-  - **Multi-Step Prompts:** Utilized to iteratively refine code, optimize performance, and create comprehensive test cases.
-
-- **Workflow Impact:**
+    
+- **Overall Impact:**
+  Reflect on how:
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
   - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
   - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively.
