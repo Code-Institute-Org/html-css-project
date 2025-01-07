@@ -4,6 +4,8 @@
 [Briefly describe the purpose of the project, the problem it solves, and its value to users.]
 
 ## UX Design Process
+- **Link to User Stories in GitHub Projects:**
+  - [Add a link to the GitHub Projects kanban board]
 - **Wireframes:**
   - [Attach or link to wireframes used in the design process.]
   - [Explain the rationale behind the layout and design choices depicted in the wireframes.]
