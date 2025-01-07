@@ -25,10 +25,7 @@
   1. [Step 1]
   2. [Step 2]
   3. [Step 3]
-- **Security Measures:**
-  - Use of environment variables for sensitive data.
-  - Ensured DEBUG mode is disabled in production.
-
+     
 ## AI Tools Usage and Reflection
 
 ### AI in Code Creation
