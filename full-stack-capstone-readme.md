@@ -21,7 +21,7 @@
 
 ## Deployment
 - **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
-- **Deployment Steps:** 
+- **High Level Deployment Steps:** 
   1. [Step 1]
   2. [Step 2]
   3. [Step 3]
