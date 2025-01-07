@@ -31,7 +31,7 @@
 
 ## AI Implementation and Orchestration
 
-- **Use Cases and Reflections:**
+### Use Cases and Reflections:
 
 (As part of your reflections, highlight the different types of prompts you used to achieve your project goals, and the benefits these brought. E.g.: Reverse, Question and Answer, and Multi-Step prompts)
 
