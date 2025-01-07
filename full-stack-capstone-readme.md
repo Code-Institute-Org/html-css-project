@@ -7,13 +7,13 @@
 - **Link to User Stories in GitHub Projects:**
   - [Add a link to the GitHub Projects kanban board.]
 - **Wireframes:**
-  - [Attach or link to accessible wireframes used in the design process, ensuring high color contrast and alt text for visual elements.]
+  - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
   - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
 - **Design Rationale:**
-  - [Explain key design decisions, such as layout, color scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
-  - [Highlight any considerations made for users with disabilities, such as keyboard navigation and screen reader support.]
+  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
+  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
 - **Reasoning For Any Final Changes:**
-  - [Summarize significant changes made to the design during development and the reasons behind them.]
+  - [Summarise significant changes made to the design during development and the reasons behind them.]
   - [Reflect on how these changes enhance inclusivity and accessibility.]
 
 ## Key Features
@@ -38,7 +38,7 @@
 ## AI Implementation and Orchestration
 
 ### Use Cases and Reflections:
-(Highlight how prompts were used to support learners with SEND or ALN where relevant.)
+(Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
 
   - **Code Creation:** 
     - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
@@ -58,8 +58,8 @@
 ## Testing Summary
 - **Manual Testing:**
   - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
-  - **Features Tested:** [Summarize features tested manually, e.g., CRUD operations, navigation.]
-  - **Results:** [Summarize testing results, e.g., "All critical features worked as expected, including accessibility checks."]
+  - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
+  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
 - **Automated Testing:**
   - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
   - Features Covered: [Briefly list features covered by automated tests.]
@@ -68,10 +68,3 @@
 ## Future Enhancements
 - [List potential improvements or additional features for future development.]
 - Consider enhancements to improve accessibility further, such as voice input capabilities or additional language support.
-
-## Documentation Process
-This README reflects the UX design process, deployment steps, and the development lifecycle:
-1. **Wireframes, mockups, and diagrams** that are accessible and showcase the initial design and reasoning behind it.
-2. Changes made during development, ensuring alignment between design and implementation.
-3. AI tool usage, detailing its role in code creation, debugging, optimization, and testing, with a focus on prompt strategies.
-4. Final implementation details, demonstrating adherence to design principles, accessibility standards, and inclusivity for diverse learner needs.
