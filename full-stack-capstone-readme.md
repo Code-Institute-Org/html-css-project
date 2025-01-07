@@ -7,15 +7,10 @@
 - **Wireframes:**
   - [Attach or link to wireframes used in the design process.]
   - [Explain the rationale behind the layout and design choices depicted in the wireframes.]
-- **Mockups:**
-  - [Include or link to mockups showcasing the visual design.]
-  - [Summarize how the mockups reflect the intended user experience and branding.]
-- **Diagrams:**
-  - [Add any diagrams, such as flowcharts or architecture diagrams, to explain the application's structure or user flow.]
 - **Design Rationale:**
   - [Explain key design decisions, such as layout, color scheme, and typography.]
   - [Discuss how accessibility guidelines (e.g., WCAG) were integrated.]
-- **Reasoning for Changes:**
+- **Reasoning For Any Final Changes:**
   - [Summarize significant changes made to the design during development and the reasons behind them.]
 
 ## Key Features
