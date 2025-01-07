@@ -21,40 +21,36 @@
 
 ## Deployment
 - **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
-- **High Level Deployment Steps:** 
+- **High-Level Deployment Steps:** 
   1. [Step 1]
   2. [Step 2]
   3. [Step 3]
-     
-## AI Tools Usage and Reflection
+- **Security Measures:**
+  - Use of environment variables for sensitive data.
+  - Ensured DEBUG mode is disabled in production.
 
-### AI in Code Creation
-- **Use Case:** AI tools (e.g., GitHub Copilot) were used for generating initial drafts of models, views, and templates.
-- **Reflection:** 
-  - Strategic use of AI allowed for rapid prototyping of code components.
-  - Outcomes: Enhanced productivity with minor manual adjustments for alignment with project goals.
+## AI Implementation and Orchestration
 
-### AI in Debugging
-- **Use Case:** AI tools assisted in identifying and resolving bugs in the code.
-- **Reflection:** 
-  - AI significantly reduced debugging time by providing context-aware suggestions.
-  - Key interventions included resolving logic errors and improving code readability.
+- **Use Cases and Reflections:**
+  - **Code Creation:** 
+    - AI tools (e.g., GitHub Copilot) assisted in generating initial drafts of models, views, and templates.
+    - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals.
+  - **Debugging:** 
+    - AI tools identified and resolved code bugs efficiently, saving debugging time and improving code readability.
+    - Reflection: Key interventions included resolving logic errors and enhancing maintainability.
+  - **Performance and UX Optimization:** 
+    - AI suggested performance enhancements (e.g., query efficiency, front-end responsiveness).
+    - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience.
+  - **Automated Unit Testing:**
+    - AI (e.g., GitHub Copilot) generated Django unit tests for CRUD operations and authentication logic.
+    - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality.
 
-### AI in Performance and UX Optimization
-- **Use Case:** AI suggested performance improvements, including optimization of query efficiency and front-end responsiveness.
-- **Reflection:** 
-  - Suggestions improved application speed and user experience.
-  - Minimal manual intervention was needed to apply AI-driven improvements.
+- **Prompt Strategies:**
+  - **Reverse Prompts:** Used to generate alternative solutions and validate existing implementations.
+  - **Question and Answer Prompts:** Leveraged for resolving specific development challenges.
+  - **Multi-Step Prompts:** Utilized to iteratively refine code, optimize performance, and create comprehensive test cases.
 
-### AI in Automated Unit Testing
-- **Use Case:** AI (e.g., GitHub Copilot) was utilized to generate Django unit tests for application features.
-- **Reflection:** 
-  - Generated test cases covered CRUD operations and authentication logic.
-  - Adjustments were made to improve test coverage and ensure accuracy.
-  - Demonstrated understanding of AI-generated test logic and its alignment with functionality.
-
-### Overall Impact of AI
-- **Reflection on Workflow:** 
+- **Workflow Impact:**
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
   - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
   - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively.
@@ -76,5 +72,5 @@
 This README reflects the UX design process, deployment steps, and the development lifecycle:
 1. **Wireframes, mockups, and diagrams** that showcase the initial design and reasoning behind it.
 2. Changes made during development, ensuring alignment between design and implementation.
-3. AI tool usage, detailing its role in code creation, debugging, optimization, and testing.
+3. AI tool usage, detailing its role in code creation, debugging, optimization, and testing, with a focus on prompt strategies.
 4. Final implementation details, demonstrating adherence to design principles and accessibility standards.
