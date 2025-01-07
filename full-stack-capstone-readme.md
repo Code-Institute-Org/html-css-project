@@ -45,6 +45,7 @@
     - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality.
     
 - **Overall Impact:**
+
   Reflect on how:
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
   - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
