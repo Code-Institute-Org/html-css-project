@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Implementation Plan</title>
+    <style>
+        body {
+            padding: 3px;
+            font-family: 'Montserrat', sans-serif;
+            color: #666666;
+            margin: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        p, li, td {
+            line-height: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background: #FFF;
+        }
+
+        tr:nth-child(odd) {
+            background: #EEE;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            color: rgb(229, 71, 36);
+            font-size: 50px;
+        }
+
+        h3 {
+            color: rgb(0, 162, 233);
+            font-size: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        a:hover {
+            color: rgb(0, 162, 233);
+        }
+
+        .unit-container {
+            max-width: 1000px;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(229, 71, 36);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="unit-container">
+        <h1 class="header-dark">Project Implementation Plan</h1>
+
+        <h2 class="header-red">Rationale for Phased Approach</h2>
+        <p>The phased approach to project implementation is designed to ensure a structured, manageable, and systematic process for developing a website project. By dividing the project into distinct phases, learners can focus on specific tasks and objectives, making it easier to track progress, identify issues, and achieve high-quality results. This methodical approach allows for iterative development, regular testing, and refinement, ensuring that the final product meets all specified requirements and standards.</p>
+
+        <h2 class="header-blue">Phase 1: Ideation & Initial Setup</h2>
+        <h3>Description</h3>
+        <p>In this phase, the primary goal is to lay a solid foundation for the project by defining its purpose, audience, and design. This involves brainstorming ideas, creating user stories, and setting up the project environment.</p>
+
+        <h2>Ideation and User Story Definition</h2>
+        <p>This task involves brainstorming and refining project ideas, defining user stories that capture the project's essential features and functionality, and documenting these stories in the README. This process helps clarify the project's goals and ensures that the development is user-centered.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#project-overview">Project Overview</a>, <a href="#user-stories">User Stories</a></li>
+        </ul>
+
+        <h2>Initial Planning and Wireframing</h2>
+        <p>Learners will outline the website's structure and design through wireframes. This includes sketching key pages, choosing color schemes and fonts, and planning content placement. Documenting these decisions helps in creating a clear design blueprint and facilitates a user-centric approach.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#project-overview">Project Overview</a>, <a href="#wireframes">Wireframes</a></li>
+        </ul>
+
+        <h2>Environment Setup and Version Control</h2>
+        <p>Setting up the development environment includes creating a GitHub repository, organizing project files, and linking necessary resources. Proper documentation of this setup ensures that the project is well-organized and version-controlled from the start.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#setup-and-installation">Setup and Installation</a></li>
+        </ul>
+
+        <h3>Expected Outcomes</h3>
+        <ul>
+            <li>A clear understanding of the project's purpose and target audience.</li>
+            <li>Detailed wireframes and design decisions documented.</li>
+            <li>A fully set up development environment with version control in place.</li>
+        </ul>
+
+        <h2 class="header-blue">Phase 2: Must User Stories Implementation & Testing</h2>
+        <h3>Description</h3>
+        <p>This phase focuses on implementing the core functionality of the website as outlined in the Must user stories. It involves coding essential features, validating code, and ensuring visual and functional alignment with initial plans.</p>
+
+        <h2>Must User Stories Implementation</h2>
+        <p>Essential features are developed based on Must user stories. This task ensures that the core functionality is in place, and the website meets the initial design requirements. Validating HTML and CSS code ensures that the implementation is technically sound.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#user-stories">User Stories</a>, <a href="#features">Features</a></li>
+        </ul>
+
+        <h2>Visual Progress & Testing</h2>
+        <p>The website is tested on different devices to ensure visual and functional consistency. Adjustments are made based on initial tests, and changes are documented. This phase ensures that the website's appearance and functionality align with the design specifications.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
+        </ul>
+
+        <h2>Adjustments & Refinement</h2>
+        <p>The website is fine-tuned to ensure consistency across all pages and functionality. Significant changes or refinements are documented. This phase involves making final adjustments to polish the website and ensure a seamless user experience.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
+        </ul>
+
+        <h3>Expected Outcomes</h3>
+        <ul>
+            <li>Core features are implemented and validated.</li>
+            <li>The website is tested across multiple devices with necessary adjustments made.</li>
+            <li>Final refinements ensure a polished and consistent user experience.</li>
+        </ul>
+
+        <h2 class="header-blue">Phase 3: Should User Stories Implementation & Advanced Features</h2>
+        <h3>Description</h3>
+        <p>In this phase, advanced features and enhancements are added based on Should user stories. This includes implementing interactive elements, refining design, and completing comprehensive documentation.</p>
+
+        <h2>Should User Stories Implementation</h2>
+        <p>Advanced features are integrated, such as interactive elements and responsive design. Documentation of these features ensures that the implementation details are captured.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#features">Features</a></li>
+        </ul>
+
+        <h2>Documentation</h2>
+        <p>The README is finalized to cover the project's purpose, features, setup instructions, and any complex code sections. Comprehensive documentation provides clarity for users and developers and ensures that the project is well-documented.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#credits">Credits</a></li>
+        </ul>
+
+        <h3>Expected Outcomes</h3>
+        <ul>
+            <li>Advanced features are implemented and tested.</li>
+            <li>Comprehensive documentation is complete, detailing the project's purpose, features, and implementation.</li>
+        </ul>
+
+        <h2 class="header-blue">Phase 4: Final Testing, Debugging & Deployment</h2>
+        <h3>Description</h3>
+        <p>The final phase focuses on ensuring that the project is free from errors, performing thorough testing, and deploying the website. This phase is critical for delivering a functional and polished final product.</p>
+
+        <h2>Final Testing & Debugging</h2>
+        <p>Comprehensive testing using tools like Chrome DevTools and Lighthouse is conducted to identify and fix any remaining issues. Detailed documentation of the testing results and fixes ensures that the website is fully functional.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
+        </ul>
+
+        <h2>Deployment</h2>
+        <p>The website is deployed to GitHub Pages, ensuring that all features and links work correctly. The deployment process is documented to provide a clear guide for the live version of the site.</p>
+        <ul>
+            <li><strong>README Sections:</strong> <a href="#deployment">Deployment</a></li>
+        </ul>
+
+        <h3>Expected Outcomes</h3>
+        <ul>
+            <li>The project is thoroughly tested and debugged.</li>
+            <li>The website is successfully deployed with all features functioning as expected.</li>
+            <li>Deployment documentation provides a clear guide for future reference.</li>
+        </ul>
+
+        <h2 class="header-red">Key Criteria for Distinction</h2>
+        <p>1. <strong>Design Quality</strong>:</p>
+        <ul>
+            <li>Demonstrate principles of good UX design.</li>
+            <li>Ensure information hierarchy is clear and navigation is intuitive.</li>
+            <li>Provide a positive user experience with consistent design and user control.</li>
+        </ul>
+
+        <p>2. <strong>Code Quality</strong>:</p>
+        <ul>
+            <li>Follow clean code principles.</li>
+            <li>Ensure all HTML attributes and CSS rules are consistent, appropriate, and meaningful.</li>
+            <li>Maintain a well-organized file structure with clear separation of custom and external code.</li>
+        </ul>
+
+        <p>3. <strong>Testing and Accessibility</strong>:</p>
+        <ul>
+            <li>Conduct thorough testing on multiple devices and browsers.</li>
+            <li>Ensure the website is accessible and meets all relevant guidelines.</li>
+        </ul>
+
+        <p>4. <strong>User Experience</strong>:</p>
+        <ul>
+            <li>Implement features that enhance the user experience, avoiding unnecessary complexity.</li>
+            <li>Ensure all interactions produce a positive emotional response.</li>
+        </ul>
+
+        <p>By focusing on these areas, you can deliver a project that not only meets the pass and merit criteria but also stands out as a high-quality, professional-grade application suitable for a real-world context.</p>
+
+        <h2 class="header-blue">Project Implementation Plan</h2>
+
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col style="width: 60%;">
+                <col>
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col>
+            </colgroup>
+            <tr>
+                <th>Phase</th>
+                <th>Task</th>
+                <th>Objective</th>
+                <th>Tasks</th>
+                <th>Associated Criteria</th>
+                <th>Pass Grade: Expected Pass Performance (Do)</th>
+                <th>Pass Grade Areas for Improvement (Don't)</th>
+                <th>Time Allocation</th>
+            </tr>
+            <tr>
+                <td>Phase 1: Ideation & Initial Setup</td>
+                <td>Ideation and User Story Definition</td>
+                <td>Clearly define the website's purpose and target audience</td>
+                <td>- Brainstorm and refine project ideas.<br>- Define and prioritize user stories (Must, Should, Could).<br>- Document user stories in the README.</td>
+                <td>LO1.1, LO1.3, LO4.1</td>
+                <td>- Think about the specific needs of your target audience.<br>- Use user stories to guide the development process.<br>- Document user stories in the README.</td>
+                <td>- Skip this step; clear planning is crucial for success.<br>- Overlook the importance of user stories in guiding development.</td>
+                <td>1.5 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 1: Ideation & Initial Setup</td>
+                <td>Initial Planning and Wireframing</td>
+                <td>Outline the structure and design of the website</td>
+                <td>- Sketch wireframes for key pages using Balsamiq.<br>- Choose color schemes and fonts using tools like image color pickers and contrast checkers.<br>- Plan the layout and content placement.<br>- Document design decisions, wireframes, and rationale in the README.</td>
+                <td>LO1.2, LO1.3, LO1.4, LO4.1</td>
+                <td>- Create detailed wireframes for each key page using Balsamiq.<br>- Ensure chosen color schemes meet accessibility standards.<br>- Document design decisions and wireframes in the README.</td>
+                <td>- Start coding without a clear design plan.<br>- Neglect accessibility standards when choosing colors and fonts.</td>
+                <td>1.5 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 1: Ideation & Initial Setup</td>
+                <td>Environment Setup and Version Control</td>
+                <td>Prepare the development environment</td>
+                <td>- Set up a GitHub repository.<br>- Create a basic project structure with necessary folders (assets, CSS, images).<br>- Link CSS and any external resources like Bootstrap, Google Fonts, and Font Awesome.<br>- Document the setup process in the README.</td>
+                <td>LO3.2, LO4.6, LO4.9</td>
+                <td>- Commit regularly to GitHub with meaningful commit messages.<br>- Organize files logically from the start.</td>
+                <td>- Delay setting up version control.<br>- Forget to test the setup to ensure everything is working correctly.</td>
+                <td>1 hour</td>
+            </tr>
+            <tr>
+                <td>Phase 2: Must User Stories Implementation & Testing</td>
+                <td>Must User Stories Implementation</td>
+                <td>Develop core functionality based on Must user stories</td>
+                <td>- Implement essential features defined in Must user stories.<br>- Ensure the website structure is functional and meets initial design requirements.<br>- Validate HTML and CSS code using W3C and Jigsaw validators.<br>- Document key coding decisions and any challenges faced in the README.</td>
+                <td>LO1.1, LO1.4, LO2.2, LO2.3</td>
+                <td>- Focus on implementing the most critical features first.<br>- Regularly validate your code to catch errors early.<br>- Ensure intuitive navigation options on the website (LO1.1).<br>- Place navigation elements strategically for ease of use (LO1.1).<br>- The purpose of the website should be clear from the outset with consistent imagery and text (LO1.2).<br>- The website design should be unique and thoughtful, with an overall simple and elegant UX design (LO1.2).<br>- The website should provide an excellent solution to the key project goals and expectations (LO1.3).<br>- Site meets all stated ways to add value for the user (LO1.3).<br>- The site has been developed for a well-defined target audience and meets the overall expectation with minor bugs (LO1.3).</td>
+                <td>- Ignore best practices for HTML and CSS.<br>- Overcomplicate your CSS; keep it maintainable.<br>- Have broken navigation links (LO1.1).<br>- Create difficulty in navigating from one page to another (LO1.1).<br>- Have a design where the thought and purpose are not evident (LO1.2).<br>- Have the thought and purpose behind the project difficult to comprehend (LO1.2).<br>- The project purpose is vague and should dive deeper and include specific user value and scenarios (LO1.3).</td>
+                <td>10 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 2: Must User Stories Implementation & Testing</td>
+                <td>Visual Progress & Testing</td>
+                <td>Ensure visual alignment with initial plans</td>
+                <td>- Preview and test the website on different devices.<br>- Adjust styles as needed based on initial tests.<br>- Document any changes made during testing in the README.</td>
+                <td>LO2.4, LO2.5, LO2.8</td>
+                <td>- Test on multiple devices and screen sizes.<br>- Make adjustments to ensure consistency.<br>- Conduct thorough testing on multiple devices and browsers to ensure consistent performance (LO2.5).<br>- Document all test cases and results, highlighting any issues found and how they were resolved (LO2.4).<br>- Make necessary adjustments based on feedback from initial tests to improve usability (LO2.8).<br>- Document any bugs found and their fixes and explanation of any bugs that are left unfixed (LO2.1).<br>- Include detailed testing guidelines and procedures in the README file (LO2.1).</td>
+                <td>- Skip testing; it’s crucial for finding issues.<br>- Ignore feedback from testing.<br>- Skip testing on a variety of devices and browsers (LO2.5).<br>- Ignore or fail to document testing results (LO2.4).<br>- Leave identified issues unresolved (LO2.8).<br>- Testing steps or guidelines are missing / incomprehensible (LO2.1).</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 2: Must User Stories Implementation & Testing</td>
+                <td>Adjustments & Refinement</td>
+                <td>Fine-tune the website</td>
+                <td>- Ensure consistency across all pages.<br>- Validate the site functions as expected.<br>- Document any significant changes or refinements in the README.</td>
+                <td>LO1.5, LO2.6, LO2.7</td>
+                <td>- Pay attention to detail in design and functionality.<br>- Ensure all links and buttons are working correctly.</td>
+                <td>- Assume everything is working without testing.<br>- Overlook minor details that could affect user experience.</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 3: Should User Stories Implementation & Advanced Features</td>
+                <td>Should User Stories Implementation</td>
+                <td>Implement advanced features based on Should user stories</td>
+                <td>- Add interactive elements and refine design.<br>- Ensure responsive design across various devices.<br>- Document any advanced features and their implementation in the README.</td>
+                <td>LO1.6, LO2.6</td>
+                <td>- Implement advanced CSS features like grids and media queries.<br>- Test interactive elements thoroughly.<br>- Provide comprehensive documentation of the implementation of advanced features, explaining the choices made and any challenges encountered (LO4.4).<br>- Ensure all HTML attributes and CSS rule names are consistent in format, appropriate, and meaningful (LO3.1).<br>- HTML design architecture is nicely kept in mind including placing elements/tags in correct positions and use of existing CSS stylesheets (LO3.1).<br>- HTML and CSS code is well written and appropriately indented (LO3.1).</td>
+                <td>- Overcomplicate interactive features.<br>- Neglect to test on various devices.<br>- Overcomplicate interactive features to the point of confusing users (LO1.6).<br>- Neglect testing of advanced features on various devices to ensure compatibility (LO2.6).<br>- Fail to document the advanced features and their purpose clearly (LO4.4).<br>- Code is inconsistent with significant bugs (LO3.1).</td>
+                <td>5 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 3: Should User Stories Implementation & Advanced Features</td>
+                <td>Documentation</td>
+                <td>Complete project documentation</td>
+                <td>- Finalize the README, covering the project's purpose, audience, features, and setup instructions.<br>- Comment on complex code sections explaining decisions.<br>- Ensure all documentation is comprehensive and up-to-date.</td>
+                <td>LO4.1, LO4.2, LO4.3, LO4.4</td>
+                <td>- Ensure the README is detailed and up-to-date.<br>- Include screenshots and explanations.</td>
+                <td>- Leave documentation until the last minute.<br>- Write incomplete or unclear documentation.</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 4: Final Testing, Debugging & Deployment</td>
+                <td>Final Testing & Debugging</td>
+                <td>Ensure the project is free from errors</td>
+                <td>- Conduct comprehensive testing using Chrome DevTools and Lighthouse.<br>- Fix any remaining issues.<br>- Document final testing results and any last-minute fixes in the README.</td>
+                <td>LO2.1, LO2.4, LO2.9</td>
+                <td>- Test all functionalities thoroughly.<br>- Ensure the site works well on all target devices.<br>- Conduct comprehensive testing using tools like Chrome DevTools, Lighthouse, or other debugging tools (LO2.9).<br>- Fix any issues found during testing and document the fixes in detail (LO2.4).<br>- Ensure the website functions correctly on all target devices and browsers (LO2.1).</td>
+                <td>- Rush through testing.<br>- Ignore small issues; they can affect user experience.<br>- Rush through the final testing phase, missing potential issues (LO2.9).<br>- Ignore small bugs that could affect the user experience (LO2.1).<br>- Fail to document the testing results and fixes clearly (LO2.4).</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 4: Final Testing, Debugging & Deployment</td>
+                <td>Deployment</td>
+                <td>Deploy the website</td>
+                <td>- Deploy to GitHub Pages.<br>- Ensure all links and features work correctly.<br>- Document the deployment process in the README.</td>
+                <td>LO3.1, LO3.4, LO3.5</td>
+                <td>- Follow deployment best practices.<br>- Test the live site after deployment.<br>- Follow best practices for deployment to ensure a smooth and error-free launch (LO3.4).<br>- Test the live site after deployment to ensure all features work as expected (LO3.5).<br>- Document the deployment process and any post-deployment checks performed (LO3.1).</td>
+                <td>- Forget to double-check everything after deployment.<br>- Overlook the importance of a smooth deployment process.<br>- Overlook final checks post-deployment, which could result in missed issues (LO3.5).<br>- Fail to document the deployment steps and any issues encountered (LO3.1).</td>
+                <td>1 hour</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
