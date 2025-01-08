@@ -1,364 +1,1091 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Implementation Plan</title>
+    <title>Interactive Project Implementation Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
     <style>
+        /* General Styling */
         body {
-            padding: 3px;
-            font-family: 'Montserrat', sans-serif;
-            color: #666666;
-            margin: 0;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: normal;
-        }
-
-        p, li, td {
-            line-height: 25px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        tr:nth-child(even) {
-            background: #FFF;
-        }
-
-        tr:nth-child(odd) {
-            background: #EEE;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            background-color: #F7F7F7;
+            color: #333333;
         }
 
         h1 {
-            font-size: 50px;
-            margin: 0;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #002D56;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        h2 {
-            color: rgb(229, 71, 36);
-            font-size: 50px;
-        }
-
-        h3 {
-            color: rgb(0, 162, 233);
-            font-size: 50px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #666666;
-        }
-
-        a:hover {
-            color: rgb(0, 162, 233);
-        }
-
-        .unit-container {
-            max-width: 1000px;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 60px auto;
-            padding: 20px;
-        }
-
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
+        .accordion-button {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            background-color: transparent;
+            color: #333;
+            padding: 10px;
             border: none;
-            outline: none;
-            background-color: rgb(229, 71, 36);
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            border-radius: 0;
+            box-shadow: none;
+            text-align: left;
         }
 
-        #myBtn:hover {
-            background-color: #555;
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #F1F1F1;
+            color: #002D56;
+        }
+
+        .accordion-button:hover {
+            background-color: #E0E0E0;
+            color: #002D56;
+        }
+
+        .accordion-body {
+            padding: 15px;
+            background-color: #fff;
+            border: none;
+            margin-bottom: 1rem;
+            color: #333333;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Progress Bar */
+        .progress {
+            height: 25px;
+            background-color: #E0E0E0;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            font-weight: bold;
+            background-color: #002D56;
+        }
+
+        /* Checkbox Styling */
+        .form-check-input {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            accent-color: #0091DB;
+            border: 2px solid #0091DB;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .form-check-input:checked {
+            background-color: #f48c06;
+            border-color: #f48c06;
+            box-shadow: none;
+        }
+
+        .table th, .table td {
+        width: 33%; /* This will divide the table columns equally */
+        word-wrap: break-word; /* Ensures that long content breaks to the next line */
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Pomodoro Timer */
+        .pomodoro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: -40px;
+        }
+
+        #pomodoro-timer {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+
+        #startPomodoro {
+            background-color: #f48c06;
+            border-color: #f48c06;
+            color: white;
+        }
+
+        #startPomodoro:hover {
+            background-color: #e07c00;
+            border-color: #e07c00;
+        }
+
+        /* Styling for the Reset Button (default Bootstrap) */
+        #resetPomodoro {
+            background-color: #6c757d; /* Default secondary button color */
+            border-color: #6c757d;
         }
     </style>
 </head>
+
 <body>
-    <div class="unit-container">
-        <h1 class="header-dark">Project Implementation Plan</h1>
+     <div class="container mt-5">
+    <h1>Learning Outcomes, Assessment Criteria and Expected Performance</h1>
 
-        <h2 class="header-red">Rationale for Phased Approach</h2>
-        <p>The phased approach to project implementation is designed to ensure a structured, manageable, and systematic process for developing a website project. By dividing the project into distinct phases, learners can focus on specific tasks and objectives, making it easier to track progress, identify issues, and achieve high-quality results. This methodical approach allows for iterative development, regular testing, and refinement, ensuring that the final product meets all specified requirements and standards.</p>
+    <div class="accordion" id="learningOutcomesAccordion">
+        <!-- LO1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLOOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLOOne" aria-expanded="true" aria-controls="collapseLOOne">
+                    LO1: Learners will be able to design and implement a one-page interactive front-end web application using HTML and CSS based on user experience design principles, accessibility, and responsiveness.
+                </button>
+            </h2>
+            <div id="collapseLOOne" class="accordion-collapse collapse show" aria-labelledby="headingLOOne" data-bs-parent="#learningOutcomesAccordion">
+                <div class="accordion-body">
+                    <h5>Criterion: 1.1 Front-End Design</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Front-End Design</td>
+                                <td>Design a cohesive one-page layout with a main navigation menu and structured content. Ensure the design adheres to accessibility guidelines, including appropriate colour contrast and alt text for non-text elements. Utilise CSS or CSS frameworks, such as Bootstrap, to create a responsive design.</td>
+                                <td>
+                                    <ul>
+                                        <li>A cohesive one-page layout with a main navigation menu and structured content.</li>
+                                        <li>Semantic use of HTML.</li>
+                                        <li>Adherence to accessibility guidelines (colour contrast, alt text).</li>
+                                        <li>No Web Content Accessibility Guideline (WCAG) errors.</li>
+                                        <li>The layout adapts to different screen sizes using CSS media queries, Flexbox, Grid and/or Bootstrap without any major errors/loss of functionality.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h5>Criterion: 1.2 User Experience</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>User Experience</td>
+                                <td>Organise information using UX principles, ensuring headers convey structure and information is easy to find. Ensure the user can initiate and control actions such as playing media (if included), with immediate feedback.</td>
+                                <td>
+                                    <ul>
+                                        <li>Information organised using UX principles (clear headers, prioritised information).</li>
+                                        <li>User-initiated actions (if chosen) with immediate feedback (e.g., media control).</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <h2 class="header-blue">Phase 1: Ideation & Initial Setup</h2>
-        <h3>Description</h3>
-        <p>In this phase, the primary goal is to lay a solid foundation for the project by defining its purpose, audience, and design. This involves brainstorming ideas, creating user stories, and setting up the project environment.</p>
+        <!-- LO2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLOTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLOTwo" aria-expanded="false" aria-controls="collapseLOTwo">
+                    LO2: Learners will be able to test and validate the one-page web application through the development, implementation, and deployment stages.
+                </button>
+            </h2>
+            <div id="collapseLOTwo" class="accordion-collapse collapse" aria-labelledby="headingLOTwo" data-bs-parent="#learningOutcomesAccordion">
+                <div class="accordion-body">
+                    <h5>Criterion: 2.1 Code Validation</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Code Validation</td>
+                                <td>Ensure custom HTML and CSS pass W3C and Jigsaw validators with no issues.</td>
+                                <td>
+                                    <ul>
+                                        <li>HTML and CSS validation: Use the W3C HTML Validator to check for errors in the HTML code. The validator should return no errors. Minor warnings (e.g., missing lang attribute) are acceptable but should be noted for future improvement.</li>
+                                        <li>CSS validation: Use the Jigsaw CSS Validator to check for any errors in the CSS code. Ensure that the CSS passes validation with no significant issues. Minor warnings (such as vendor prefixes) are acceptable.</li>
+                                        <li>Documentation of validation results: Include the validation results in the README file. If errors were identified and fixed during the validation process, briefly document the process of resolving those issues.</li>
+                                        <li>Focus on meaningful structure: Ensure the code is semantically meaningful, with correct usage of tags (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;) that help improve both validation and accessibility.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <h2>Ideation and User Story Definition</h2>
-        <p>This task involves brainstorming and refining project ideas, defining user stories that capture the project's essential features and functionality, and documenting these stories in the README. This process helps clarify the project's goals and ensures that the development is user-centered.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#project-overview">Project Overview</a>, <a href="#user-stories">User Stories</a></li>
-        </ul>
+                    <h5>Criterion: 2.2 Responsive Design</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Responsive Design</td>
+                                <td>Use CSS media queries or Bootstrap to ensure the layout is responsive and maintains integrity across different screen sizes. Apply semantic markup for HTML to enhance readability and structure. Ensure the single page features intuitive navigation.</td>
+                                <td>
+                                    <ul>
+                                        <li>Responsive layout using CSS media queries or Bootstrap: Use CSS media queries to adjust the layout for different screen sizes. For example, switch from a multi-column layout on desktop to a single-column layout on mobile.</li>
+                                        <li>Consistent layout across screen sizes: Ensure that images and text scale properly without overlapping or breaking the layout. Whether using CSS or Bootstrap, ensure the layout is fluid and adapts to screen sizes, using percentage-based widths or responsive classes.</li>
+                                        <li>Clear and semantic HTML structure: Use semantic elements such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;footer&gt;, and &lt;article&gt; to structure content logically. This improves readability and enhances accessibility for screen readers.</li>
+                                        <li>Intuitive, functional navigation: Use media queries to transform a horizontal navigation bar into a vertical menu for mobile devices, or use Bootstrap’s navbar component for a responsive navigation menu that collapses into a hamburger menu on smaller screens.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <h2>Initial Planning and Wireframing</h2>
-        <p>Learners will outline the website's structure and design through wireframes. This includes sketching key pages, choosing color schemes and fonts, and planning content placement. Documenting these decisions helps in creating a clear design blueprint and facilitates a user-centric approach.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#project-overview">Project Overview</a>, <a href="#wireframes">Wireframes</a></li>
-        </ul>
+        <!-- LO3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLOThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLOThree" aria-expanded="false" aria-controls="collapseLOThree">
+                    LO3: Learners will be able to deploy the one-page web application to a cloud platform.
+                </button>
+            </h2>
+            <div id="collapseLOThree" class="accordion-collapse collapse" aria-labelledby="headingLOThree" data-bs-parent="#learningOutcomesAccordion">
+                <div class="accordion-body">
+                    <h5>Criterion: 3.1 Cloud Deployment</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cloud Deployment</td>
+                                <td>Successfully deploy the final version to GitHub Pages, ensuring it matches the development version. Use Git and GitHub for version control, with a clear commit history and clean, commented code. Remove commented-out code before final deployment. Ensure all internal links and interactive elements function correctly.</td>
+                                <td>
+                                    <ul>
+                                        <li>Successful deployment to GitHub Pages: Deploy the single-page application to GitHub Pages. Ensure the live version matches the development version with no discrepancies (e.g., broken links, missing images, layout issues).</li>
+                                        <li>Effective use of Git and GitHub for version control: Use Git to track changes with meaningful commits reflecting key development stages. Use GitHub for collaboration and version control.</li>
+                                        <li>Clear, commented code and removal of commented-out sections: Apply comments where the code may be unclear and remove any commented-out code before deployment.</li>
+                                        <li>Internal links and interactive elements function correctly: Ensure all internal links and interactive elements work correctly in the live version.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <h2>Environment Setup and Version Control</h2>
-        <p>Setting up the development environment includes creating a GitHub repository, organizing project files, and linking necessary resources. Proper documentation of this setup ensures that the project is well-organized and version-controlled from the start.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#setup-and-installation">Setup and Installation</a></li>
-        </ul>
+        <!-- LO4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLOFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLOFour" aria-expanded="false" aria-controls="collapseLOFour">
+                    LO4: Learners will be able to maximise future maintainability through documentation, code structure, and organisation.
+                </button>
+            </h2>
+            <div id="collapseLOFour" class="accordion-collapse collapse" aria-labelledby="headingLOFour" data-bs-parent="#learningOutcomesAccordion">
+                <div class="accordion-body">
+                    <h5>Criterion: 4.1 Documentation</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Documentation</td>
+                                <td>Write a concise README.md file explaining the application’s purpose, user value, and deployment procedure. Include screenshots of the single-page application with brief descriptions and user value explanations. Attribute any code from external sources clearly.</td>
+                                <td>
+                                    <ul>
+                                        <li>Concise README.md file (brief and concise) with clear structure based on headings like Introduction, User Experience, Features, Technologies Used, Testing, Deployment, Credits and Attribution, Reflection on AI Tools, Screenshots, and Descriptions.</li>
+                                        <li>Proper attribution of external code sources.</li>
+                                        <li>Reflection on AI tools used for ideation and development.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <h3>Expected Outcomes</h3>
-        <ul>
-            <li>A clear understanding of the project's purpose and target audience.</li>
-            <li>Detailed wireframes and design decisions documented.</li>
-            <li>A fully set up development environment with version control in place.</li>
-        </ul>
+        <!-- LO5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLOFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLOFive" aria-expanded="false" aria-controls="collapseLOFive">
+                    LO5: Learners will be able to leverage AI tools to orchestrate the development.
+                </button>
+            </h2>
+            <div id="collapseLOFive" class="accordion-collapse collapse" aria-labelledby="headingLOFive" data-bs-parent="#learningOutcomesAccordion">
+                <div class="accordion-body">
+                    <h5>Criterion: 5.1 Use AI tools to assist in writing HTML, CSS, and JavaScript code</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI-Assisted Coding</td>
+                                <td>Use AI tools to assist in writing HTML, CSS, and JavaScript code. Ensure AI-generated code aligns with project requirements through timely manual intervention. Document in the README file evidence of how AI tools contributed to the development process.</td>
+                                <td>
+                                    <ul>
+                                        <li>Effective AI use in coding: Use significant AI prompts to generate parts of the project. For example, prompt "Generate a fully responsive navigation bar with dropdown menus and a mobile toggle."</li>
+                                        <li>Briefly document AI usage in the README: Learners should document one significant AI prompt and its impact on the project.</li>
+                                        <li>Manual intervention: Describe one significant example of a specific manual intervention where the AI-generated code was refined.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <h2 class="header-blue">Phase 2: Must User Stories Implementation & Testing</h2>
-        <h3>Description</h3>
-        <p>This phase focuses on implementing the core functionality of the website as outlined in the Must user stories. It involves coding essential features, validating code, and ensuring visual and functional alignment with initial plans.</p>
+                    <h5>Criterion: 5.2 Use AI tools to assist in debugging HTML and CSS</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI-Assisted Debugging</td>
+                                <td>Use AI tools to assist in identifying and fixing errors in HTML and CSS code. AI tools should accurately identify issues and suggest relevant fixes with minimal manual intervention.</td>
+                                <td>
+                                    <ul>
+                                        <li>Extensive use of AI for debugging: Use AI tools to debug issues like misaligned elements.</li>
+                                        <li>AI suggesting accurate fixes: Ensure the AI suggestions (e.g., flexbox alignment corrections) improve the design.</li>
+                                        <li>Minimal manual intervention: Document how AI assisted in debugging and what manual tweaks were applied.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <h2>Must User Stories Implementation</h2>
-        <p>Essential features are developed based on Must user stories. This task ensures that the core functionality is in place, and the website meets the initial design requirements. Validating HTML and CSS code ensures that the implementation is technically sound.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#user-stories">User Stories</a>, <a href="#features">Features</a></li>
-        </ul>
+                    <h5>Criterion: 5.3 Use AI tools to optimise HTML and CSS for better performance and user experience</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI-Assisted Optimisation</td>
+                                <td>Use AI tools to assist in optimising HTML and CSS for performance and user experience.</td>
+                                <td>
+                                    <ul>
+                                        <li>Efficient AI use for optimization: Use AI to streamline CSS for performance and responsive design.</li>
+                                        <li>Minimal manual adjustments: Review AI-suggested optimizations for visual consistency.</li>
+                                        <li>Enhanced user experience: Implement AI suggestions that improve load times, responsive design, and user interaction.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <h2>Visual Progress & Testing</h2>
-        <p>The website is tested on different devices to ensure visual and functional consistency. Adjustments are made based on initial tests, and changes are documented. This phase ensures that the website's appearance and functionality align with the design specifications.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
-        </ul>
-
-        <h2>Adjustments & Refinement</h2>
-        <p>The website is fine-tuned to ensure consistency across all pages and functionality. Significant changes or refinements are documented. This phase involves making final adjustments to polish the website and ensure a seamless user experience.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
-        </ul>
-
-        <h3>Expected Outcomes</h3>
-        <ul>
-            <li>Core features are implemented and validated.</li>
-            <li>The website is tested across multiple devices with necessary adjustments made.</li>
-            <li>Final refinements ensure a polished and consistent user experience.</li>
-        </ul>
-
-        <h2 class="header-blue">Phase 3: Should User Stories Implementation & Advanced Features</h2>
-        <h3>Description</h3>
-        <p>In this phase, advanced features and enhancements are added based on Should user stories. This includes implementing interactive elements, refining design, and completing comprehensive documentation.</p>
-
-        <h2>Should User Stories Implementation</h2>
-        <p>Advanced features are integrated, such as interactive elements and responsive design. Documentation of these features ensures that the implementation details are captured.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#features">Features</a></li>
-        </ul>
-
-        <h2>Documentation</h2>
-        <p>The README is finalized to cover the project's purpose, features, setup instructions, and any complex code sections. Comprehensive documentation provides clarity for users and developers and ensures that the project is well-documented.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#credits">Credits</a></li>
-        </ul>
-
-        <h3>Expected Outcomes</h3>
-        <ul>
-            <li>Advanced features are implemented and tested.</li>
-            <li>Comprehensive documentation is complete, detailing the project's purpose, features, and implementation.</li>
-        </ul>
-
-        <h2 class="header-blue">Phase 4: Final Testing, Debugging & Deployment</h2>
-        <h3>Description</h3>
-        <p>The final phase focuses on ensuring that the project is free from errors, performing thorough testing, and deploying the website. This phase is critical for delivering a functional and polished final product.</p>
-
-        <h2>Final Testing & Debugging</h2>
-        <p>Comprehensive testing using tools like Chrome DevTools and Lighthouse is conducted to identify and fix any remaining issues. Detailed documentation of the testing results and fixes ensures that the website is fully functional.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#testing">Testing</a></li>
-        </ul>
-
-        <h2>Deployment</h2>
-        <p>The website is deployed to GitHub Pages, ensuring that all features and links work correctly. The deployment process is documented to provide a clear guide for the live version of the site.</p>
-        <ul>
-            <li><strong>README Sections:</strong> <a href="#deployment">Deployment</a></li>
-        </ul>
-
-        <h3>Expected Outcomes</h3>
-        <ul>
-            <li>The project is thoroughly tested and debugged.</li>
-            <li>The website is successfully deployed with all features functioning as expected.</li>
-            <li>Deployment documentation provides a clear guide for future reference.</li>
-        </ul>
-
-        <h2 class="header-red">Key Criteria for Distinction</h2>
-        <p>1. <strong>Design Quality</strong>:</p>
-        <ul>
-            <li>Demonstrate principles of good UX design.</li>
-            <li>Ensure information hierarchy is clear and navigation is intuitive.</li>
-            <li>Provide a positive user experience with consistent design and user control.</li>
-        </ul>
-
-        <p>2. <strong>Code Quality</strong>:</p>
-        <ul>
-            <li>Follow clean code principles.</li>
-            <li>Ensure all HTML attributes and CSS rules are consistent, appropriate, and meaningful.</li>
-            <li>Maintain a well-organized file structure with clear separation of custom and external code.</li>
-        </ul>
-
-        <p>3. <strong>Testing and Accessibility</strong>:</p>
-        <ul>
-            <li>Conduct thorough testing on multiple devices and browsers.</li>
-            <li>Ensure the website is accessible and meets all relevant guidelines.</li>
-        </ul>
-
-        <p>4. <strong>User Experience</strong>:</p>
-        <ul>
-            <li>Implement features that enhance the user experience, avoiding unnecessary complexity.</li>
-            <li>Ensure all interactions produce a positive emotional response.</li>
-        </ul>
-
-        <p>By focusing on these areas, you can deliver a project that not only meets the pass and merit criteria but also stands out as a high-quality, professional-grade application suitable for a real-world context.</p>
-
-        <h2 class="header-blue">Project Implementation Plan</h2>
-
-        <table>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col style="width: 60%;">
-                <col>
-                <col style="width: 20%;">
-                <col style="width: 20%;">
-                <col>
-            </colgroup>
-            <tr>
-                <th>Phase</th>
-                <th>Task</th>
-                <th>Objective</th>
-                <th>Tasks</th>
-                <th>Associated Criteria</th>
-                <th>Pass Grade: Expected Pass Performance (Do)</th>
-                <th>Pass Grade Areas for Improvement (Don't)</th>
-                <th>Time Allocation</th>
-            </tr>
-            <tr>
-                <td>Phase 1: Ideation & Initial Setup</td>
-                <td>Ideation and User Story Definition</td>
-                <td>Clearly define the website's purpose and target audience</td>
-                <td>- Brainstorm and refine project ideas.<br>- Define and prioritize user stories (Must, Should, Could).<br>- Document user stories in the README.</td>
-                <td>LO1.1, LO1.3, LO4.1</td>
-                <td>- Think about the specific needs of your target audience.<br>- Use user stories to guide the development process.<br>- Document user stories in the README.</td>
-                <td>- Skip this step; clear planning is crucial for success.<br>- Overlook the importance of user stories in guiding development.</td>
-                <td>1.5 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 1: Ideation & Initial Setup</td>
-                <td>Initial Planning and Wireframing</td>
-                <td>Outline the structure and design of the website</td>
-                <td>- Sketch wireframes for key pages using Balsamiq.<br>- Choose color schemes and fonts using tools like image color pickers and contrast checkers.<br>- Plan the layout and content placement.<br>- Document design decisions, wireframes, and rationale in the README.</td>
-                <td>LO1.2, LO1.3, LO1.4, LO4.1</td>
-                <td>- Create detailed wireframes for each key page using Balsamiq.<br>- Ensure chosen color schemes meet accessibility standards.<br>- Document design decisions and wireframes in the README.</td>
-                <td>- Start coding without a clear design plan.<br>- Neglect accessibility standards when choosing colors and fonts.</td>
-                <td>1.5 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 1: Ideation & Initial Setup</td>
-                <td>Environment Setup and Version Control</td>
-                <td>Prepare the development environment</td>
-                <td>- Set up a GitHub repository.<br>- Create a basic project structure with necessary folders (assets, CSS, images).<br>- Link CSS and any external resources like Bootstrap, Google Fonts, and Font Awesome.<br>- Document the setup process in the README.</td>
-                <td>LO3.2, LO4.6, LO4.9</td>
-                <td>- Commit regularly to GitHub with meaningful commit messages.<br>- Organize files logically from the start.</td>
-                <td>- Delay setting up version control.<br>- Forget to test the setup to ensure everything is working correctly.</td>
-                <td>1 hour</td>
-            </tr>
-            <tr>
-                <td>Phase 2: Must User Stories Implementation & Testing</td>
-                <td>Must User Stories Implementation</td>
-                <td>Develop core functionality based on Must user stories</td>
-                <td>- Implement essential features defined in Must user stories.<br>- Ensure the website structure is functional and meets initial design requirements.<br>- Validate HTML and CSS code using W3C and Jigsaw validators.<br>- Document key coding decisions and any challenges faced in the README.</td>
-                <td>LO1.1, LO1.4, LO2.2, LO2.3</td>
-                <td>- Focus on implementing the most critical features first.<br>- Regularly validate your code to catch errors early.<br>- Ensure intuitive navigation options on the website (LO1.1).<br>- Place navigation elements strategically for ease of use (LO1.1).<br>- The purpose of the website should be clear from the outset with consistent imagery and text (LO1.2).<br>- The website design should be unique and thoughtful, with an overall simple and elegant UX design (LO1.2).<br>- The website should provide an excellent solution to the key project goals and expectations (LO1.3).<br>- Site meets all stated ways to add value for the user (LO1.3).<br>- The site has been developed for a well-defined target audience and meets the overall expectation with minor bugs (LO1.3).</td>
-                <td>- Ignore best practices for HTML and CSS.<br>- Overcomplicate your CSS; keep it maintainable.<br>- Have broken navigation links (LO1.1).<br>- Create difficulty in navigating from one page to another (LO1.1).<br>- Have a design where the thought and purpose are not evident (LO1.2).<br>- Have the thought and purpose behind the project difficult to comprehend (LO1.2).<br>- The project purpose is vague and should dive deeper and include specific user value and scenarios (LO1.3).</td>
-                <td>10 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 2: Must User Stories Implementation & Testing</td>
-                <td>Visual Progress & Testing</td>
-                <td>Ensure visual alignment with initial plans</td>
-                <td>- Preview and test the website on different devices.<br>- Adjust styles as needed based on initial tests.<br>- Document any changes made during testing in the README.</td>
-                <td>LO2.4, LO2.5, LO2.8</td>
-                <td>- Test on multiple devices and screen sizes.<br>- Make adjustments to ensure consistency.<br>- Conduct thorough testing on multiple devices and browsers to ensure consistent performance (LO2.5).<br>- Document all test cases and results, highlighting any issues found and how they were resolved (LO2.4).<br>- Make necessary adjustments based on feedback from initial tests to improve usability (LO2.8).<br>- Document any bugs found and their fixes and explanation of any bugs that are left unfixed (LO2.1).<br>- Include detailed testing guidelines and procedures in the README file (LO2.1).</td>
-                <td>- Skip testing; it’s crucial for finding issues.<br>- Ignore feedback from testing.<br>- Skip testing on a variety of devices and browsers (LO2.5).<br>- Ignore or fail to document testing results (LO2.4).<br>- Leave identified issues unresolved (LO2.8).<br>- Testing steps or guidelines are missing / incomprehensible (LO2.1).</td>
-                <td>2 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 2: Must User Stories Implementation & Testing</td>
-                <td>Adjustments & Refinement</td>
-                <td>Fine-tune the website</td>
-                <td>- Ensure consistency across all pages.<br>- Validate the site functions as expected.<br>- Document any significant changes or refinements in the README.</td>
-                <td>LO1.5, LO2.6, LO2.7</td>
-                <td>- Pay attention to detail in design and functionality.<br>- Ensure all links and buttons are working correctly.</td>
-                <td>- Assume everything is working without testing.<br>- Overlook minor details that could affect user experience.</td>
-                <td>2 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 3: Should User Stories Implementation & Advanced Features</td>
-                <td>Should User Stories Implementation</td>
-                <td>Implement advanced features based on Should user stories</td>
-                <td>- Add interactive elements and refine design.<br>- Ensure responsive design across various devices.<br>- Document any advanced features and their implementation in the README.</td>
-                <td>LO1.6, LO2.6</td>
-                <td>- Implement advanced CSS features like grids and media queries.<br>- Test interactive elements thoroughly.<br>- Provide comprehensive documentation of the implementation of advanced features, explaining the choices made and any challenges encountered (LO4.4).<br>- Ensure all HTML attributes and CSS rule names are consistent in format, appropriate, and meaningful (LO3.1).<br>- HTML design architecture is nicely kept in mind including placing elements/tags in correct positions and use of existing CSS stylesheets (LO3.1).<br>- HTML and CSS code is well written and appropriately indented (LO3.1).</td>
-                <td>- Overcomplicate interactive features.<br>- Neglect to test on various devices.<br>- Overcomplicate interactive features to the point of confusing users (LO1.6).<br>- Neglect testing of advanced features on various devices to ensure compatibility (LO2.6).<br>- Fail to document the advanced features and their purpose clearly (LO4.4).<br>- Code is inconsistent with significant bugs (LO3.1).</td>
-                <td>5 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 3: Should User Stories Implementation & Advanced Features</td>
-                <td>Documentation</td>
-                <td>Complete project documentation</td>
-                <td>- Finalize the README, covering the project's purpose, audience, features, and setup instructions.<br>- Comment on complex code sections explaining decisions.<br>- Ensure all documentation is comprehensive and up-to-date.</td>
-                <td>LO4.1, LO4.2, LO4.3, LO4.4</td>
-                <td>- Ensure the README is detailed and up-to-date.<br>- Include screenshots and explanations.</td>
-                <td>- Leave documentation until the last minute.<br>- Write incomplete or unclear documentation.</td>
-                <td>2 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 4: Final Testing, Debugging & Deployment</td>
-                <td>Final Testing & Debugging</td>
-                <td>Ensure the project is free from errors</td>
-                <td>- Conduct comprehensive testing using Chrome DevTools and Lighthouse.<br>- Fix any remaining issues.<br>- Document final testing results and any last-minute fixes in the README.</td>
-                <td>LO2.1, LO2.4, LO2.9</td>
-                <td>- Test all functionalities thoroughly.<br>- Ensure the site works well on all target devices.<br>- Conduct comprehensive testing using tools like Chrome DevTools, Lighthouse, or other debugging tools (LO2.9).<br>- Fix any issues found during testing and document the fixes in detail (LO2.4).<br>- Ensure the website functions correctly on all target devices and browsers (LO2.1).</td>
-                <td>- Rush through testing.<br>- Ignore small issues; they can affect user experience.<br>- Rush through the final testing phase, missing potential issues (LO2.9).<br>- Ignore small bugs that could affect the user experience (LO2.1).<br>- Fail to document the testing results and fixes clearly (LO2.4).</td>
-                <td>2 hours</td>
-            </tr>
-            <tr>
-                <td>Phase 4: Final Testing, Debugging & Deployment</td>
-                <td>Deployment</td>
-                <td>Deploy the website</td>
-                <td>- Deploy to GitHub Pages.<br>- Ensure all links and features work correctly.<br>- Document the deployment process in the README.</td>
-                <td>LO3.1, LO3.4, LO3.5</td>
-                <td>- Follow deployment best practices.<br>- Test the live site after deployment.<br>- Follow best practices for deployment to ensure a smooth and error-free launch (LO3.4).<br>- Test the live site after deployment to ensure all features work as expected (LO3.5).<br>- Document the deployment process and any post-deployment checks performed (LO3.1).</td>
-                <td>- Forget to double-check everything after deployment.<br>- Overlook the importance of a smooth deployment process.<br>- Overlook final checks post-deployment, which could result in missed issues (LO3.5).<br>- Fail to document the deployment steps and any issues encountered (LO3.1).</td>
-                <td>1 hour</td>
-            </tr>
-        </table>
+                    <h5>Criterion: 5.4 Document AI’s role in the development process and how it improved or streamlined the workflow</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>Description</th>
+                                <th>Expected Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI Workflow Integration</td>
+                                <td>Document how AI tools (e.g., GitHub Copilot) were used to improve or streamline the development process. Provide specific examples of how AI tools assisted in key stages of the project.</td>
+                                <td>
+                                    <ul>
+                                        <li>Concise documentation of AI usage: Outline the role of AI tools in the README.md under "AI Tool Usage."</li>
+                                        <li>Minimal examples, focused on workflow improvement: Document examples where AI tools streamlined the workflow, such as optimizing CSS or generating initial layouts.</li>
+                                        <li>README Integration: Mention AI tools' contributions, focusing on areas like code generation, bug fixing, or layout optimization.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+    <div class="container mt-5">
+        <h1>Project Implementation Guide</h1>
+
+        <!-- Pomodoro Timer -->
+        <div class="pomodoro-container">
+            <h4>Pomodoro Timer</h4>
+            <div id="pomodoro-timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div id="pomodoro-controls">
+                <button id="startPomodoro" class="btn btn-primary mt-2">Start</button>
+                <button id="resetPomodoro" class="btn btn-secondary mt-2">Reset</button>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <h3>Progress</h3>
+        <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressBar">0%</div>
+        </div>
+        <div class="accordion" id="wellBeingAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingWellBeing">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWellBeing" aria-expanded="true" aria-controls="collapseWellBeing">
+                    Health and Well-Being Guidance
+                </button>
+            </h2>
+            <div id="collapseWellBeing" class="accordion-collapse collapse show" aria-labelledby="headingWellBeing" data-bs-parent="#wellBeingAccordion">
+                <div class="accordion-body">
+                    <p>It's essential to balance productivity with health and well-being. Here’s how you can maintain a healthy approach during this intensive project period:</p>
+                    <ul>
+                        <li><strong>Manage Your Time Wisely</strong>
+                            <ul>
+                                <li>Create a Realistic Schedule: Break down the hours into focused work sessions (e.g., 2-hour blocks) with short breaks in between. Prioritise must-have tasks first.</li>
+                                <li>Use Focused Work Techniques: Apply the Pomodoro Technique (25 minutes of focused work followed by a 5-minute break) to maximise productivity within the limited time.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Take Regular, Short Breaks</strong>
+                            <ul>
+                                <li>Incorporate Micro-Breaks: After every 25-30 minutes of work, take a 2-5 minute break. Use this time to stretch, move around, or simply rest your eyes.</li>
+                                <li>Avoid Overworking: Even in a short project, it’s important not to skip breaks. They help maintain concentration and prevent burnout.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Maintain a Functional Workspace</strong>
+                            <ul>
+                                <li>Optimise Ergonomics: Ensure your chair and desk setup support good posture. This reduces the risk of discomfort during long work sessions.</li>
+                                <li>Ensure Adequate Lighting: Work in a well-lit space to reduce eye strain, especially if working on a screen for extended periods.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stay Hydrated and Nourished</strong>
+                            <ul>
+                                <li>Keep Water Nearby: Stay hydrated by keeping a water bottle at your desk. This helps maintain focus and energy.</li>
+                                <li>Healthy Snacks: Choose light, healthy snacks (like fruits or nuts) to keep your energy levels stable throughout the project.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Balance Work and Rest</strong>
+                            <ul>
+                                <li>Set Clear Boundaries: Even within the allocated project period, establish a balance between focused work and rest. Use your breaks effectively to relax and reset.</li>
+                                <li>Mini Relaxation: After a few hours of work, take a slightly longer break (10-15 minutes) to step away from the project and clear your mind.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Get Enough Rest Before the Project</strong>
+                            <ul>
+                                <li>Sleep Well Before Starting: Ensure you are well-rested before beginning the project. Good sleep beforehand will improve your concentration and efficiency.</li>
+                                <li>Avoid Late-Night Sessions: Try to schedule your project work during times when you are most alert, rather than working late into the night.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Reflect and Adjust</strong>
+                            <ul>
+                                <li>Monitor Your Progress: Regularly check in on your progress and adjust your pace if necessary. If you’re feeling fatigued, take a short break to recharge.</li>
+                                <li>Stay Flexible: Be prepared to adapt your plan if certain tasks take longer than expected. Prioritise the most critical tasks to ensure they are completed.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stay Positive and Focused</strong>
+                            <ul>
+                                <li>Maintain a Positive Mindset: Stay motivated by focusing on what you’re accomplishing. Keep your goals in mind and celebrate small wins along the way.</li>
+                                <li>Avoid Perfectionism: With limited time, aim for good progress rather than perfection. Completing tasks efficiently is more important than getting every detail perfect.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>By incorporating these strategies into your project time, you can work efficiently while maintaining your health and well-being. Remember, taking care of yourself is crucial to ensuring a successful and productive project outcome.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="accordion" id="accordionExample">
+            <!-- Phase 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Phase 1: Ideation & Initial Setup (3 hours)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories that capture essential features and functionality, and document these stories in the README. Use GitHub Copilot to assist in drafting content and defining user stories  and their acceptance criteria efficiently.</p>
+
+                        <!-- Task 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">
+                                    Task 1: Ideation and User Story Definition (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask1" class="accordion-collapse collapse" aria-labelledby="headingTask1">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories, and document them in the README. Use AI tools like GitHub Copilot to assist in drafting content and defining user stories.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO1.1: Front-End Design: Create a cohesive one-page layout using HTML and CSS or Bootstrap, ensuring semantic HTML and adherence to accessibility guidelines (e.g. color contrast, alt-text for images).</li>
+                                        <li>LO4.1: Documentation: Write a concise README.md explaining the application’s purpose, user value, and deployment procedure. Include brief user stories and acceptance criteria.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task1Do1"> A concise README.md documenting the project’s purpose, user value, and user stories.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task1Do2"> Prioritize user stories into Must, Should, and Could categories.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task1Do3"> Use GitHub Copilot to generate content efficiently and ensure relevance to the project’s scope.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc1"> Brief README entry with project definition, user stories, and acceptance criteria.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc2"> Brief AI Reflection (1-2 sentences): "GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Skipping user story documentation can lead to unclear planning.</li>
+                                        <li>Over-relying on AI without reviewing or refining the output may cause misalignment with project goals.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+                                    Task 2: Initial Planning and Wireframing (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask2" class="accordion-collapse collapse" aria-labelledby="headingTask2">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Outline the website's structure and design through wireframes, including color schemes, fonts, and content placement.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO1.2: User Experience: Organize information using UX principles with proper headers and content prioritization. Ensure consistency in imagery, color contrast, and font usage.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task2Do1"> Create wireframes that reflect a well-structured layout.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task2Do2"> Ensure adherence to accessibility standards (color contrast, alt-text for images).</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task2Do3"> Use AI tools like DALL-E to generate initial design elements, if applicable.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc3"> Record design decisions in the README: wireframes, color schemes, fonts.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc4"> Brief AI Reflection: "DALL-E helped generate image ideas, but manual adjustments were needed to fit the design theme."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Starting development without a clear design plan can lead to inconsistencies.</li>
+                                        <li>Neglecting accessibility guidelines during the design process can hurt usability.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask3" aria-expanded="false" aria-controls="collapseTask3">
+                                    Task 3: Environment Setup and Version Control (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask3" class="accordion-collapse collapse" aria-labelledby="headingTask3">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Set up the project’s development environment, create a GitHub repository, and link external resources like Bootstrap.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO3.1: Cloud Deployment: Use Git and GitHub for effective version control and ensure a clear commit history. Deploy to GitHub Pages, ensuring the live version matches the development version.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task3Do1"> Set up a well-organized project structure with linked Bootstrap resources.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task3Do2"> Regular and meaningful commits to GitHub should be made throughout.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc5"> Brief documentation of the setup process (GitHub repository creation, Bootstrap linked).</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Avoid vague or infrequent commit messages, as this can obscure the development process.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Should Be in Place -->
+                        <div class="mt-4">
+                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                            <ul>
+                                <li>A clear understanding of the project’s purpose and target audience, briefly documented in the README.</li>
+                                <li>Wireframes and design decisions, recorded concisely in bullet points.</li>
+                                <li>A fully set-up development environment with version control.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Phase 2: Must User Stories Implementation & Testing (5.5 hours)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        <p><h5>Objective:</h5> Implement the essential features of the website as outlined in the Must user stories. Use HTML, CSS, and Bootstrap, and ensure the site is responsive and accessible. Use AI tools like GitHub Copilot to assist with code generation and debugging.</p>
+
+                        <!-- Task 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask4" aria-expanded="false" aria-controls="collapseTask4">
+                                    Task 4: Must User Stories Implementation (3.5 hours)
+                                </button>
+                            </h2>
+                            <div id="collapseTask4" class="accordion-collapse collapse" aria-labelledby="headingTask4">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Develop the core features based on the Must user stories, ensuring a cohesive, accessible, and responsive website.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO1.1: Front-End Design: Create a responsive and accessible layout using Bootstrap or custom CSS, with proper navigation and semantic HTML.</li>
+                                        <li>LO2.1: Code Validation: Validate HTML and CSS using W3C and Jigsaw validators, ensuring no significant issues.</li>
+                                        <li>LO5.1: Use AI tools to assist in writing HTML and CSS: Use GitHub Copilot to assist in generating HTML, CSS, and Bootstrap code efficiently.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task4Do1"> Implement a cohesive layout using Bootstrap or custom CSS, ensuring a responsive and accessible site.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task4Do2"> Use semantic HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, and &lt;footer&gt;, adhering to accessibility standards.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task4Do3"> Validate HTML and CSS through W3C and Jigsaw validators with no major errors.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc6"> Keep the README entry brief, noting the implemented Must user stories and features in bullet points.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc7"> AI Reflection (1-2 sentences): "GitHub Copilot helped generate the HTML structure and Bootstrap classes quickly, though some adjustments were needed to ensure responsiveness."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Failing to ensure accessibility and responsiveness can negatively impact the user experience.</li>
+                                        <li>Over-relying on AI-generated code without reviewing it can result in errors or misaligned design choices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask5" aria-expanded="false" aria-controls="collapseTask5">
+                                    Task 5: Visual Progress & Testing (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask5" class="accordion-collapse collapse" aria-labelledby="headingTask5">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Test the website for responsiveness across different devices and screen sizes, ensuring that all components work properly. Leverage AI tools for debugging.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO2.2: Responsive Design and Navigation: Ensure that the website’s layout adapts correctly using CSS media queries or Bootstrap’s grid system.</li>
+                                        <li>LO5.2: Use AI tools to assist in debugging HTML and CSS: Use GitHub Copilot or other AI tools to help debug HTML and CSS issues.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task5Do1"> Test the website using developer tools (e.g., Chrome DevTools) to ensure the design is responsive and consistent across devices.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task5Do2"> Use Bootstrap’s grid system or custom CSS media queries to adjust the layout for various screen sizes.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task5Do3"> Fix any issues identified during testing using GitHub Copilot or other AI tools.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc8"> Document testing results briefly in the README (1-2 sentences), focusing on any major adjustments made to improve responsiveness.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc9"> AI Reflection: "GitHub Copilot helped identify and fix layout issues, particularly with mobile responsiveness."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Failing to test across multiple devices can result in a poor user experience on mobile or tablets.</li>
+                                        <li>Skipping accessibility checks can make the website difficult for certain users to navigate.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask6" aria-expanded="false" aria-controls="collapseTask6">
+                                    Task 6: Adjustments & Refinement (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask6" class="accordion-collapse collapse" aria-labelledby="headingTask6">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Refine the website, ensuring consistency in design, performance, and responsiveness. Use AI tools to optimize the HTML and CSS.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO1.5: Design Consistency: Ensure the design is consistent across all sections of the website, with unified styling and functionality.</li>
+                                        <li>LO5.3: Use AI tools to optimize HTML and CSS: Use AI tools to suggest and implement optimizations, ensuring better performance and user experience.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task6Do1"> Ensure that all pages are consistent in layout, style, and responsiveness, with no discrepancies in design.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task6Do2"> Use GitHub Copilot or other AI tools to optimize the code, reducing redundancy and improving performance.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task6Do3"> Test any optimizations to confirm they enhance performance and user experience.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc10"> Keep the documentation brief, noting any changes made during the refinement stage (1-2 sentences).</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc11"> AI Reflection: "GitHub Copilot suggested improvements for optimizing media queries, which enhanced the website’s load time."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Neglecting consistency checks could lead to a disjointed user experience.</li>
+                                        <li>Skipping optimization steps may result in slower performance or larger file sizes, affecting load times.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Should Be in Place -->
+                        <div class="mt-4">
+                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                            <ul>
+                                <li>Core Must features implemented and functioning correctly.</li>
+                                <li>A responsive and accessible website tested across multiple devices.</li>
+                                <li>Optimized code for better performance and user experience, with AI-driven improvements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Phase 3: Should User Stories Implementation & Advanced Features (3.5 hours)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        <p><h5>Objective:</h5> Implement additional features and enhancements based on the Should user stories. This phase focuses on refining the design, improving user engagement, and ensuring that all features work seamlessly. AI tools are used to assist in refining HTML, CSS, and Bootstrap code.</p>
+
+                        <!-- Task 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask7" aria-expanded="false" aria-controls="collapseTask7">
+                                    Task 7: Should User Stories Implementation (2.5 hours)
+                                </button>
+                            </h2>
+                            <div id="collapseTask7" class="accordion-collapse collapse" aria-labelledby="headingTask7">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Implement features based on the Should user stories to enhance the user experience and functionality beyond core requirements.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO1.1: Front-End Design: Design and implement advanced features using Bootstrap or custom CSS, ensuring responsive and accessible design.</li>
+                                        <li>LO1.2: User Experience: Ensure additional content and features are organized using UX principles for an intuitive user experience.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task7Do1"> Implement advanced features such as a responsive image gallery, interactive sections, or animations using Bootstrap components or custom CSS.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task7Do2"> Maintain consistent color schemes, font styles, and image usage while ensuring accessibility.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc12"> In bullet points, describe the Should user story features implemented and how they enhance the user experience.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc13"> AI Reflection: "GitHub Copilot helped generate CSS for animations, though manual adjustments were needed to ensure smooth transitions."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Avoid overcomplicating the Should features, which could lead to inconsistent or cluttered designs.</li>
+                                        <li>Neglecting to test advanced features can result in bugs or poor performance.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask8" aria-expanded="false" aria-controls="collapseTask8">
+                                    Task 8: Final Documentation (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask8" class="accordion-collapse collapse" aria-labelledby="headingTask8">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Finalize the README.md by ensuring all sections are complete and properly documented. Keep documentation concise, but include screenshots and descriptions of the website’s features and deployment steps.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO4.1: Documentation: Write a concise README.md file explaining the application’s purpose, user value, and deployment procedure.</li>
+                                        <li>LO4.2: Code Organization and Readability: Ensure that the HTML, CSS, and any other code are well-organized and commented, supporting future maintainability.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task8Do1"> Complete the README.md, ensuring it includes sections such as Introduction, User Stories, Features, Screenshots, Technologies Used, and Deployment Instructions.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task8Do2"> Provide concise screenshots of key features, explaining how they improve the user experience.</li>
+                                    </ul>
+
+                                    <h5>AI Reflection Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc14"> Include a section in the README reflecting on AI tool usage in a few sentences: "GitHub Copilot helped optimize the CSS for advanced features like the image gallery. Some tweaks were necessary to match the design requirements."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Incomplete or unclear documentation can lead to confusion for future developers or assessors.</li>
+                                        <li>Failing to attribute external code sources can lead to academic integrity issues.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Should Be in Place -->
+                        <div class="mt-4">
+                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                            <ul>
+                                <li>Should features implemented and functioning correctly, enhancing user experience and engagement.</li>
+                                <li>A complete, concise README.md file documenting the application’s purpose, user stories, features, and AI tool usage.</li>
+                                <li>Screenshots and brief explanations of key features.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Phase 4: Final Testing, Debugging & Deployment (2 hours)
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        <p><h5>Objective:</h5> Conduct final testing and debugging to ensure the website is fully functional before deployment. Deploy the project to GitHub Pages and document the deployment process in the README. Use AI tools for debugging and quality checks.</p>
+
+                        <!-- Task 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask9">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask9" aria-expanded="false" aria-controls="collapseTask9">
+                                    Task 9: Final Testing & Debugging (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask9" class="accordion-collapse collapse" aria-labelledby="headingTask9">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Conduct thorough testing of the website to identify any remaining issues. Use AI tools to assist in debugging and ensuring the site is functional and accessible across different devices.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO2.1: Code Validation: Ensure HTML and CSS code passes validation using W3C and Jigsaw validators without significant issues.</li>
+                                        <li>LO2.2: Responsive Design and Navigation: Verify that the layout maintains its integrity across devices and screen sizes, with intuitive navigation.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task9Do1"> Perform comprehensive testing using developer tools (e.g., Chrome DevTools) to ensure functionality across various devices.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task9Do2"> Validate HTML and CSS using W3C and Jigsaw validators, ensuring no major issues.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task9Do3"> Use GitHub Copilot to identify and fix any layout or code issues efficiently.</li>
+                                    </ul>
+
+                                    <h5>Documentation Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc15"> Document testing results briefly in the README (1-2 sentences), noting any major issues that were identified and fixed.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="doc16"> AI Reflection: "GitHub Copilot helped identify layout inconsistencies across screen sizes, which were fixed before final deployment."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Skipping validation may result in significant errors affecting site functionality.</li>
+                                        <li>Failing to test the site on multiple devices can lead to layout issues on mobile or tablets.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTask10">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask10" aria-expanded="false" aria-controls="collapseTask10">
+                                    Task 10: Deployment (1 hour)
+                                </button>
+                            </h2>
+                            <div id="collapseTask10" class="accordion-collapse collapse" aria-labelledby="headingTask10">
+                                <div class="accordion-body">
+                                    <p><h5>Objective:</h5> Deploy the website to GitHub Pages, ensuring the live version matches the development version. Document the deployment process in the README and reflect on AI tools' role in this stage.</p>
+                                    <h5>Associated Pass Criteria</h5>
+                                    <ul>
+                                        <li>LO3.1: Cloud Deployment: Deploy the website successfully to GitHub Pages with no discrepancies between the development and live versions.</li>
+                                        <li>LO5.4: Document AI’s role in the development process: Reflect on how AI tools (e.g., GitHub Copilot) helped streamline deployment and provided useful suggestions for code cleanup.</li>
+                                    </ul>
+
+                                    <h5>Expected Performance (Do's)</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="task10Do1"> Deploy the website to GitHub Pages successfully, ensuring the live version matches the development version.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task10Do2"> Verify that all features, navigation, and interactive elements work correctly post-deployment.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task10Do3"> Remove any commented-out code and unused files before final deployment.</li>
+                                        <li><input type="checkbox" class="form-check-input" id="task10Do4"> Provide brief documentation of the deployment process in the README, ensuring clear instructions on how to deploy and use the site.</li>
+                                    </ul>
+
+                                    <h5>AI Reflection Task</h5>
+                                    <ul>
+                                        <li><input type="checkbox" class="form-check-input" id="doc17"> Briefly reflect on how AI tools assisted in the deployment process. Example: "GitHub Copilot provided useful suggestions for cleaning up the code before deployment, which improved the overall project quality."</li>
+                                    </ul>
+
+                                    <h5>Areas for Improvement (Don'ts)</h5>
+                                    <ul>
+                                        <li>Failing to check internal links and interactive elements post-deployment could lead to a broken user experience.</li>
+                                        <li>Deploying with unused code or incomplete elements will affect the overall quality of the project.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Should Be in Place -->
+                        <div class="mt-4">
+                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                            <ul>
+                                <li>The website successfully deployed to GitHub Pages, fully functional and responsive across devices.</li>
+                                <li>Clean and optimized code with no commented-out or unused sections.</li>
+                                <li>A README.md file that briefly documents the deployment process and includes reflections on the use of AI tools.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<audio id="beepSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+    <script>
+        function updateProgress() {
+            const totalCheckboxes = document.querySelectorAll('input[type="checkbox"]').length;
+            const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const progress = Math.round((checkedCheckboxes / totalCheckboxes) * 100);
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = progress + '%';
+            progressBar.setAttribute('aria-valuenow', progress);
+            progressBar.textContent = progress + '%';
+        }
+
+        function saveCheckboxState(id, checked) {
+            localStorage.setItem(id, checked);
+        }
+
+        function loadCheckboxState() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const checked = localStorage.getItem(checkbox.id) === 'true';
+                checkbox.checked = checked;
+            });
+            updateProgress();
+        }
+
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                saveCheckboxState(this.id, this.checked);
+                updateProgress();
+            });
+        });
+
+        window.onload = function () {
+            loadCheckboxState();
+        };
+
+        // Pomodoro Timer Logic
+    let pomodoroInterval;
+    const pomodoroMinutes = document.getElementById("minutes");
+    const pomodoroSeconds = document.getElementById("seconds");
+    const startPomodoro = document.getElementById("startPomodoro");
+    const resetPomodoro = document.getElementById("resetPomodoro");
+    const beepSound = document.getElementById("beepSound"); // Sound element
+
+    let duration = 25 * 60 * 1000; // 25 minutes in milliseconds
+    let remainingTime = duration;
+    let startTime;
+
+    function updatePomodoroTimer() {
+        let currentTime = new Date().getTime();
+        let timeElapsed = currentTime - startTime;
+        let timeLeft = remainingTime - timeElapsed;
+
+        if (timeLeft <= 0) {
+            clearInterval(pomodoroInterval);
+            beepSound.play(); // Play sound when timer reaches zero
+            alert("Pomodoro time finished!");
+            timeLeft = 0; // Ensure the timer doesn't go negative
+        }
+
+        let minutes = Math.floor(timeLeft / 1000 / 60);
+        let seconds = Math.floor((timeLeft / 1000) % 60);
+        pomodoroMinutes.textContent = minutes < 10 ? "0" + minutes : minutes;
+        pomodoroSeconds.textContent = seconds < 10 ? "0" + seconds : seconds;
+    }
+
+    function startPomodoroTimer() {
+        startTime = new Date().getTime();
+        pomodoroInterval = setInterval(updatePomodoroTimer, 1000);
+    }
+
+    function resetPomodoroTimer() {
+        clearInterval(pomodoroInterval);
+        remainingTime = duration; // Reset the remaining time to full duration
+        startTime = new Date().getTime(); // Reset the start time
+        updatePomodoroTimer(); // Immediately update the timer display
+    }
+
+    startPomodoro.addEventListener("click", startPomodoroTimer);
+    resetPomodoro.addEventListener("click", resetPomodoroTimer);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
