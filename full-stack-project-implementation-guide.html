@@ -56,9 +56,32 @@
             background-color: #fff;
             border: none;
             margin-bottom: 1rem;
-            color: #333333;
-            font-family: 'Lato', sans-serif;
+        
+           
         }
+
+     .accordion-body {
+    line-height: 1.6; /* Increase line spacing for readability */
+    font-family: Arial, sans-serif; /* Dyslexia-friendly font */
+}
+
+
+        .accordion-button {
+    color: #002D56; /* Text color */
+    background-color: #FFFFFF; /* Background color */
+}
+
+        .accordion-button:focus {
+    outline: 3px solid #0091DB; /* High-contrast focus outline */
+    outline-offset: 2px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E0E0E0;
+    color: #002D56;
+}
+
+
 
         /* Progress Bar */
         .progress {
@@ -165,6 +188,8 @@
             background-color: #6c757d; /* Default secondary button color */
             border-color: #6c757d;
         }
+
+
     </style>
 </head>
 
@@ -1530,6 +1555,73 @@
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        // Add icons before specific h5 and h2 elements based on their content
+        document.querySelectorAll('.accordion-body h5').forEach(h5 => {
+            if (h5.textContent.includes("Expected Performance (Do's)")) {
+                const icon = document.createElement("span");
+                icon.textContent = "✓"; // Checkmark icon
+                icon.style.color = "#0091DB"; // Accent color
+                icon.style.marginRight = "10px"; // Spacing
+                h5.prepend(icon); // Add the icon before the h5 text
+            } else if (h5.textContent.includes("Areas for Improvement (Don'ts)")) {
+                const icon = document.createElement("span");
+                icon.textContent = "✗"; // Cross icon
+                icon.style.color = "#F48C06"; // Warning color
+                icon.style.marginRight = "10px"; // Spacing
+                h5.prepend(icon); // Add the icon before the h5 text
+            } else if (h5.textContent.includes("Documentation Task")) {
+                const icon = document.createElement("span");
+                icon.textContent = "📝"; // Document icon
+                icon.style.color = "#6c757d"; // Neutral color
+                icon.style.marginRight = "10px"; // Spacing
+                h5.prepend(icon); // Add the icon before the h5 text
+            }
+        });
+
+        // Add an icon for "Health and Well-Being Guidance"
+        document.querySelectorAll('.accordion-header button').forEach(button => {
+            if (button.textContent.includes("Health and Well-Being Guidance")) {
+                const icon = document.createElement("span");
+                icon.textContent = "💡"; // Light bulb icon for guidance
+                icon.style.color = "#FFD700"; // Gold color for emphasis
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon); // Add the icon before the button text
+            }
+        });
+
+        // Add icons for each phase header
+        document.querySelectorAll('.accordion-header button').forEach(button => {
+            if (button.textContent.includes("Phase 1: Ideation & Initial Setup")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🧠"; // Brain icon for ideation
+                icon.style.color = "#007BFF"; // Blue color for creativity
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon); // Add the icon before the button text
+            } else if (button.textContent.includes("Phase 2: Must User Stories Implementation & Testing")) {
+                const icon = document.createElement("span");
+                icon.textContent = "✔"; // Checkmark icon for essential tasks
+                icon.style.color = "#28A745"; // Green color for importance
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon); // Add the icon before the button text
+            } else if (button.textContent.includes("Phase 3: Should User Stories Implementation & Advanced Features")) {
+                const icon = document.createElement("span");
+                icon.textContent = "⭐"; // Star icon for enhancements
+                icon.style.color = "#FFC107"; // Yellow color for features
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon); // Add the icon before the button text
+            } else if (button.textContent.includes("Phase 4: Final Testing, Debugging & Deployment")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🚀"; // Rocket icon for deployment
+                icon.style.color = "#DC3545"; // Red color for culmination
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon); // Add the icon before the button text
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
