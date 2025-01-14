@@ -1622,6 +1622,147 @@
     });
 </script>
 
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        // Add icons for the Health and Well-Being Guidance bullet headings
+        document.querySelectorAll('.accordion-body ul > li').forEach(listItem => {
+            const text = listItem.textContent.trim();
+
+            // Add icons for main headings
+            if (text.startsWith("Manage Your Time Wisely")) {
+                const icon = document.createElement("span");
+                icon.textContent = "⏰"; // Clock icon
+                icon.style.color = "#007BFF"; // Blue color for time management
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Take Regular, Short Breaks")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🔄"; // Refresh icon for breaks
+                icon.style.color = "#28A745"; // Green color for refreshing
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Maintain a Functional Workspace")) {
+                const icon = document.createElement("span");
+                icon.textContent = "💺"; // Chair icon
+                icon.style.color = "#FFC107"; // Yellow color for workspace
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Stay Hydrated and Nourished")) {
+                const icon = document.createElement("span");
+                icon.textContent = "💧"; // Water drop icon
+                icon.style.color = "#00BFFF"; // Light blue color for hydration
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Balance Work and Rest")) {
+                const icon = document.createElement("span");
+                icon.textContent = "⚖"; // Balance scale icon
+                icon.style.color = "#6c757d"; // Neutral gray color for balance
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Get Enough Rest Before the Project")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🛌"; // Bed icon
+                icon.style.color = "#8A2BE2"; // Purple color for rest
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Reflect and Adjust")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🔍"; // Magnifying glass icon
+                icon.style.color = "#FF4500"; // Orange-red color for reflection
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            } else if (text.startsWith("Stay Positive and Focused")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🌟"; // Star icon
+                icon.style.color = "#FFD700"; // Gold color for positivity
+                icon.style.marginRight = "10px"; // Spacing
+                listItem.prepend(icon);
+            }
+
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        // Add icons for Task headings
+        document.querySelectorAll('.accordion-item > .accordion-header button').forEach(button => {
+            const text = button.textContent.trim();
+
+            // Add icons for each task
+            if (text.startsWith("Task 1: Ideation and User Story Definition")) {
+                const icon = document.createElement("span");
+                icon.textContent = "💡"; // Light bulb icon
+                icon.style.color = "#007BFF"; // Blue color for ideation
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 2: Initial Planning and Wireframing")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🖊"; // Pen icon
+                icon.style.color = "#28A745"; // Green color for planning
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 3: Environment Setup and Version Control")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🖥"; // Desktop computer icon
+                icon.style.color = "#6C757D"; // Neutral gray for environment setup
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            }
+
+
+            if (text.startsWith("Task 4: Must User Stories Implementation")) {
+                const icon = document.createElement("span");
+                icon.textContent = "✅"; // Checkmark icon
+                icon.style.color = "#28A745"; // Green color for 'must-have' tasks
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 5: Visual Progress & Testing")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🔍"; // Magnifying glass icon
+                icon.style.color = "#FFC107"; // Yellow color for testing
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 6: Adjustments & Refinement")) {
+                const icon = document.createElement("span");
+                icon.textContent = "⚙️"; // Gear icon
+                icon.style.color = "#6C757D"; // Neutral gray for refinement
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            }
+
+            if (text.startsWith("Task 7: Should User Stories Implementation")) {
+                const icon = document.createElement("span");
+                icon.textContent = "⭐"; // Star icon for enhancements
+                icon.style.color = "#17A2B8"; // Teal for 'should-have' tasks
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 8: Final Documentation")) {
+                const icon = document.createElement("span");
+                 icon.textContent = "📝"; // Document icon
+                icon.style.color = "#007BFF"; // Blue for documentation
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            }
+
+            if (text.startsWith("Task 9: Final Testing & Debugging")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🛠️"; // Tools icon
+                icon.style.color = "#FFC107"; // Amber for testing/debugging
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            } else if (text.startsWith("Task 10: Deployment")) {
+                const icon = document.createElement("span");
+                icon.textContent = "🚀"; // Rocket icon
+                icon.style.color = "#28A745"; // Green for deployment success
+                icon.style.marginRight = "10px"; // Spacing
+                button.prepend(icon);
+            }
+        });
+    });
+</script>
+
+
 </body>
 
 </html>
