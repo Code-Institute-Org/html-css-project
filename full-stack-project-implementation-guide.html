@@ -7,14 +7,43 @@
     <title>Interactive Project Implementation Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=arial:wght@300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
+        /* Fonts */
+
+        @font-face {
+            font-family: 'Atkinson Hyperlegible';
+            src: url('/assets/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Atkinson Hyperlegible';
+            src: url('/assets/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Atkinson Hyperlegible';
+            src: url('/assets/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Atkinson Hyperlegible';
+            src: url('/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
+            font-weight: bold;
+            font-style: italic;
+        }
         /* General Styling */
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Atkinson Hyperlegible', 'Lato', sans-serif;
             font-weight: 300;
-            background-color: #F7F7F7;
+            background-color: #FFFDD0;
             color: #333333;
         }
 
@@ -56,32 +85,9 @@
             background-color: #fff;
             border: none;
             margin-bottom: 1rem;
-        
-           
+            color: #333333;
+            font-family: 'Lato', sans-serif;
         }
-
-     .accordion-body {
-    line-height: 1.6; /* Increase line spacing for readability */
-    font-family: Arial, sans-serif; /* Dyslexia-friendly font */
-}
-
-
-        .accordion-button {
-    color: #002D56; /* Text color */
-    background-color: #FFFFFF; /* Background color */
-}
-
-        .accordion-button:focus {
-    outline: 3px solid #0091DB; /* High-contrast focus outline */
-    outline-offset: 2px;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #E0E0E0;
-    color: #002D56;
-}
-
-
 
         /* Progress Bar */
         .progress {
@@ -115,39 +121,6 @@
         .table th, .table td {
         width: 33%; /* This will divide the table columns equally */
         word-wrap: break-word; /* Ensures that long content breaks to the next line */
-        }
-
-        /* General Table Styling */
-        .table {
-            font-family: 'Arial', sans-serif; /* Dyslexia-friendly font */
-            font-size: 16px; /* Larger font size for better readability */
-        }
-
-       
-        /* Highlight Active Row on Hover */
-        .table tbody tr:hover {
-            background-color: #c5c7ca; /* Slightly darker gray for focus */
-        }
-
-        /* Table Header Styling for Clarity */
-        .table thead th {
-            background-color: #343a40; /* Dark gray */
-            color: #ffffff; /* White text for strong contrast */
-            text-align: center;
-        }
-
-        /* Accessible Table Borders */
-        .table,
-        .table th,
-        .table td {
-            border: 1px solid #6c757d; /* Medium gray for clear cell separation */
-        }
-
-        /* Responsive Table Styling for Small Screens */
-        @media (max-width: 768px) {
-            .table {
-                font-size: 14px; /* Adjust font size for smaller devices */
-            }
         }
 
         .container {
@@ -188,10 +161,9 @@
             background-color: #6c757d; /* Default secondary button color */
             border-color: #6c757d;
         }
-
-
     </style>
 </head>
+
 
 <body>
      <div class="container mt-5">
@@ -906,16 +878,10 @@
                 </div>
             </div>
         </div>
-    </div>
-
- 
-        </div>
-
-
-        
+    </div> 
 </div>
 
-    <div class="container mt-5">
+<div class="container mt-5">
         <h1>Project Implementation Guide</h1>
 
         <!-- Pomodoro Timer -->
@@ -1001,477 +967,499 @@
         </div>
     </div>
 
-        <div class="accordion" id="accordionExample">
-            <!-- Phase 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Phase 1: Ideation & Initial Setup (3 hours)
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                    <div class="accordion-body">
-                        <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories that capture essential features and functionality, and document these stories in the README. Use GitHub Copilot to assist in drafting content and defining user stories  and their acceptance criteria efficiently.</p>
+    <div class="accordion" id="accordionExample">
+        <!-- Phase 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Phase 1: Ideation & Initial Setup (7 hours)
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                    <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories that capture essential features and functionality, and document these stories in the README. Use GitHub Copilot to assist in drafting content and defining user stories  and their acceptance criteria efficiently.</p>
 
-                        <!-- Task 1 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">
-                                    Task 1: Ideation and User Story Definition (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask1" class="accordion-collapse collapse" aria-labelledby="headingTask1">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories, and document them in the README. Use AI tools like GitHub Copilot to assist in drafting content and defining user stories.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO1.1: Front-End Design: Create a cohesive one-page layout using HTML and CSS or Bootstrap, ensuring semantic HTML and adherence to accessibility guidelines (e.g. color contrast, alt-text for images).</li>
-                                        <li>LO4.1: Documentation: Write a concise README.md explaining the application’s purpose, user value, and deployment procedure. Include brief user stories and acceptance criteria.</li>
-                                    </ul>
+                    <!-- Task 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTask1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">
+                                Task 1: Ideation and User Story Definition (2 hours)
+                            </button>
+                        </h2>
+                        <div id="collapseTask1" class="accordion-collapse collapse" aria-labelledby="headingTask1">
+                            <div class="accordion-body">
+                                <p><h5>Objective:</h5> Brainstorm and refine project ideas, define user stories, and document them in the README. Use AI tools like GitHub Copilot to assist in drafting content and defining user stories.</p>
+                                <h5>Associated Pass Criteria</h5>
+                                <ul>
+                                    <li>LO1.1: Design a front-end that meets accessibility guidelines and follows UX design principles. Create a responsive full-stack application that meets its given purpose, provides a set of user interactions, and uses custom HTML and CSS/CSS frameworks.</li>
+                                    <li>LO1.3: Use an Agile tool to plan and track all major functionality. Document and implement all user stories linking them to project goals within an agile tool.</li>
+                                    <li>LO1.5: Document the UX design process, including wireframes, mockups, and diagrams. Ensure documentation demonstrates that the design process has been followed through to implementation.</li>
+                                </ul>
 
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task1Do1"> A concise README.md documenting the project’s purpose, user value, and user stories.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task1Do2"> Prioritize user stories into Must, Should, and Could categories.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task1Do3"> Use GitHub Copilot to generate content efficiently and ensure relevance to the project’s scope.</li>
-                                    </ul>
+                                <h5>Expected Performance (Do's)</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="task1Do1"> A concise README.md documenting the project’s purpose, user value, and link to the user stories kanban board.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task1Do2"> Prioritise user stories into Must, Should, and Could categories.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task1Do3"> Use GitHub Copilot to generate content efficiently and ensure relevance to the project’s scope.</li>
+                                </ul>
 
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc1"> Brief README entry with project definition, user stories, and acceptance criteria.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc2"> Brief AI Reflection (1-2 sentences): "GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals."</li>
-                                    </ul>
+                                <h5>Documentation Task</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="doc1"> Brief README entry with project definition, link to user stories, and acceptance criteria.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="doc2"> Brief AI Reflection (1-2 sentences): "GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals."</li>
+                                </ul>
 
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Skipping user story documentation can lead to unclear planning.</li>
-                                        <li>Over-relying on AI without reviewing or refining the output may cause misalignment with project goals.</li>
-                                    </ul>
-                                </div>
+                                <h5>Areas for Improvement (Don'ts)</h5>
+                                <ul>
+                                    <li>Skipping user story documentation can lead to unclear planning.</li>
+                                    <li>Over-relying on AI without reviewing or refining the output may cause misalignment with project goals.</li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Task 2 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
-                                    Task 2: Initial Planning and Wireframing (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask2" class="accordion-collapse collapse" aria-labelledby="headingTask2">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Outline the website's structure and design through wireframes, including color schemes, fonts, and content placement.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO1.2: User Experience: Organize information using UX principles with proper headers and content prioritization. Ensure consistency in imagery, color contrast, and font usage.</li>
-                                    </ul>
+                    <!-- Task 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTask2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+                                Task 2: Initial Wireframing and Database Planning (2.5 hours)
+                            </button>
+                        </h2>
+                        <div id="collapseTask2" class="accordion-collapse collapse" aria-labelledby="headingTask2">
+                            <div class="accordion-body">
+                                <p><h5>Objective:</h5> Outline the website's structure and design through wireframes, including color schemes, fonts, and content placement. Begin planning the database schema.</p>
+                                <h5>Associated Pass Criteria</h5>
+                                <ul>
+                                    <li>LO1.1: Design a front-end that meets accessibility guidelines and follows UX design principles. Create a responsive full-stack application that meets its given purpose, provides a set of user interactions, and uses custom HTML and CSS/CSS frameworks.</li>
+                                    <li>LO1.2: Build a database-backed Django web application to manage data records. Design a database structure with at least one custom model.</li>
+                                </ul>
 
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task2Do1"> Create wireframes that reflect a well-structured layout.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task2Do2"> Ensure adherence to accessibility standards (color contrast, alt-text for images).</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task2Do3"> Use AI tools like DALL-E to generate initial design elements, if applicable.</li>
-                                    </ul>
+                                <h5>Expected Performance (Do's)</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="task2Do1"> Create wireframes that reflect a well-structured layout.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task2Do2"> Ensure adherence to accessibility standards (color contrast, alt-text for images).</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task2Do3"> Use AI tools like DALL-E to generate initial design elements, if applicable.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task2Do4"> Plan a usable database structure with at least one custom model.</li>
+                                </ul>
 
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc3"> Record design decisions in the README: wireframes, color schemes, fonts.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc4"> Brief AI Reflection: "DALL-E helped generate image ideas, but manual adjustments were needed to fit the design theme."</li>
-                                    </ul>
+                                <h5>Documentation Task</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="doc3"> Record design decisions in the README: wireframes, color schemes, fonts.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="doc3"> There is no need to record your database schema in the README.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="doc4"> Brief AI Reflection: "DALL-E helped generate image ideas, but manual adjustments were needed to fit the design theme."</li>
+                                </ul>
 
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Starting development without a clear design plan can lead to inconsistencies.</li>
-                                        <li>Neglecting accessibility guidelines during the design process can hurt usability.</li>
-                                    </ul>
-                                </div>
+                                <h5>Areas for Improvement (Don'ts)</h5>
+                                <ul>
+                                    <li>Starting development without a clear design plan can lead to inconsistencies.</li>
+                                    <li>Neglecting accessibility guidelines during the design process can hurt usability.</li>
+                                    <li>Building your database schema without initial planning can lead to pain later!</li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Task 3 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask3" aria-expanded="false" aria-controls="collapseTask3">
-                                    Task 3: Environment Setup and Version Control (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask3" class="accordion-collapse collapse" aria-labelledby="headingTask3">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Set up the project’s development environment, create a GitHub repository, and link external resources like Bootstrap.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO3.1: Cloud Deployment: Use Git and GitHub for effective version control and ensure a clear commit history. Deploy to GitHub Pages, ensuring the live version matches the development version.</li>
-                                    </ul>
+                    <!-- Task 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTask3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask3" aria-expanded="false" aria-controls="collapseTask3">
+                                Task 3: Environment Setup and Version Control (2.5 hours)
+                            </button>
+                        </h2>
+                        <div id="collapseTask3" class="accordion-collapse collapse" aria-labelledby="headingTask3">
+                            <div class="accordion-body">
+                                <p><h5>Objective:</h5> Set up the project’s development environment, install Django and initial libraries, create a GitHub repository, create a Heroku app and perform an initial deployment.</p>
+                                <h5>Associated Pass Criteria</h5>
+                                <ul>
+                                    <li>LO6.1: Successfully deploy the final version of the Full-Stack application to a cloud-based hosting platform and verify that it matches the development version.</li>
+                                    <li>LO6.2: Clearly document the deployment process in a README file.</li>
+                                </ul>
 
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task3Do1"> Set up a well-organized project structure with linked Bootstrap resources.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task3Do2"> Regular and meaningful commits to GitHub should be made throughout.</li>
-                                    </ul>
+                                <h5>Expected Performance (Do's)</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="task3Do1"> Set up a well-organised project structure with Django and related libraries installed.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task3Do2"> Create a <code>requirements.txt</code> file and <code>Procfile</code>.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task3Do3"> Deploy the skeleton Django application to Heroku.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task3Do4"> Regular and meaningful commits to GitHub should be made throughout.</li>
+                                </ul>
 
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc5"> Brief documentation of the setup process (GitHub repository creation, Bootstrap linked).</li>
-                                    </ul>
+                                <h5>Documentation Task</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="doc5"> Brief documentation of the setup process (GitHub repository creation etc.).</li>
+                                </ul>
 
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Avoid vague or infrequent commit messages, as this can obscure the development process.</li>
-                                    </ul>
-                                </div>
+                                <h5>Areas for Improvement (Don'ts)</h5>
+                                <ul>
+                                    <li>Avoid vague or infrequent commit messages, as this can obscure the development process.</li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- What Should Be in Place -->
-                        <div class="mt-4">
-                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                    <!-- What Should Be in Place -->
+                    <div class="mt-4">
+                        <h5>What Should Be in Place By The End Of This Phase?</h5>
+                        <ul>
+                            <li>A clear understanding of the project’s purpose and target audience, briefly documented in the README.</li>
+                            <li>Wireframes and design decisions, recorded concisely in bullet points.</li>
+                            <li>A fully set-up development environment with version control.</li>
+                            <li>Initial database schema planning and project setup on GitHub and Heroku.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Phase 2 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Phase 2: Must User Stories Implementation & Testing (52 hours)
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body">
+                <p><h5>Objective:</h5> Build the core functionality of the application by implementing Must user stories. Focus on Django views, models, and templates to create a robust and responsive web application. Ensure full CRUD functionality and adherence to accessibility standards. Use AI tools to assist with code generation, debugging, and testing.</p>
+
+                <!-- Task 4: Develop Django Models and CRUD Operations -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTask4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask4" aria-expanded="false" aria-controls="collapseTask4">
+                            Task 4: Develop the basic application (32 hours)
+                        </button>
+                    </h2>
+                    <div id="collapseTask4" class="accordion-collapse collapse" aria-labelledby="headingTask4">
+                        <div class="accordion-body">
+                            <p><h5>Objective:</h5> Create Django models and implement an authentication mechanism and CRUD operations using Django views and templates, ensuring the functionality aligns with Must user stories. Use Bootstrap for responsivity, and custom CSS where necessary.</p>
+                            <h5>Associated Pass Criteria</h5>
                             <ul>
-                                <li>A clear understanding of the project’s purpose and target audience, briefly documented in the README.</li>
-                                <li>Wireframes and design decisions, recorded concisely in bullet points.</li>
-                                <li>A fully set-up development environment with version control.</li>
+                                <li>LO2.1: Database Development: Develop custom Django models and migrate them successfully.</li>
+                                <li>LO2.2: CRUD Functionality: Implement full CRUD operations with user-friendly interfaces.</li>
+                                <li>LO2.4: Forms: Implement a form that creates, updates and/or deletes data on the backend.</li>
+                                <li>LO3.1: Authentication: Build an authentication mechanism to allow new users to register and returning users to login.</li>
+                                <li>LO3.3: Access Control: Ensure only logged-in users have accesss to CRUD operations.</li>
+                                <li>LO5.1: Version Control: Use Git for version control and commit regularly with meaningful messages.</li>
+                                <li>LO7.1: Database Development: Design and implement at least one custom data model (i.e. a model different to that taught on the course)</li>
+                                <li>LO8.1 to LO8.5: AI Tools: Use AI tools to assist in the development process, such as generating code snippets, debugging, and testing.</li>
+                            </ul>
+
+                            <h5>Expected Performance (Do's)</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do1"> Create at least one custom Django model, incorporating fields with appropriate types and constraints.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do2"> Use Django templates to render CRUD interfaces with consistent styling.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do3"> Test CRUD operations thoroughly using Django’s ORM and the web interface.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task4Do4"> Utilise AI tools to accelerate development, debugging and testing.</li>
+                            </ul>
+
+                            <h5>Documentation Task</h5>
+                            <ul>
+                                <li>Document Django models and their roles in the README.md.</li>
+                                <li>Reflect on AI usage: "GitHub Copilot assisted in generating model fields and CRUD views, with minor adjustments for project needs."</li>
+                            </ul>
+
+                            <h5>Areas for Improvement (Don'ts)</h5>
+                            <ul>
+                                <li>Failing to validate user inputs in forms could lead to data integrity issues.</li>
+                                <li>Skipping model testing can result in functional errors during CRUD operations.</li>
+                                <li>Overlooking AI tools may slow down development and testing processes.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Phase 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Phase 2: Must User Stories Implementation & Testing (5.5 hours)
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                    <div class="accordion-body">
-                        <p><h5>Objective:</h5> Implement the essential features of the website as outlined in the Must user stories. Use HTML, CSS, and Bootstrap, and ensure the site is responsive and accessible. Use AI tools like GitHub Copilot to assist with code generation and debugging.</p>
-
-                        <!-- Task 4 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask4" aria-expanded="false" aria-controls="collapseTask4">
-                                    Task 4: Must User Stories Implementation (3.5 hours)
-                                </button>
-                            </h2>
-                            <div id="collapseTask4" class="accordion-collapse collapse" aria-labelledby="headingTask4">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Develop the core features based on the Must user stories, ensuring a cohesive, accessible, and responsive website.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO1.1: Front-End Design: Create a responsive and accessible layout using Bootstrap or custom CSS, with proper navigation and semantic HTML.</li>
-                                        <li>LO2.1: Code Validation: Validate HTML and CSS using W3C and Jigsaw validators, ensuring no significant issues.</li>
-                                        <li>LO5.1: Use AI tools to assist in writing HTML and CSS: Use GitHub Copilot to assist in generating HTML, CSS, and Bootstrap code efficiently.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task4Do1"> Implement a cohesive layout using Bootstrap or custom CSS, ensuring a responsive and accessible site.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task4Do2"> Use semantic HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, and &lt;footer&gt;, adhering to accessibility standards.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task4Do3"> Validate HTML and CSS through W3C and Jigsaw validators with no major errors.</li>
-                                    </ul>
-
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc6"> Keep the README entry brief, noting the implemented Must user stories and features in bullet points.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc7"> AI Reflection (1-2 sentences): "GitHub Copilot helped generate the HTML structure and Bootstrap classes quickly, though some adjustments were needed to ensure responsiveness."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Failing to ensure accessibility and responsiveness can negatively impact the user experience.</li>
-                                        <li>Over-relying on AI-generated code without reviewing it can result in errors or misaligned design choices.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Task 5 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask5">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask5" aria-expanded="false" aria-controls="collapseTask5">
-                                    Task 5: Visual Progress & Testing (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask5" class="accordion-collapse collapse" aria-labelledby="headingTask5">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Test the website for responsiveness across different devices and screen sizes, ensuring that all components work properly. Leverage AI tools for debugging.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO2.2: Responsive Design and Navigation: Ensure that the website’s layout adapts correctly using CSS media queries or Bootstrap’s grid system.</li>
-                                        <li>LO5.2: Use AI tools to assist in debugging HTML and CSS: Use GitHub Copilot or other AI tools to help debug HTML and CSS issues.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task5Do1"> Test the website using developer tools (e.g., Chrome DevTools) to ensure the design is responsive and consistent across devices.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task5Do2"> Use Bootstrap’s grid system or custom CSS media queries to adjust the layout for various screen sizes.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task5Do3"> Fix any issues identified during testing using GitHub Copilot or other AI tools.</li>
-                                    </ul>
-
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc8"> Document testing results briefly in the README (1-2 sentences), focusing on any major adjustments made to improve responsiveness.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc9"> AI Reflection: "GitHub Copilot helped identify and fix layout issues, particularly with mobile responsiveness."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Failing to test across multiple devices can result in a poor user experience on mobile or tablets.</li>
-                                        <li>Skipping accessibility checks can make the website difficult for certain users to navigate.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Task 6 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask6">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask6" aria-expanded="false" aria-controls="collapseTask6">
-                                    Task 6: Adjustments & Refinement (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask6" class="accordion-collapse collapse" aria-labelledby="headingTask6">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Refine the website, ensuring consistency in design, performance, and responsiveness. Use AI tools to optimize the HTML and CSS.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO1.5: Design Consistency: Ensure the design is consistent across all sections of the website, with unified styling and functionality.</li>
-                                        <li>LO5.3: Use AI tools to optimize HTML and CSS: Use AI tools to suggest and implement optimizations, ensuring better performance and user experience.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task6Do1"> Ensure that all pages are consistent in layout, style, and responsiveness, with no discrepancies in design.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task6Do2"> Use GitHub Copilot or other AI tools to optimize the code, reducing redundancy and improving performance.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task6Do3"> Test any optimizations to confirm they enhance performance and user experience.</li>
-                                    </ul>
-
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc10"> Keep the documentation brief, noting any changes made during the refinement stage (1-2 sentences).</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc11"> AI Reflection: "GitHub Copilot suggested improvements for optimizing media queries, which enhanced the website’s load time."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Neglecting consistency checks could lead to a disjointed user experience.</li>
-                                        <li>Skipping optimization steps may result in slower performance or larger file sizes, affecting load times.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- What Should Be in Place -->
-                        <div class="mt-4">
-                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                <!-- Task 5: Build Front-End Templates and Navigation -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTask5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask5" aria-expanded="false" aria-controls="collapseTask5">
+                            Task 5: Build Front-End Templates and Navigation (10 hours)
+                        </button>
+                    </h2>
+                    <div id="collapseTask5" class="accordion-collapse collapse" aria-labelledby="headingTask5">
+                        <div class="accordion-body">
+                            <p><h5>Objective:</h5> Design and implement responsive front-end templates and site navigation using Django templates and Bootstrap.</p>
+                            <h5>Associated Pass Criteria</h5>
                             <ul>
-                                <li>Core Must features implemented and functioning correctly.</li>
-                                <li>A responsive and accessible website tested across multiple devices.</li>
-                                <li>Optimized code for better performance and user experience, with AI-driven improvements.</li>
+                                <li>LO1.1: Front-End Design: Create responsive and accessible layouts adhering to UX principles.</li>
+                                <li>LO1.5: Documentation: Include wireframes and navigation design in the README.md.</li>
+                            </ul>
+
+                            <h5>Expected Performance (Do's)</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do1"> Use Django template inheritance to create a consistent site layout.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do2"> Implement a navigation bar that adapts to different user roles.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do3"> Ensure templates meet accessibility standards, including proper ARIA roles and labels.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task5Do4"> Test navigation and template responsiveness across devices.</li>
+                            </ul>
+
+                            <h5>Documentation Task</h5>
+                            <ul>
+                                <li>Include screenshots of key pages and navigation in the README.md.</li>
+                                <li>Reflect on AI usage: "AI tools helped generate Bootstrap components efficiently, with adjustments for accessibility."</li>
+                            </ul>
+
+                            <h5>Areas for Improvement (Don'ts)</h5>
+                            <ul>
+                                <li>Overlooking mobile responsiveness could degrade user experience.</li>
+                                <li>Neglecting accessibility standards may exclude some users.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Phase 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Phase 3: Should User Stories Implementation & Advanced Features (3.5 hours)
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                    <div class="accordion-body">
-                        <p><h5>Objective:</h5> Implement additional features and enhancements based on the Should user stories. This phase focuses on refining the design, improving user engagement, and ensuring that all features work seamlessly. AI tools are used to assist in refining HTML, CSS, and Bootstrap code.</p>
-
-                        <!-- Task 7 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask7">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask7" aria-expanded="false" aria-controls="collapseTask7">
-                                    Task 7: Should User Stories Implementation (2.5 hours)
-                                </button>
-                            </h2>
-                            <div id="collapseTask7" class="accordion-collapse collapse" aria-labelledby="headingTask7">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Implement features based on the Should user stories to enhance the user experience and functionality beyond core requirements.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO1.1: Front-End Design: Design and implement advanced features using Bootstrap or custom CSS, ensuring responsive and accessible design.</li>
-                                        <li>LO1.2: User Experience: Ensure additional content and features are organized using UX principles for an intuitive user experience.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task7Do1"> Implement advanced features such as a responsive image gallery, interactive sections, or animations using Bootstrap components or custom CSS.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task7Do2"> Maintain consistent color schemes, font styles, and image usage while ensuring accessibility.</li>
-                                    </ul>
-
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc12"> In bullet points, describe the Should user story features implemented and how they enhance the user experience.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc13"> AI Reflection: "GitHub Copilot helped generate CSS for animations, though manual adjustments were needed to ensure smooth transitions."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Avoid overcomplicating the Should features, which could lead to inconsistent or cluttered designs.</li>
-                                        <li>Neglecting to test advanced features can result in bugs or poor performance.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Task 8 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask8">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask8" aria-expanded="false" aria-controls="collapseTask8">
-                                    Task 8: Final Documentation (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask8" class="accordion-collapse collapse" aria-labelledby="headingTask8">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Finalize the README.md by ensuring all sections are complete and properly documented. Keep documentation concise, but include screenshots and descriptions of the website’s features and deployment steps.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO4.1: Documentation: Write a concise README.md file explaining the application’s purpose, user value, and deployment procedure.</li>
-                                        <li>LO4.2: Code Organization and Readability: Ensure that the HTML, CSS, and any other code are well-organized and commented, supporting future maintainability.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task8Do1"> Complete the README.md, ensuring it includes sections such as Introduction, User Stories, Features, Screenshots, Technologies Used, and Deployment Instructions.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task8Do2"> Provide concise screenshots of key features, explaining how they improve the user experience.</li>
-                                    </ul>
-
-                                    <h5>AI Reflection Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc14"> Include a section in the README reflecting on AI tool usage in a few sentences: "GitHub Copilot helped optimize the CSS for advanced features like the image gallery. Some tweaks were necessary to match the design requirements."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Incomplete or unclear documentation can lead to confusion for future developers or assessors.</li>
-                                        <li>Failing to attribute external code sources can lead to academic integrity issues.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- What Should Be in Place -->
-                        <div class="mt-4">
-                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                <!-- Task 6: Testing and Refinement -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTask6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask6" aria-expanded="false" aria-controls="collapseTask6">
+                            Task 6: Testing and Refinement (10 hours)
+                        </button>
+                    </h2>
+                    <div id="collapseTask6" class="accordion-collapse collapse" aria-labelledby="headingTask6">
+                        <div class="accordion-body">
+                            <p><h5>Objective:</h5> Conduct thorough testing of models, views, and templates to ensure functionality and refine the application based on user feedback and accessibility standards.</p>
+                            <h5>Associated Pass Criteria</h5>
                             <ul>
-                                <li>Should features implemented and functioning correctly, enhancing user experience and engagement.</li>
-                                <li>A complete, concise README.md file documenting the application’s purpose, user stories, features, and AI tool usage.</li>
-                                <li>Screenshots and brief explanations of key features.</li>
+                                <li>LO4.1: Testing: Implement manual tests to validate core functionality.</li>
+                                <li>LO4.2: Testing: Implement JavaScript tests if applicable to the project.</li>
+                                <li>LO4.3: Documentation: Document test results in the README.md.</li>
+                            </ul>
+
+                            <h5>Expected Performance (Do's)</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do1"> Write test cases for models, views, and templates using Django’s TestCase.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do2"> Validate the application’s responsiveness and accessibility.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task6Do3"> Resolve any identified issues, ensuring consistency and performance.</li>
+                            </ul>
+
+                            <h5>Documentation Task</h5>
+                            <ul>
+                                <li>Summarize test results and fixes in the README.md, with examples of resolved issues.</li>
+                                <li>Reflect on AI usage: "GitHub Copilot helped streamline test generation, identifying edge cases efficiently."</li>
+                            </ul>
+
+                            <h5>Areas for Improvement (Don'ts)</h5>
+                            <ul>
+                                <li>Ignoring test failures could lead to unresolved bugs in production.</li>
+                                <li>Skipping accessibility checks may compromise usability for some users.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <div class="mt-4">
+                    <h5>What Should Be in Place By The End Of This Phase?</h5>
+                    <ul>
+                        <li>Functional Django models and CRUD operations implemented and tested.</li>
+                        <li>Responsive and accessible front-end templates with consistent navigation.</li>
+                        <li>Thorough documentation of implemented features and test results.</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Phase 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Phase 4: Final Testing, Debugging & Deployment (2 hours)
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                    <div class="accordion-body">
-                        <p><h5>Objective:</h5> Conduct final testing and debugging to ensure the website is fully functional before deployment. Deploy the project to GitHub Pages and document the deployment process in the README. Use AI tools for debugging and quality checks.</p>
+    <!-- Phase 3 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Phase 3: Should User Stories Implementation & Advanced Features (32 hours)
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+            <div class="accordion-body">
+                <p><h5>Objective:</h5> Implement additional features and enhancements based on the Should user stories. This phase focuses on refining the design, improving user engagement, and ensuring that all features work seamlessly. AI tools are used to assist in refining HTML, CSS, and Bootstrap code.</p>
 
-                        <!-- Task 9 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask9">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask9" aria-expanded="false" aria-controls="collapseTask9">
-                                    Task 9: Final Testing & Debugging (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask9" class="accordion-collapse collapse" aria-labelledby="headingTask9">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Conduct thorough testing of the website to identify any remaining issues. Use AI tools to assist in debugging and ensuring the site is functional and accessible across different devices.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO2.1: Code Validation: Ensure HTML and CSS code passes validation using W3C and Jigsaw validators without significant issues.</li>
-                                        <li>LO2.2: Responsive Design and Navigation: Verify that the layout maintains its integrity across devices and screen sizes, with intuitive navigation.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task9Do1"> Perform comprehensive testing using developer tools (e.g., Chrome DevTools) to ensure functionality across various devices.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task9Do2"> Validate HTML and CSS using W3C and Jigsaw validators, ensuring no major issues.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task9Do3"> Use GitHub Copilot to identify and fix any layout or code issues efficiently.</li>
-                                    </ul>
-
-                                    <h5>Documentation Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc15"> Document testing results briefly in the README (1-2 sentences), noting any major issues that were identified and fixed.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="doc16"> AI Reflection: "GitHub Copilot helped identify layout inconsistencies across screen sizes, which were fixed before final deployment."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Skipping validation may result in significant errors affecting site functionality.</li>
-                                        <li>Failing to test the site on multiple devices can lead to layout issues on mobile or tablets.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Task 10 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTask10">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask10" aria-expanded="false" aria-controls="collapseTask10">
-                                    Task 10: Deployment (1 hour)
-                                </button>
-                            </h2>
-                            <div id="collapseTask10" class="accordion-collapse collapse" aria-labelledby="headingTask10">
-                                <div class="accordion-body">
-                                    <p><h5>Objective:</h5> Deploy the website to GitHub Pages, ensuring the live version matches the development version. Document the deployment process in the README and reflect on AI tools' role in this stage.</p>
-                                    <h5>Associated Pass Criteria</h5>
-                                    <ul>
-                                        <li>LO3.1: Cloud Deployment: Deploy the website successfully to GitHub Pages with no discrepancies between the development and live versions.</li>
-                                        <li>LO5.4: Document AI’s role in the development process: Reflect on how AI tools (e.g., GitHub Copilot) helped streamline deployment and provided useful suggestions for code cleanup.</li>
-                                    </ul>
-
-                                    <h5>Expected Performance (Do's)</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="task10Do1"> Deploy the website to GitHub Pages successfully, ensuring the live version matches the development version.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task10Do2"> Verify that all features, navigation, and interactive elements work correctly post-deployment.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task10Do3"> Remove any commented-out code and unused files before final deployment.</li>
-                                        <li><input type="checkbox" class="form-check-input" id="task10Do4"> Provide brief documentation of the deployment process in the README, ensuring clear instructions on how to deploy and use the site.</li>
-                                    </ul>
-
-                                    <h5>AI Reflection Task</h5>
-                                    <ul>
-                                        <li><input type="checkbox" class="form-check-input" id="doc17"> Briefly reflect on how AI tools assisted in the deployment process. Example: "GitHub Copilot provided useful suggestions for cleaning up the code before deployment, which improved the overall project quality."</li>
-                                    </ul>
-
-                                    <h5>Areas for Improvement (Don'ts)</h5>
-                                    <ul>
-                                        <li>Failing to check internal links and interactive elements post-deployment could lead to a broken user experience.</li>
-                                        <li>Deploying with unused code or incomplete elements will affect the overall quality of the project.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- What Should Be in Place -->
-                        <div class="mt-4">
-                            <h5>What Should Be in Place By The End Of This Phase?</h5>
+                <!-- Task 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTask7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask7" aria-expanded="false" aria-controls="collapseTask7">
+                            Task 7: Should User Stories Implementation (28 hours)
+                        </button>
+                    </h2>
+                    <div id="collapseTask7" class="accordion-collapse collapse" aria-labelledby="headingTask7">
+                        <div class="accordion-body">
+                            <p><h5>Objective:</h5> Implement features based on the Should user stories to enhance the user experience and functionality beyond core requirements.</p>
+                            <h5>Associated Pass Criteria</h5>
                             <ul>
-                                <li>The website successfully deployed to GitHub Pages, fully functional and responsive across devices.</li>
-                                <li>Clean and optimized code with no commented-out or unused sections.</li>
-                                <li>A README.md file that briefly documents the deployment process and includes reflections on the use of AI tools.</li>
+                                <li>LO1.1: Front-End Design: Design and implement advanced features using Bootstrap or custom CSS, ensuring responsive and accessible design.</li>
+                                <li>LO1.2: User Experience: Ensure additional content and features are organized using UX principles for an intuitive user experience.</li>
+                                <li>LO2.3: User Notifications: Make sure that the messaing framework, or similar, is used to notify the user of relevant actions.</li>
+                                <li>LO3.2: Reflect Login State: Ensure that the user's login state is reflected in the UI, such as showing a logout button when logged in.</li>
+                            </ul>
+
+                            <h5>Expected Performance (Do's)</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="task7Do1"> Implement advanced features such as a responsive image gallery, interactive sections, or animations using Bootstrap components or custom CSS.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task7Do2"> Maintain consistent color schemes, font styles, and image usage while ensuring accessibility.</li>
+                            </ul>
+
+                            <h5>Documentation Task</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="doc12"> Ensure that the kanban board is updated with completed and incomplete user stories.</li>
+                                <li><input type="checkbox" class="form-check-input" id="doc13"> AI Reflection: "GitHub Copilot helped generate CSS for animations, though manual adjustments were needed to ensure smooth transitions."</li>
+                            </ul>
+
+                            <h5>Areas for Improvement (Don'ts)</h5>
+                            <ul>
+                                <li>Avoid overcomplicating the Should features, which could lead to inconsistent or cluttered designs.</li>
+                                <li>Neglecting to test advanced features can result in bugs or poor performance.</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Task 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTask8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask8" aria-expanded="false" aria-controls="collapseTask8">
+                            Task 8: Final Documentation (4 hours)
+                        </button>
+                    </h2>
+                    <div id="collapseTask8" class="accordion-collapse collapse" aria-labelledby="headingTask8">
+                        <div class="accordion-body">
+                            <p><h5>Objective:</h5> Finalize the README.md by ensuring all sections are complete and properly documented. Keep documentation concise, but include screenshots and descriptions of the website’s features and deployment steps.</p>
+                            <h5>Associated Pass Criteria</h5>
+                            <ul>
+                                <li>LO4.1: Documentation: Write a concise README.md file explaining the application’s purpose, user value, and deployment procedure.</li>
+                                <li>LO4.2: Code Organization and Readability: Ensure that the HTML, CSS, and any other code are well-organized and commented, supporting future maintainability.</li>
+                            </ul>
+
+                            <h5>Expected Performance (Do's)</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="task8Do1"> Complete the README.md, ensuring it includes sections such as Introduction, link to User Stories, Features, Screenshots, Technologies Used, Deployment Instructions, and AI reflections.</li>
+                                <li><input type="checkbox" class="form-check-input" id="task8Do2"> Provide concise screenshots of key features, explaining how they improve the user experience.</li>
+                            </ul>
+
+                            <h5>AI Reflection Task</h5>
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" id="doc14"> Include a section in the README reflecting on AI tool usage in a few sentences: "GitHub Copilot helped optimize the CSS for advanced features like the image gallery. Some tweaks were necessary to match the design requirements."</li>
+                            </ul>
+
+                            <h5>Areas for Improvement (Don'ts)</h5>
+                            <ul>
+                                <li>Incomplete or unclear documentation can lead to confusion for future developers or assessors.</li>
+                                <li>Failing to attribute external code sources can lead to academic integrity issues.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What Should Be in Place -->
+                <div class="mt-4">
+                    <h5>What Should Be in Place By The End Of This Phase?</h5>
+                    <ul>
+                        <li>Should features implemented and functioning correctly, enhancing user experience and engagement.</li>
+                        <li>A complete, concise README.md file documenting the application’s purpose, user stories, features, and AI tool usage.</li>
+                        <li>Screenshots and brief explanations of key features.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Phase 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Phase 4: Final Testing, Debugging & Deployment (7 hours)
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                <div class="accordion-body">
+                    <p><h5>Objective:</h5> Conduct final testing and debugging to ensure the project is fully functional before submission. Deploy the project to Heroku and document the deployment process in the README. Use AI tools for debugging and quality checks.</p>
+
+                    <!-- Task 9 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTask9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask9" aria-expanded="false" aria-controls="collapseTask9">
+                                Task 9: Final Testing & Debugging (4 hours)
+                            </button>
+                        </h2>
+                        <div id="collapseTask9" class="accordion-collapse collapse" aria-labelledby="headingTask9">
+                            <div class="accordion-body">
+                                <p><h5>Objective:</h5> Conduct thorough testing of the website to identify any remaining issues. Use AI tools to assist in debugging and ensuring the site is functional and accessible across different devices.</p>
+                                <h5>Associated Pass Criteria</h5>
+                                <ul>
+                                    <li>LO1.1: Front-End Design: Ensure full responsivity for all major website breakpoints</li>
+                                    <li>LO1.4: Code Quality: Ensure all code passes the official validators and that Python code adheres to PEP8 guidelines.</li>
+                                </ul>
+
+                                <h5>Expected Performance (Do's)</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="task9Do1"> Perform comprehensive testing using developer tools (e.g., Chrome DevTools) to ensure functionality across various devices.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task9Do2"> Validate HTML and CSS using W3C and Jigsaw validators, ensuring no major issues.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task9Do3"> Validate Python code using a PEP8 checker, ensuring to errors or warnings are reported.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task9Do4"> Use GitHub Copilot to identify and fix any layout or code issues efficiently.</li>
+                                </ul>
+
+                                <h5>Documentation Task</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="doc15"> Document testing results briefly in the README (1-2 sentences), noting any major issues that were identified and fixed.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="doc16"> AI Reflection: "GitHub Copilot helped identify layout inconsistencies across screen sizes, which were fixed before final deployment."</li>
+                                </ul>
+
+                                <h5>Areas for Improvement (Don'ts)</h5>
+                                <ul>
+                                    <li>Skipping validation may result in significant errors affecting site functionality.</li>
+                                    <li>Failing to test the site on multiple devices can lead to layout issues on mobile or tablets.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Task 10 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTask10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTask10" aria-expanded="false" aria-controls="collapseTask10">
+                                Task 10: Deployment (3 hours)
+                            </button>
+                        </h2>
+                        <div id="collapseTask10" class="accordion-collapse collapse" aria-labelledby="headingTask10">
+                            <div class="accordion-body">
+                                <p><h5>Objective:</h5> Deploy the website to a cloud-based hosting platform, ensuring the live version matches the development version. Document the deployment process in the README and reflect on AI tools' role in this stage.</p>
+                                <h5>Associated Pass Criteria</h5>
+                                <ul>
+                                    <li>LO6.1 Deploy Application to Cloud Platform: Deploy the application to a cloud-based hosting platform, such as Heroku.</li>
+                                    <li>LO6.2 Document Deployment Process: Clearly document the deployment process in the README, including any issues encountered and resolved.</li>
+                                    <li>LO6.3 Ensure Security in Deployment: Make sure that <code>DEBUG</code> mode is switched off, and that no API keys or secret keys are visible in the repo.</li>
+                                </ul>
+
+                                <h5>Expected Performance (Do's)</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="task10Do1"> Deploy the website to GitHub Pages successfully, ensuring the live version matches the development version.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task10Do2"> Verify that all features, navigation, and interactive elements work correctly post-deployment.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task10Do3"> Remove any commented-out code and unused files before final deployment.</li>
+                                    <li><input type="checkbox" class="form-check-input" id="task10Do4"> Provide brief documentation of the deployment process in the README, ensuring clear instructions on how to deploy and use the site.</li>
+                                </ul>
+
+                                <h5>AI Reflection Task</h5>
+                                <ul>
+                                    <li><input type="checkbox" class="form-check-input" id="doc17"> Briefly reflect on how AI tools assisted in the deployment process. Example: "GitHub Copilot provided useful suggestions for fixing errors during the Heroku deployment, which improved the overall project quality."</li>
+                                </ul>
+
+                                <h5>Areas for Improvement (Don'ts)</h5>
+                                <ul>
+                                    <li>Failing to check internal links and interactive elements post-deployment could lead to a broken user experience.</li>
+                                    <li>Deploying with unused code or incomplete elements will affect the overall quality of the project.</li>
+                                    <li>Deploying with <code>DEBUG</code> set to True can expose sensitive information and security vulnerabilities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What Should Be in Place -->
+                    <div class="mt-4">
+                        <h5>What Should Be in Place By The End Of This Phase?</h5>
+                        <ul>
+                            <li>The website successfully deployed to GitHub Pages, fully functional and responsive across devices.</li>
+                            <li>Clean and optimized code with no commented-out or unused sections.</li>
+                            <li>A README.md file that briefly documents the deployment process and includes reflections on the use of AI tools.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <audio id="beepSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
 
     <script>
@@ -1555,214 +1543,6 @@
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-        // Add icons before specific h5 and h2 elements based on their content
-        document.querySelectorAll('.accordion-body h5').forEach(h5 => {
-            if (h5.textContent.includes("Expected Performance (Do's)")) {
-                const icon = document.createElement("span");
-                icon.textContent = "✓"; // Checkmark icon
-                icon.style.color = "#0091DB"; // Accent color
-                icon.style.marginRight = "10px"; // Spacing
-                h5.prepend(icon); // Add the icon before the h5 text
-            } else if (h5.textContent.includes("Areas for Improvement (Don'ts)")) {
-                const icon = document.createElement("span");
-                icon.textContent = "✗"; // Cross icon
-                icon.style.color = "#F48C06"; // Warning color
-                icon.style.marginRight = "10px"; // Spacing
-                h5.prepend(icon); // Add the icon before the h5 text
-            } else if (h5.textContent.includes("Documentation Task")) {
-                const icon = document.createElement("span");
-                icon.textContent = "📝"; // Document icon
-                icon.style.color = "#6c757d"; // Neutral color
-                icon.style.marginRight = "10px"; // Spacing
-                h5.prepend(icon); // Add the icon before the h5 text
-            }
-        });
-
-        // Add an icon for "Health and Well-Being Guidance"
-        document.querySelectorAll('.accordion-header button').forEach(button => {
-            if (button.textContent.includes("Health and Well-Being Guidance")) {
-                const icon = document.createElement("span");
-                icon.textContent = "💡"; // Light bulb icon for guidance
-                icon.style.color = "#FFD700"; // Gold color for emphasis
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon); // Add the icon before the button text
-            }
-        });
-
-        // Add icons for each phase header
-        document.querySelectorAll('.accordion-header button').forEach(button => {
-            if (button.textContent.includes("Phase 1: Ideation & Initial Setup")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🧠"; // Brain icon for ideation
-                icon.style.color = "#007BFF"; // Blue color for creativity
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon); // Add the icon before the button text
-            } else if (button.textContent.includes("Phase 2: Must User Stories Implementation & Testing")) {
-                const icon = document.createElement("span");
-                icon.textContent = "✔"; // Checkmark icon for essential tasks
-                icon.style.color = "#28A745"; // Green color for importance
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon); // Add the icon before the button text
-            } else if (button.textContent.includes("Phase 3: Should User Stories Implementation & Advanced Features")) {
-                const icon = document.createElement("span");
-                icon.textContent = "⭐"; // Star icon for enhancements
-                icon.style.color = "#FFC107"; // Yellow color for features
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon); // Add the icon before the button text
-            } else if (button.textContent.includes("Phase 4: Final Testing, Debugging & Deployment")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🚀"; // Rocket icon for deployment
-                icon.style.color = "#DC3545"; // Red color for culmination
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon); // Add the icon before the button text
-            }
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-        // Add icons for the Health and Well-Being Guidance bullet headings
-        document.querySelectorAll('.accordion-body ul > li').forEach(listItem => {
-            const text = listItem.textContent.trim();
-
-            // Add icons for main headings
-            if (text.startsWith("Manage Your Time Wisely")) {
-                const icon = document.createElement("span");
-                icon.textContent = "⏰"; // Clock icon
-                icon.style.color = "#007BFF"; // Blue color for time management
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Take Regular, Short Breaks")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🔄"; // Refresh icon for breaks
-                icon.style.color = "#28A745"; // Green color for refreshing
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Maintain a Functional Workspace")) {
-                const icon = document.createElement("span");
-                icon.textContent = "💺"; // Chair icon
-                icon.style.color = "#FFC107"; // Yellow color for workspace
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Stay Hydrated and Nourished")) {
-                const icon = document.createElement("span");
-                icon.textContent = "💧"; // Water drop icon
-                icon.style.color = "#00BFFF"; // Light blue color for hydration
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Balance Work and Rest")) {
-                const icon = document.createElement("span");
-                icon.textContent = "⚖"; // Balance scale icon
-                icon.style.color = "#6c757d"; // Neutral gray color for balance
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Get Enough Rest Before the Project")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🛌"; // Bed icon
-                icon.style.color = "#8A2BE2"; // Purple color for rest
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Reflect and Adjust")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🔍"; // Magnifying glass icon
-                icon.style.color = "#FF4500"; // Orange-red color for reflection
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            } else if (text.startsWith("Stay Positive and Focused")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🌟"; // Star icon
-                icon.style.color = "#FFD700"; // Gold color for positivity
-                icon.style.marginRight = "10px"; // Spacing
-                listItem.prepend(icon);
-            }
-
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-        // Add icons for Task headings
-        document.querySelectorAll('.accordion-item > .accordion-header button').forEach(button => {
-            const text = button.textContent.trim();
-
-            // Add icons for each task
-            if (text.startsWith("Task 1: Ideation and User Story Definition")) {
-                const icon = document.createElement("span");
-                icon.textContent = "💡"; // Light bulb icon
-                icon.style.color = "#007BFF"; // Blue color for ideation
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 2: Initial Planning and Wireframing")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🖊"; // Pen icon
-                icon.style.color = "#28A745"; // Green color for planning
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 3: Environment Setup and Version Control")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🖥"; // Desktop computer icon
-                icon.style.color = "#6C757D"; // Neutral gray for environment setup
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            }
-
-
-            if (text.startsWith("Task 4: Must User Stories Implementation")) {
-                const icon = document.createElement("span");
-                icon.textContent = "✅"; // Checkmark icon
-                icon.style.color = "#28A745"; // Green color for 'must-have' tasks
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 5: Visual Progress & Testing")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🔍"; // Magnifying glass icon
-                icon.style.color = "#FFC107"; // Yellow color for testing
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 6: Adjustments & Refinement")) {
-                const icon = document.createElement("span");
-                icon.textContent = "⚙️"; // Gear icon
-                icon.style.color = "#6C757D"; // Neutral gray for refinement
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            }
-
-            if (text.startsWith("Task 7: Should User Stories Implementation")) {
-                const icon = document.createElement("span");
-                icon.textContent = "⭐"; // Star icon for enhancements
-                icon.style.color = "#17A2B8"; // Teal for 'should-have' tasks
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 8: Final Documentation")) {
-                const icon = document.createElement("span");
-                 icon.textContent = "📝"; // Document icon
-                icon.style.color = "#007BFF"; // Blue for documentation
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            }
-
-            if (text.startsWith("Task 9: Final Testing & Debugging")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🛠️"; // Tools icon
-                icon.style.color = "#FFC107"; // Amber for testing/debugging
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            } else if (text.startsWith("Task 10: Deployment")) {
-                const icon = document.createElement("span");
-                icon.textContent = "🚀"; // Rocket icon
-                icon.style.color = "#28A745"; // Green for deployment success
-                icon.style.marginRight = "10px"; // Spacing
-                button.prepend(icon);
-            }
-        });
-    });
-</script>
-
-
 </body>
 
 </html>
