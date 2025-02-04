@@ -51,7 +51,7 @@ Throughout this project, I relied on GitHub Copilot to streamline development an
 - **Performance and UX Optimization:** 
   - Reflection: One of my proudest moments came when I used Copilot to refine the Bootstrap styling. I wasn’t very confident in front-end design, but the AI helped bridge that gap. It suggested small, impactful changes, like improving button alignment and tweaking breakpoints, that made the application feel polished and professional. These adjustments also ensured that the app was truly responsive, which was a priority for me.
 
-- **Automated Unit Testing:**
+- **Automated Unit Testing: (If undertaken)**
   - Reflection: Writing unit tests has always been a challenging aspect of development for me, but Copilot turned it into a manageable task. I used question-and-answer and multi-step prompts to generate a solid starting point for my test cases, which I could then refine to align with the project’s requirements. Seeing it anticipate edge cases—like invalid user input—made me more aware of the importance of writing comprehensive tests. This process deepened my understanding of Django’s testing framework and made me more confident in my ability to create robust applications.
 
 ### Overall Impact:
