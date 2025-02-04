@@ -66,7 +66,7 @@ Looking back, I feel this experience not only improved my technical abilities bu
   - **Assistive Technologies:** Tested using Lighthouse in the Developer Tools.
   - **Features Tested:** CRUD operations, user authentication, responsive design, and accessibility features.
   - **Results:** All critical features, including accessibility checks, worked as expected.
-- **Automated Testing:**
+- **Automated Testing:(If undertaken)**
   - Tools Used: Django TestCase, GitHub Copilot.
   - Features Covered: CRUD operations, user authentication, and accessibility compliance.
   - Adjustments Made: Additional manual modifications to ensure comprehensive test coverage and inclusivity.
