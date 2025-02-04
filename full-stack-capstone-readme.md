@@ -47,7 +47,7 @@
     - Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
   - **Performance and UX Optimization:** 
     - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
-  - **Automated Unit Testing:**
+  - **Automated Unit Testing: (If undertaken)**
     - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
 
 - **Overall Impact:**
@@ -60,7 +60,7 @@
   - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
   - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
   - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
-- **Automated Testing:**
+- **Automated Testing: (If undertaken)**
   - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
   - Features Covered: [Briefly list features covered by automated tests.]
   - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
